@@ -1,0 +1,7 @@
+{
+  "jobId": "background-static-resource-updater",
+  "triggers": {
+    "Backgrounds.update": "onBackgroundsUpdate"
+  },
+  "schedule": "none"
+}

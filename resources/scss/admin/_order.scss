@@ -1,0 +1,18 @@
+.overview {
+  .overview-items {
+    width: 100%;
+    .overview-per-photo, .overview-add-shipping {
+      .single-photo {
+        @include span(6);
+        img {
+          @include span(4);
+          float: left;
+        }
+      }
+
+      .overview-item {
+        @include span(6 last);
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "pictaccio-transactional",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Roxanne Courchesne",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-terser": "^1.2.0"
+  },
+  "dependencies": {
+    "breakpoint": "^0.1.6",
+    "compass": "^0.1.1",
+    "gem": "^2.4.3",
+    "install": "^0.13.0",
+    "susy": "^3.0.7"
+  }
+}

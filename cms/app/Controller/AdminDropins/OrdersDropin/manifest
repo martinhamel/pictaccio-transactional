@@ -1,0 +1,7 @@
+{
+  "uuid": "b839b495-33a6-4e69-b2bd-9132006f59bd",
+  "name_locale_json": "{\"eng\": \"Orders\", \"fra\": \"Commandes\"}",
+  "category_locale_json": "{\"eng\": \"Orders\", \"fra\": \"Commandes\"}",
+  "order": 4,
+  "js_modules": "grid forms ui"
+}

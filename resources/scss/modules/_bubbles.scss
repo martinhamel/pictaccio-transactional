@@ -1,0 +1,73 @@
+$bubble-bg-color : rgba($black, .6);
+
+.bubble-positioning, .bubble-positioning {
+  position: absolute;
+  min-width: 300px;
+  min-height: 50px;
+}
+
+.bubble-positioning:after {
+  content: "";
+  position: absolute;
+  left: auto;
+  right: auto;
+  top: auto;
+  bottom: auto;
+  border-width: 15px 15px 0;
+  border-style: solid;
+  border-color: $bubble-bg-color transparent;
+  display: block;
+  width: 0;
+}
+
+.bubble-positioning.above:after {
+  bottom: -15px;
+  left: 50%;
+  margin-left: -15px;
+  border-width: 15px 15px 0;
+  border-color: $bubble-bg-color transparent;
+}
+
+.bubble-positioning.below:after {
+  top: -15px;
+  right: 50%;
+  margin-right: -15px;
+  border-width: 0 15px 15px;
+  border-color: $bubble-bg-color transparent;
+}
+
+.bubble-positioning.left:after {
+  left: 100%;
+  top: 50%;
+  margin-top: -15px;
+  border-width: 15px 0 15px 15px;
+  border-color: transparent $bubble-bg-color;
+}
+
+.bubble-positioning.right:after {
+  left: 0;
+  top: 50%;
+  margin: -15px 0 0 -15px;
+  border-width: 15px 15px 15px 0;
+  border-color: transparent $bubble-bg-color;
+}
+
+.bubble-style {
+  padding: 20px;
+  color: $white;
+  font-size: 1em;
+  text-align: center;
+  text-shadow:  -1px -1px 0 #333,
+                 1px -1px 0 #333,
+                -1px 1px 0 #333,
+                 1px 1px 0 #333;
+  @include border-radius();
+  //@include box-shadow(1px 1px 2px $medium-gray);
+  @include filter(drop-shadow(0 0 2px rgba(0,0,0,.8)));
+  //filter: drop-shadow(0 1px 2px rgba(0,0,0,.5));
+  cursor: default;
+}
+
+.bubble-default-background {
+  background: $bubble-bg-color;
+}

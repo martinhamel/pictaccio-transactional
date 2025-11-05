@@ -1,0 +1,20 @@
+msgid "TITLE"
+msgstr "Sessions"
+
+msgid "ADD_SESSION"
+msgstr "Ajouter une session"
+
+msgid "EDIT_SESSION"
+msgstr "Modifier une session"
+
+msgid "CATEGORIES"
+msgstr "Categories"
+
+msgid "PRODUCT_GROUPS"
+msgstr "Groupes de produits"
+
+msgid "DELIVERY_OPTION_GROUPS"
+msgstr "Groupes de livraison"
+
+msgid "GROUP_PICTURES_OPTION"
+msgstr "Activer photos de groupes"

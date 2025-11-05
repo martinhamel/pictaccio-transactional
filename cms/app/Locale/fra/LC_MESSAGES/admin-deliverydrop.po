@@ -1,0 +1,29 @@
+msgid "TITLE"
+msgstr "Options de livraison"
+
+msgid "ADD_DELIVERY_OPTIONS"
+msgstr "Ajouter une options de livraison"
+
+msgid "CREATE_GROUP_DELIVERY_OPTIONS"
+msgstr "Créer un groupe d'options de livraison"
+
+msgid "EDIT_GROUP_DELIVERY"
+msgstr "Modifier un groupe d'options de livraison"
+
+msgid "LEAD_TIME"
+msgstr "Lead time"
+
+msgid "BASE_PRICE"
+msgstr "Prix de base"
+
+msgid "METHOD"
+msgstr "Methode"
+
+msgid "DELIVERY_OPTIONS"
+msgstr "Options de livraison"
+
+msgid "PROPERTIES"
+msgstr "Propriétées"
+
+msgid "EDIT_DELIVERY_OPTIONS"
+msgstr "Modifier les options de livraison"

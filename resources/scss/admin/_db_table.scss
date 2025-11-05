@@ -1,0 +1,78 @@
+.db-table-container {
+  display: inline-block;
+
+  .controls {
+    @include clearfix;
+
+    .add-row {
+      color: $mid-blue;
+      font-size: 2.5rem;
+      background-color: transparent;
+      border: 0;
+      outline: 0;
+      cursor: pointer;
+      transition: $transition-delay $transition-easing color;
+
+      &:hover {
+        color: lighten($mid-blue, 15%);
+      }
+      &:active {
+        color: darken($mid-blue, 15%);
+      }
+    }
+  }
+
+  table {
+    background-color: $light-gray;
+    box-shadow: 1px 1px 3px rgba($dark-gray, .15);
+
+    th {
+      padding: 1rem 2rem .3rem;
+      text-align: center;
+      border-bottom: 1px solid $medium-gray;
+      border-right: 1px dashed $medium-gray;
+      white-space: nowrap;
+      user-select: none;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      i {
+        margin-left: .5rem;
+        opacity: .01;
+
+        &.visible {
+          opacity: 1;
+        }
+      }
+    }
+
+    tr {
+      &:not(:first-child):not(:last-child) {
+        border-bottom: 1px dashed $medium-gray;
+      }
+    }
+
+    td {
+      padding: .5rem .5rem .3rem .5rem;
+      border-right: 1px dashed $medium-gray;
+
+      &:last-child {
+        border-right: 0;
+      }
+
+      &.row-actions {
+        text-align: center;
+        i {
+          cursor: pointer;
+          margin-right: .5rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

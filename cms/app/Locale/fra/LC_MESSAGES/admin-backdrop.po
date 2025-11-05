@@ -1,0 +1,29 @@
+msgid "TITLE"
+msgstr "Fond d'image"
+
+msgid "ADD_BACKGROUND"
+msgstr "Ajouter un fond d'image"
+
+msgid "EDIT_BACKGROUND"
+msgstr "Modifier un fond d'image"
+
+msgid "UPDATE_BACKGROUND_STATIC"
+msgstr "Forcer mise à jour du cache de fonds"
+
+msgid "NUMBER"
+msgstr "Numéro"
+
+msgid "CATEGORIES"
+msgstr "Catégories"
+
+msgid "BACKGROUNDS"
+msgstr "Fonds"
+
+msgid "FEATURED"
+msgstr "En vedette"
+
+msgid "ADD_BACKGROUND_CATEGORY"
+msgstr "Ajouter une catégorie de fond"
+
+msgid "EDIT_BACKGROUND_CATEGORY"
+msgstr "Modifer une catégorie de fond"

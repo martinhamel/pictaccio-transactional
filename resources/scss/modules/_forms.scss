@@ -1,0 +1,212 @@
+form {
+  /* Just to center the form on the page */
+  //margin: 0 auto;
+  //width: 800px;
+  /* To see the outline of the form */
+  //padding: 1em;
+  //border: 1px solid $lightGray;
+  //margin: 20px 10px;
+}
+
+label {
+  display: block;
+  //width: 19%;
+  //text-align: right;
+
+  &.inline-label {
+    display: inline-block;
+    vertical-align: text-bottom;
+  }
+}
+
+input,
+select,
+.input {
+  height: $input-height;
+  vertical-align: middle;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="file"],
+input[type="url"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+input[type="datetime"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+textarea,
+select,
+.input {
+  width: 100%;
+  padding: 0 .5em;
+  @include input-border();
+  @include border-radius();
+}
+
+input:focus,
+textarea:focus {
+  /* To give a little highlight on active elements */
+  //border-color: $black;
+}
+
+textarea {
+  padding: .5rem;
+  vertical-align: top;
+  height: 150px;
+  resize: none;
+}
+
+.btn {
+  @extend .color-neutral-15;
+  display: inline-block;
+  height: auto;
+  padding: 20px;
+  font-family: $head-font;
+  font-size: 1em;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  @include border-radius();
+
+  &:hover {
+    filter: brightness(1.1);
+  }
+
+  &[disabled] {
+    background-color: var(--color-semantic-disabled);
+    cursor: default;
+
+    &:hover {
+      background-color: var(--color-semantic-disabled);
+    }
+  }
+}
+
+.submit {
+  @extend .btn;
+  float: right;
+
+  &:hover {
+    //
+  }
+}
+
+.btn-blue {
+  @extend .btn;
+  background-color: var(--color-button-blue);
+
+  &:hover {
+    --color-button-blue-lightness: calc(var(--color-button-blue-lightness) + 10%);
+  }
+}
+
+.btn-red {
+  @extend .btn;
+  background-color: var(--color-button-red);
+
+  &:hover {
+    --color-button-blue-lightness: calc(var(--color-button-blue-lightness) + 10%)
+  }
+}
+
+.btn-accent {
+  @extend .btn;
+  background-color: var(--color-accent);
+
+  &:hover {
+    --color-accent-lightness: calc(var(--color-accent-lightness) + 10%);
+  }
+}
+
+.small-btn-blue {
+  @extend .btn-blue;
+  padding: 10px;
+}
+
+.small-btn {
+  @extend .btn;
+  padding: 10px;
+}
+
+.clear-btn {
+  background: none;
+  border: 0;
+}
+
+#home,
+#order-app,
+#accounts-login,
+dialog,
+.accounts-reload-needed,
+#complete {
+  input[type="text"],
+  input[type="password"],
+  input[type="email"],
+  input[type="file"],
+  input[type="url"],
+  input[type="tel"],
+  input[type="number"],
+  input[type="date"],
+  input[type="datetime"],
+  input[type="month"],
+  input[type="time"],
+  input[type="week"],
+  textarea,
+  select,
+  .input {
+    font-family: $font-main;
+  }
+
+  .btn,
+  .btn-blue,
+  .btn-primary {
+    display: inline-block;
+    height: auto;
+    padding: var(--button-padding);
+    font-family: $font-main;
+    font-size: var(--button-font-size);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    outline: none;
+
+    &[disabled] {
+      background-color: var(--color-semantic-disabled);
+      cursor: default;
+
+      &:hover {
+        background-color: var(--color-semantic-disabled);
+        filter: none;
+      }
+    }
+  }
+
+  .btn,
+  .btn-blue,
+  .btn-primary {
+    font-family: Roboto, sans-serif;
+    border-radius: 10px;
+  }
+
+  .small-btn {
+    padding: 10px;
+  }
+
+  .btn-primary {
+    max-height: 5.9rem;
+    min-width: 8rem;
+
+    &:hover {
+      //
+    }
+  }
+}

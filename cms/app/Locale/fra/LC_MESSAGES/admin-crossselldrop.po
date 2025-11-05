@@ -1,0 +1,32 @@
+msgid "TITLE"
+msgstr "Administration des ventes additionnelles"
+
+msgid "ADD_CROSS_SELL"
+msgstr "Ajouter vente additionnelle"
+
+msgid "EDIT_CROSS_SELL"
+msgstr "Modifier vente additionnelle"
+
+msgid "PRODUCT_PRODUCTS"
+msgstr "Produits"
+
+msgid "PRODUCT_EXPLAIN"
+msgstr "Sélectionner les produits vous voulez mettre en vedette. Si vous prenez plus de 3, chaque fois qu'il seront afficher à un utilisateur, 3 produits serons choisi au hazard dans votre sélection."
+
+msgid "PRODUCT_SELECTED"
+msgstr "Sélectionné"
+
+msgid "PRODUCT_AVAILABLE"
+msgstr "Disponible"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

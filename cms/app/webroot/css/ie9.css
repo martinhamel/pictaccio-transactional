@@ -1,0 +1,22 @@
+/* line 1, ../../../../resources/scss/ie9.scss */
+.progression .container {
+  top: 0;
+}
+
+/* line 5, ../../../../resources/scss/ie9.scss */
+.packages .packages-display .description ul {
+  box-sizing: content-box;
+  width: 180px;
+}
+
+/* line 10, ../../../../resources/scss/ie9.scss */
+.products-container .products .product .price-box i {
+  left: 28%;
+  top: 24%;
+}
+
+/* line 15, ../../../../resources/scss/ie9.scss */
+.photo-choose .photo-container .selected-images .selected-photo-item img {
+  width: 193px;
+  height: 270px;
+}

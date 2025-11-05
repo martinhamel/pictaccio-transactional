@@ -1,0 +1,7 @@
+{
+  "jobId": "background-popularity-report",
+  "triggers": {
+    "Backgrounds.popularityReport": "onBackgroundsPopularityReport"
+  },
+  "schedule": "none"
+}

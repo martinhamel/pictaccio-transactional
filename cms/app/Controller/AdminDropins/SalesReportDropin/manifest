@@ -1,0 +1,7 @@
+{
+  "uuid": "baf946b4-e2e4-48fd-ace0-662d137dec50",
+  "name_locale_json": "{\"eng\": \"Sales\", \"fra\": \"Ventes\"}",
+  "category_locale_json": "{\"eng\": \"Reports\", \"fra\": \"Rapports\"}",
+  "order": 1,
+  "js_modules": "grid forms ui"
+}

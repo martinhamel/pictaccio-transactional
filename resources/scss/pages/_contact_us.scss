@@ -1,0 +1,144 @@
+//.contact-us {
+//  background-color: $white;
+//  color: $dark-gray;
+//  min-height: 60vh;
+//
+//  .container {
+//
+//    h3 {
+//      margin-top: 20px;
+//      margin-bottom: 20px;
+//    }
+//
+//    h4 {
+//      margin-bottom: 6px;
+//      font-size: 1.2em;
+//    }
+//
+//    i {
+//      color: $color-secondary;
+//    }
+//
+//    form {
+//      @include clearfix;
+//
+//      input[type="text"], textarea {
+//        width: 100%;
+//		    padding: .5em;
+//      }
+//
+//      input[type="checkbox"] {
+//        height: inherit;
+//      }
+//
+//      .half-form {
+//        width: 49.5%;
+//        display: inline-block;
+//      }
+//
+//      div {
+//        margin-bottom: 20px;
+//      }
+//
+//      label {
+//        display: inline-block;
+//      }
+//
+//      .categories {
+//        padding: 20px;
+//        background-color: $light-gray;
+//        @include border-radius();
+//        font-size: 0.9em;
+//
+//        label {
+//          margin-bottom: 15px;
+//        }
+//
+//        span {
+//          display: inline-block;
+//          width: 49%;
+//
+//          input {
+//            height: inherit;
+//          }
+//
+//          label {
+//            display: inline-block;
+//            margin-bottom: 4px;
+//          }
+//        }
+//      }
+//
+//      .g-recaptcha {
+//        float: right;
+//      }
+//
+//      .submit {
+//        clear: right;
+//      }
+//    }
+//
+//    .feedback-message {
+//      .fa-check {
+//        display: block;
+//        width: auto;
+//        margin-left: auto;
+//        margin-right: auto;
+//        margin-bottom: 5px;
+//        color: #b0e217;
+//        font-size: 90px;
+//      }
+//
+//      .fa-exclamation {
+//        display: block;
+//        width: auto;
+//        margin-left: auto;
+//        margin-right: auto;
+//        margin-bottom: 15px;
+//        color: #e0202f;
+//        font-size: 60px;
+//      }
+//    }
+//
+//    div {
+//      display: flex;
+//      flex-direction: row;
+//
+//      @include breakpoint($phone) {
+//        flex-direction: column;
+//        text-align: center;
+//      }
+//
+//      .form-left, .form-right {
+//        display: flex;
+//        flex-direction: column;
+//        max-width: 50rem;
+//
+//       /* @include breakpoint($desktop) {
+//          @include gallery(6);
+//        }*/
+//      }
+//
+//      .form-left {
+//        margin-right: 2rem;
+//      }
+//
+//      .form-right {
+//        @include breakpoint($phone) {
+//          margin-top: 2rem;
+//        }
+//      }
+//
+//
+//     /* @include breakpoint($desktop) {
+//        .form-left {
+//          @include gallery(6);
+//        }
+//
+//        .form-right {
+//          @include gallery(6);
+//        }
+//      }*/
+//    }
+//  }
+//}

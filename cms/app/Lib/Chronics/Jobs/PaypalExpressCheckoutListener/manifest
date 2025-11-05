@@ -1,0 +1,8 @@
+{
+  "jobId": "paypalexpresscheckout-listener",
+  "triggers": {
+    "PaypalExpressCheckout.getInfo": "onGetInfo",
+    "PaypalExpressCheckout.complete[101]": "onComplete"
+  },
+  "schedule": "none"
+}

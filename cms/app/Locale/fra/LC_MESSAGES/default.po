@@ -1,0 +1,1383 @@
+## VARIABLES
+msgid "VAR_BUSINESS_HOURS"
+msgstr "Lundi au Vendredi 9h à 17h"
+
+
+## GENERIC
+msgid "GENERIC_VIEW"
+msgstr "Visionner"
+
+msgid "GENERIC_ADD"
+msgstr "Ajouter"
+
+msgid "GENERIC_OK"
+msgstr "OK"
+
+msgid "GENERIC_OR"
+msgstr "Ou"
+
+msgid "GENERIC_CANCEL"
+msgstr "Annuler"
+
+msgid "GENERIC_YES"
+msgstr "Oui"
+
+msgid "GENERIC_NO"
+msgstr "Non"
+
+msgid "GENERIC_SUBMIT"
+msgstr "Soumettre"
+
+msgid "GENERIC_BROWSE"
+msgstr "Parcourir"
+
+msgid "GENERIC_REMOVE"
+msgstr "Supprimer"
+
+msgid "GENERIC_NONE"
+msgstr "Aucun"
+
+msgid "GENERIC_IMAGES"
+msgstr "Images"
+
+msgid "GENERIC_NO_IMAGE"
+msgstr "Aucune image"
+
+msgid "GENERIC_LOAD_MORE"
+msgstr "Afficher plus"
+
+msgid "GENERIC_NEXT"
+msgstr "Suivant"
+
+msgid "GENERIC_DAYS"
+msgstr "Jours ouvrables"
+
+msgid "GENERIC_LBS"
+msgstr "lbs"
+
+msgid "GENERIC_KG"
+msgstr "kg"
+
+msgid "GENERIC_IMPERIAL"
+msgstr "Imp"
+
+msgid "GENERIC_METRIC"
+msgstr "Met"
+
+msgid "GENERIC_FOOT"
+msgstr "'"
+
+msgid "GENERIC_INCH"
+msgstr "\""
+
+msgid "GENERIC_M"
+msgstr "m"
+
+msgid "GENERIC_CM"
+msgstr "cm"
+
+msgid "GENERIC_CHANGE"
+msgstr "Modifier"
+
+msgid "GENERIC_EDIT"
+msgstr "Modifier"
+
+msgid "GENERIC_SUBTOTAL"
+msgstr "Sous-total "
+
+msgid "GENERIC_GST"
+msgstr "TPS "
+
+msgid "GENERIC_QST"
+msgstr "TVQ "
+
+msgid "GENERIC_SHIPPING"
+msgstr "Expédition "
+
+msgid "GENERIC_AFTER_SHIPPING"
+msgstr "Sous-total avec frais d'expédition "
+
+msgid "GENERIC_TOTAL"
+msgstr "Total"
+
+msgid "GENERIC_OPTIONAL"
+msgstr "Optionnel"
+
+msgid "GENERIC_EACH"
+msgstr "Chaque"
+
+msgid "GENERIC_ORDER_ID"
+msgstr "No. de Commande"
+
+msgid "GENERIC_CLEAR"
+msgstr "Effacer"
+
+msgid "GENERIC_EDIT"
+msgstr "Modification"
+
+msgid "GENERIC_PRODUCTS"
+msgstr "Produits"
+
+msgid "GENERIC_SERVICES"
+msgstr "Services"
+
+msgid "GENERIC_INFORMATION"
+msgstr "Informations"
+
+msgid "GENERIC_OUR_SERVICES"
+msgstr "Nos services"
+
+msgid "GENERIC_OTHER_SERVICES"
+msgstr "Autres services"
+
+msgid "GENERIC_COPYRIGHT"
+msgstr "&copy; %s Pictaccio"
+
+msgid "GENERIC_CONTACT_US"
+msgstr "Contactez-nous"
+
+msgid "GENERIC_DESCRIPTION_LABEL"
+msgstr "Description"
+
+msgid "GENERIC_NAME_LABEL"
+msgstr "Nom"
+
+msgid "GENERIC_INTERNAL_NAME_LABEL"
+msgstr "Nom interne"
+
+msgid "GENERIC_FIRST_NAME_LABEL"
+msgstr "Prénom"
+
+msgid "GENERIC_EMAIL_LABEL"
+msgstr "Courriel"
+
+msgid "GENERIC_MESSAGE_LABEL"
+msgstr "Message"
+
+msgid "GENERIC_TEL_LABEL"
+msgstr "Téléphone"
+
+msgid "GENERIC_MSG_CONTACT_US"
+msgstr "Vous avez des questions ou des suggestions? Contactez la dynamique équipe de PhotoSF. Il nous fera plaisir de communiquer avec vous."
+
+msgid "GENERIC_MONTREAL"
+msgstr "Montréal"
+
+msgid "GENERIC_NO_FEES"
+msgstr "Sans frais"
+
+msgid "GENERIC_BY_PHONE"
+msgstr "Par téléphone"
+
+msgid "GENERIC_SEND_YOUR_MESSAGE"
+msgstr "Envoyer votre message"
+
+msgid "GENERIC_LOGO"
+msgstr "Logo"
+
+msgid "GENERIC_CONFIRM"
+msgstr "Confirmation"
+
+msgid "GENERIC_PRICE"
+msgstr "Prix"
+
+msgid "GENERIC_BROWSE_FILES"
+msgstr "Parcourir..."
+
+msgid "GENERIC_DATE"
+msgstr "Date"
+
+msgid "GENERIC_EXPIRATION_DATE"
+msgstr "Date expiration"
+
+msgid "GENERIC_UPLOAD"
+msgstr "Téléverser"
+
+msgid "GENERIC_DELETE"
+msgstr "Effacer"
+
+msgid "GENERIC_WARNING"
+msgstr "Avertissement"
+
+msgid "GENERIC_ERROR"
+msgstr "Erreur"
+
+msgid "GENERIC_ACCEPT_BEGIN"
+msgstr "Accepter & Commencer"
+
+msgid "GENERIC_TAGS"
+msgstr "Étiquettes"
+
+msgid "GENERIC_PRINT"
+msgstr "Imprimer"
+
+msgid "GENERIC_TOLLFREE"
+msgstr "Sans frais"
+
+msgid "GENERIC_QUANTITY"
+msgstr "Quantité"
+
+msgid "GENERIC_EACH"
+msgstr "Chaque"
+
+msgid "GENERIC_TRACK"
+msgstr "Suivre"
+
+msgid "GENERIC_NO_CHANGE"
+msgstr "Aucun changement"
+
+msgid "GENERIC_PARENT_NAME_LABEL"
+msgstr "Nom du parent"
+
+msgid "GENERIC_CHILD_NAME_LABEL"
+msgstr "Nom de l'enfant"
+
+msgid "GENERIC_META_DESCRIPTION"
+msgstr "Vos experts en photographie scolaire, sportive et de garderie"
+
+msgid "GENERIC_OTHER"
+msgstr "Autre"
+
+msgid "GENERIC_SAVE"
+msgstr "Sauvegarder"
+
+msgid "GENERIC_FREE"
+msgstr "Gratuit"
+
+msgid "GENERIC_WITH"
+msgstr "Avec"
+
+msgid "GENERIC_AND"
+msgstr "et"
+
+msgid "GENERIC_SENT"
+msgstr "Votre courriel de confirmation a été envoyé"
+
+msgid "GENERIC_INFO"
+msgstr "Confirmation"
+
+msgid "GENERIC_FAQ_QUESTIONS"
+msgstr "Avez-vous des questions?"
+
+msgid "GENERIC_SELECT_LANGUAGE"
+msgstr "Sélectionnez votre langue"
+
+msgid "GENERIC_VIRTUAL"
+msgstr "Virtuel"
+
+msgid "GENERIC_LOADING"
+msgstr "Chargement"
+
+msgid "GENERIC_SUCCESS"
+msgstr "Succès"
+
+
+## SOCIAL
+msgid "SOCIAL_FACEBOOK"
+msgstr "Facebook"
+
+msgid "SOCIAL_TWITTER"
+msgstr "Twitter"
+
+msgid "SOCIAL_GOOGLEP"
+msgstr "Google+"
+
+
+## MESSAGES
+msgid "MESSAGE_TAGLINE"
+msgstr "PhotoSF, c’est la qualité et le professionnalisme à votre portée!"
+
+msgid "MESSAGE_TAGLINE_SINCE"
+msgstr "Votre équipe de confiance depuis 10 ans."
+
+msgid "MESSAGE_HERO_LINE_1"
+msgstr "Gardez des souvenirs extraordinaires de vos enfants."
+
+msgid "MESSAGE_HERO_LINE_2"
+msgstr "Les photographes professionnels de l’équipe de PhotoSF se donnent pour mission d’offrir des souvenirs photographiques originaux et de qualité pour chaque étape de la vie de vos enfants, vous permettant ainsi de chérir des moments extraordinaires à tout jamais."
+
+msgid "MESSAGE_CONFIRM_DELETE"
+msgstr "Êtes-vous certains de vouloir effacer cet article?"
+
+msgid "MESSAGE_SHORT_TERMS_AND_CONDITIONS_BEFORE"
+msgstr "En cliquant sur « Commencer », vous acceptez nos "
+
+msgid "MESSAGE_SHORT_TERMS_AND_CONDITIONS_LINK"
+msgstr "termes&nbsp;et&nbsp;conditions"
+
+msgid "MESSAGE_SHORT_TERMS_AND_CONDITIONS_AFTER"
+msgstr "."
+
+msgid "MESSAGE_ONLINE_FEES"
+msgstr "Un frais de service de 1.00$ s’applique pour la commande en ligne. Il sera appliqué à la fin de votre commande."
+
+msgid "MESSAGE_ENTER_CODE"
+msgstr "Entrez votre code."
+
+msgid "MESSAGE_CODE_VALIDATING"
+msgstr "Nous validons votre code..."
+
+msgid "MESSAGE_CODE_VALIDATED"
+msgstr "Votre code est valide et appartient à"
+
+msgid "MESSAGE_CODE_NOT_FOUND"
+msgstr "Votre code n'a pu être validé, veuillez vérifier qu'il a bien été entré."
+
+msgid "MESSAGE_OPEN_SOON"
+msgstr "Le site ouvrira ses portes bientôt, veuillez essayer de nouveau mardi en soirée."
+
+msgid "MESSAGE_GREENSCREEN"
+msgstr "La découpe de fond vert n'est qu'un aperçu, l'impression finale sera préparée par notre équipe de spécialistes."
+
+msgid "MESSAGE_SELECTION_NOT_VISITED"
+msgstr "Avez-vous oublié d'ajouter un produit pour cette photo?"
+
+msgid "MESSAGE_NEED_4_CHECKS"
+msgstr "Pour choisir ce forfait, vous devez cocher 4 cases avant de passer à l'étape suivante."
+
+msgid "MESSAGE_MISSING_BACKGROUND"
+msgstr "Vous devez sélectionner un fond d'image pour toutes vos photos sur fond vert."
+
+msgid "MESSAGE_UNSUPPORTED_CC"
+msgstr "Malheureusement il nous est impossible de traiter une carte $1. S'il vous plait utiliser une Visa ou MasterCard"
+
+msgid "MESSAGE_PAYMENT_FAILED"
+msgstr "Les informations ne peuvent être validées, veuillez vérifier vos informations et essayez de nouveau."
+
+msgid "MESSAGE_PAYMENT_DECLINED"
+msgstr "Votre transaction par carte de crédit a été réfusée. Veuillez contacter votre banque ou fournisseur de carte de crédit pour plus de détails.<br><br>Si possible, vous pouvez également réessayez avec une autre carte de crédit ou utiliser notre option de paiement par PayPal."
+
+msgid "MESSAGE_PAYMENT_ALREADY_MADE"
+msgstr "Un paiement à déjà été appliqué avec succès à cette commande."
+
+msgid "MESSAGE_IE_KNOWN_ISSUES_1"
+msgstr "Internet Explorer a de la difficulté avec les \"cookies\" utilisés sur ce site."
+
+msgid "MESSAGE_IE_KNOWN_ISSUES_2"
+msgstr "Si vous avez des problèmes, s'il vous plaît essayer un autre navigateur tel que <a href=\"https://www.google.com/chrome\">Chrome</a> ou <a href=\"https://www.mozilla.org/en-US/firefox/new/\">Firefox</a>."
+
+msgid "MESSAGE_SAFARI_9"
+msgstr "Le site n'est pas compatible avec les versions 9 et antérieures de Safari. Veuillez, si possible, mettre votre Safari à jour selon la dernière version disponible. Autrement, veuillez utiliser un autre navigateur (Google Chrome, Firefox, Opera GX, etc.)"
+
+
+## ERRORS
+msgid "ERROR_TITLE"
+msgstr "Erreur"
+
+msgid "ERROR_SERVER_COMM_FAILED"
+msgstr "La communication avec le serveur a échoué."
+
+msgid "ERROR_CODE_NOT_FOUND"
+msgstr "Ce code de sujet n'a pas été trouvé sur nos serveurs."
+
+msgid "ERROR_VALIDATE_CONTACT"
+msgstr "Nous ne pouvons valider vos informations de contact, veuillez vérifier que l'information est exacte."
+
+msgid "ERROR_PAYMENT_SERVER_FAILED"
+msgstr "Nous avons rencontré un problème technique lors du traitement de votre transaction. Soyez sans crainte, votre carte n'a pas été débitée.<br><br>Cet incident a été enregistré par notre système et nous en a informé. Nous allons régler ce problème dès que possible. Nous vous contacterons si nous avons besoin d'informations supplémentaires.<br><br>Si vous désirez contacter notre service à la clientèle ou avez besoin d'aide pour restaurer votre commande, appelez nous<br>au <b>$1</b>."
+
+msgid "ERROR_PASSWORD"
+msgstr "Mot de passe"
+
+msgid "ERROR_PASSWORD_MISMATCH"
+msgstr "Votre mot de passe ne correspond pas"
+
+msgid "ERROR_SUBJECT_CODE_OWNED"
+msgstr "Ce code est déjà réclamé"
+
+msgid "ERROR_SESSION_NOT_FOUND"
+msgstr "Session introuvable"
+
+msgid "ERROR_SERVER"
+msgstr "Erreur serveur inconnue, veuillez essayer plus tard. Si le problème persiste, contactez-nous."
+
+msgid "ERROR_SERVER_UNKNOWN"
+msgstr "Vérifier que vos tailles de fichiers sont dans les limites"
+
+msgid "ERROR_STRIPE_LOAD_ELEMENT"
+msgstr "Une erreur est survenue lors du chargement du formulaire de paiement. Veuillez rafraîchir la page et réessayer."
+
+msgid "ERROR_STRIPE_PAYMENT_FAILED"
+msgstr "Votre paiement n'a pas pu être complété : $1"
+
+
+## PAGE TITLES
+msgid "PAGE_HOME"
+msgstr "PhotoSF - Accueil"
+
+msgid "PAGE_CODE_REQUEST"
+msgstr "PhotoSF - Demande de Code Web"
+
+msgid "PAGE_CONTACT_US"
+msgstr "PhotoSF - Contactez-nous"
+
+msgid "PAGE_DIGITALS"
+msgstr "PhotoSF - Fichiers numériques"
+
+msgid "PAGE_CHECKOUT"
+msgstr "Paiement"
+
+msgid "PAGE_FAQ"
+msgstr "FAQ"
+
+msgid "PAGE_SESSION_NOT_AVAILABLE"
+msgstr "Session non disponible"
+
+
+## SESSION NOT AVAILABLE
+msgid "SESSION_NOT_AVAILABLE_TITLE"
+msgstr "Session non disponible"
+
+msgid "SESSION_NOT_AVAILABLE_MESSAGE"
+msgstr "La session que vous avez demandée n'est pas disponible. Veuillez nous contacter pour plus d'information."
+
+msgid "SESSION_NOT_AVAILABLE_RETURN"
+msgstr "Retour à l'accueil"
+
+
+## NAVIGATION
+msgid "NAVIGATION_HOME"
+msgstr "Accueil"
+
+msgid "NAVIGATION_SERVICES_MISSION"
+msgstr "Mission et services"
+
+msgid "NAVIGATION_ORDER"
+msgstr "Commander"
+
+msgid "NAVIGATION_OUR_SERVICES"
+msgstr "Nos services"
+
+msgid "NAVIGATION_PRODUCTS"
+msgstr "Produits"
+
+msgid "NAVIGATION_PHOTOGRAPHER"
+msgstr "Photographe"
+
+msgid "NAVIGATION_BLOG"
+msgstr "Blogue"
+
+msgid "NAVIGATION_CONTACT_US"
+msgstr "Nous contacter"
+
+msgid "NAVIGATION_ABOUT_US"
+msgstr "À propos de nous"
+
+msgid "NAVIGATION_PRIVACY_POLICIES"
+msgstr "Politique de confidentialité"
+
+msgid "NAVIGATION_TERMS_AND_CONDITIONS"
+msgstr "Termes&nbsp;et&nbsp;conditions"
+
+msgid "NAVIGATION_SECURE_PAYMENTS"
+msgstr "Nos paiements sécurisés"
+
+msgid "NAVIGATION_SERVICES_KINDERGARTEN"
+msgstr "Photographie en garderie"
+
+msgid "NAVIGATION_SERVICES_SCHOOL"
+msgstr "Photographie scolaire"
+
+msgid "NAVIGATION_SERVICES_GRADUATION"
+msgstr "Photographie de finissants"
+
+msgid "NAVIGATION_SERVICES_SPORTS"
+msgstr "Photographie sportive"
+
+msgid "NAVIGATION_SCHOOLS"
+msgstr "Écoles"
+
+msgid "NAVIGATION_DAYCARE"
+msgstr "Garderies"
+
+msgid "NAVIGATION_GRADUATION"
+msgstr "Finissants"
+
+msgid "NAVIGATION_SPORT"
+msgstr "Sport"
+
+msgid "NAVIGATION_TEAM_PROFILE"
+msgstr "Profil d'équipe"
+
+msgid "NAVIGATION_RESERVE_GRADUATES"
+msgstr "Réservation finissants secondaire"
+
+msgid "NAVIGATION_RESERVE_FAMILY"
+msgstr "Réservation photos de famille"
+
+msgid "NAVIGATION_ADMIN"
+msgstr "Administration"
+
+msgid "NAVIGATION_RESERVATION"
+msgstr "Réservation"
+
+msgid "NAVIGATION_FAQ"
+msgstr "FAQ"
+
+
+## USERS
+msgid "USER_SAVED"
+msgstr "Sauvegardé"
+
+msgid "USER_NOT_SAVED"
+msgstr "Non sauvegardé"
+
+msgid "USER_INVALID"
+msgstr "Invalide"
+
+msgid "USER_ADD"
+msgstr "Ajouter"
+
+msgid "USER_NAME"
+msgstr "Nom"
+
+msgid "USER_EMAIL"
+msgstr "Courriel"
+
+msgid "USER_PASSWORD"
+msgstr "Mot de passe"
+
+msgid "USER_CURRENT_PASSWORD"
+msgstr "Ancien mot de passe"
+
+msgid "USER_CONFIRM_PASSWORD"
+msgstr "Confirmation du mot de passe"
+
+msgid "USER_CREATE_OAUTH"
+msgstr "Créez un compte avec:"
+
+msgid "USER_LOGIN"
+msgstr "Se connecter"
+
+msgid "USER_LOGIN_HEADER"
+msgstr "Connectez-vous à votre compte"
+
+msgid "USER_LOGIN_OAUTH"
+msgstr "Connectez-vous avec:"
+
+msgid "USER_LOGIN_LOCAL"
+msgstr "Connectez-vous avec votre compte PhotoSF"
+
+msgid "USER_LOGIN_RELOAD_TITLE"
+msgstr "La page a expiré"
+
+msgid "USER_LOGIN_RELOAD_TEXT"
+msgstr "La page où vous êtes a expiré. Actualisez la page pour retrouver l'accès à son contenu."
+
+msgid "USER_LOGIN_RELOAD_LINK"
+msgstr "Actualiser la page"
+
+msgid "USER_DONT_HAVE_AN_ACCOUNT"
+msgstr "Vous n'avez pas de compte?"
+
+msgid "USER_DONT_HAVE_AN_ACCOUNT_USE_OAUTH"
+msgstr "Vous pouvez soit vous connecter avec un compte Google, Facebook ou Amazon en cliquant l'un des boutons à gauche ..."
+
+msgid "USER_CREATE_LOCAL_ACCOUNT"
+msgstr "... ou vous créer un compte PhotoSF en cliquant sur le bouton ci-dessus"
+
+msgid "USER_CREATE_LOCAL_ACCOUNT_BUTTON"
+msgstr "Créer votre compte"
+
+msgid "USER_ACCOUNT_WAS_CREATED_HEADER"
+msgstr "Votre compte a été créé!"
+
+msgid "USER_ACCOUNT_WAS_CREATED_EXPLAIN"
+msgstr "Avant de commencer, veuillez vous connecter avec le compte que vous venez de créer.<br>Une fois connecté, vous pourrez réclamer vos Codes d'Élèves et gérer les photos de vos enfants."
+
+msgid "USER_ACCOUNT_WAS_CREATED_CLICK_ANYWHERE"
+msgstr "Cliquez n'importe où pour faire disparaître ce message"
+
+msgid "USER_CREATE_LOCAL_HEADER"
+msgstr "Créer votre compte"
+
+msgid "USER_EXISTS"
+msgstr "Cette adresse courriel a déjà un compte"
+
+msgid "USER_EMAIL_VERIFIED"
+msgstr "Courriel vérifié"
+
+msgid "USER_EDIT_INFO_AND_CHANGE_PASS"
+msgstr "Modifier vos informations personelles"
+
+msgid "USER_SEND_VERIFICATION_EMAIL"
+msgstr "Envoyer le courriel de vérification"
+
+msgid "USER_CLAIM_SUBJECT_CODE_ACTION"
+msgstr "Réclamer"
+
+msgid "USER_CLAIM_SUBJECT_CODE_HEADER"
+msgstr "Réclamer un code de sujet"
+
+msgid "USER_SUBJECT_CODE"
+msgstr "Code de sujet"
+
+msgid "USER_SUBJECT_NAME"
+msgstr "Nom du sujet"
+
+msgid "USER_CLAIM_HIDE_PUBLIC"
+msgstr "Cacher le code de sujet"
+
+msgid "USER_CLAIM_HIDE_PUBLIC_EXPLAIN"
+msgstr "Cochez cette boîte si vous désirez que ce code soit accessible seulement par ce compte. Il vous faudra donc vous connecter à ce compte pour voir ces photos dans le futur. Cette option peut être changée à tout moment dans la Gestion des Codes d'élèves (cette page)."
+
+msgid "USER_SUBJECT_CODE_HIDE"
+msgstr "Cacher"
+
+msgid "USER_NO_CLAIM_HEADER"
+msgstr "Aucun code de sujet réclamé"
+
+msgid "USER_NO_CLAIM_EXPLAIN"
+msgstr "Commencez à réclamer vos Codes Internet en cliquant sur le bouton Réclamer"
+
+msgid "USER_MENU_PROFILE"
+msgstr "Profile"
+
+msgid "USER_MENU_CODE_LIBRARY"
+msgstr "Codes de sujets"
+
+msgid "USER_MENU_ORDER"
+msgstr "Commandes"
+
+msgid "USER_MENU_SETTINGS"
+msgstr "Options"
+
+msgid "USER_MENU_LOGOUT"
+msgstr "Déconection"
+
+msgid "USER_GREETINGS"
+msgstr "Bonjour, "
+
+msgid "USER_LOGIN"
+msgstr "Connection"
+
+msgid "USER_SIGNUP"
+msgstr "S'inscrire"
+
+msgid "USER_FORGOT_PASSWORD"
+msgstr "Vous avez oublié votre mot de passe ?"
+
+msgid "USER_CREATE_LOCAL_ACCOUNT_LINK"
+msgstr "Vous n'avez pas de compte? inscrivez-vous maintenat!"
+
+msgid "USER_LOGOUT_MESSAGE"
+msgstr "Vous avez été déconnecté avec succès!"
+
+msgid "USER_RETURN_HOME"
+msgstr "Retour à l'accueil"
+
+
+## HOME
+msgid "HOME_SCHOOL_PHOTOS"
+msgstr "Photographie scolaire"
+
+msgid "HOME_SCHOOL_PHOTOS_TAGLINE"
+msgstr "Souvenirs d’un temps inoubliable !"
+
+msgid "HOME_GRADUATES_PHOTOS"
+msgstr "Photographie des finissants"
+
+msgid "HOME_GRADUATES_PHOTOS_TAGLINE"
+msgstr "Une fin d’études à souligner en grand !"
+
+msgid "HOME_DAYCARE_PHOTOS"
+msgstr "Photographie en garderie"
+
+msgid "HOME_DAYCARE_PHOTOS_TAGLINE"
+msgstr "Un jeu d’enfant !"
+
+msgid "HOME_SPORT_PHOTOS"
+msgstr "Photographie sportive"
+
+msgid "HOME_SPORT_PHOTOS_TAGLINE"
+msgstr "Immortalisez de grands efforts !"
+
+
+## SHIPPING
+msgid "SHIPPING_REGULAR"
+msgstr "Régulier"
+
+msgid "SHIPPING_XPRESS"
+msgstr "Xpress"
+
+
+## ADMIN
+msgid "ADMIN_ZIP"
+msgstr "Code postal"
+
+msgid "ADMIN_GENERIC_STATUS"
+msgstr "État"
+
+msgid "ADMIN_GENERIC_ID"
+msgstr "Id"
+
+msgid "ADMIN_GENERIC_MANAGE"
+msgstr "Gérer"
+
+msgid "ADMIN_GENERIC_DESCRIPTIONS"
+msgstr "Description"
+
+msgid "ADMIN_ORDER_TIME"
+msgstr "Temps de la commande"
+
+msgid "ORDER_TRANSACTION_ID"
+msgstr "Numéro de transaction"
+
+msgid "ORDER_FIRST"
+msgstr "Prénom"
+
+msgid "ORDER_LAST"
+msgstr "Nom de famille"
+
+msgid "ADMIN_GENERIC_BASE"
+msgstr "Base"
+
+msgid "ADMIN_PRODUCTS"
+msgstr "Produits"
+
+msgid "ADMIN_PRODUCT_ADDED"
+msgstr "Produit ajouté"
+
+msgid "ADMIN_SAVE_ERROR"
+msgstr "Erreur de sauvegarde"
+
+msgid "ADMIN_LANG_CODE"
+msgstr "Code de langue"
+
+msgid "ADMIN_LANG_STRING"
+msgstr "Langue du texte"
+
+msgid "ADMIN_ORDERS"
+msgstr "Commandes"
+
+msgid "ADMIN_BLOGS"
+msgstr "Blog"
+
+msgid "ADMIN_PRODUCT_DESCRIPTION"
+msgstr "Descriptions des Produits"
+
+
+## VALIDATION
+msgid "VALIDATION_ALPHA_APOSTROPHE_SPACE_HYPHEN"
+msgstr "Seuls les lettres, apostrophes, espaces et traits d'union sont acceptés"
+
+msgid "VALIDATION_NUMERIC"
+msgstr "Seuls les chiffres sont acceptés"
+
+msgid "VALIDATION_ALPHA_APOSTROPHE_SPACE"
+msgstr "Seuls les lettres, apostrophes et espaces sont acceptés"
+
+msgid "VALIDATION_ALPHA_HYPHEN_APOSTROPHE"
+msgstr "Seuls les lettres, apostrophes et traits d'union sont acceptés"
+
+msgid "VALIDATION_ALPHA_NUMERIC_SPACE"
+msgstr "Seuls les lettres, les chiffres et les espaces sont acceptés"
+
+msgid "VALIDATION_ALPHA_HYPHEN_PERIOD_COMMA_HASHTAG"
+msgstr "Seuls les lettres, traits d'union, points, virgules et dièses sont acceptés"
+
+msgid "VALIDATION_NOT_EMPTY"
+msgstr "Cet espace ne peut être laissé vide"
+
+msgid "VALIDATION_PHONE"
+msgstr "Veuillez entrer un numéro de téléphone dans un format valide"
+
+msgid "VALIDATION_BETWEEN_1_2"
+msgstr "Cette valeur doit être comprise entre 1 et 2"
+
+msgid "VALIDATION_BETWEEN_1_3"
+msgstr "Cette valeur doit être comprise entre 1 et 3"
+
+msgid "VALIDATION_BETWEEN_2_50"
+msgstr "Cette valeur doit être comprise entre 2 et 50"
+
+msgid "VALIDATION_BETWEEN_5_7"
+msgstr "Cette valeur doit être comprise entre 5 et 7"
+
+msgid "VALIDATION_BETWEEN_1_10"
+msgstr "Cette valeur doit être comprise entre 1 et 10"
+
+msgid "VALIDATION_BETWEEN_5_100"
+msgstr "Cette valeur doit être comprise entre 5 et 100"
+
+msgid "VALIDATION_IS_QUEBEC"
+msgstr "Nous expédions seulement au Québec pour le moment"
+
+
+## LANGUAGES
+msgid "LANG_FRENCH"
+msgstr "Français"
+
+msgid "LANG_ENGLISH"
+msgstr "English"
+
+
+## ORDERAPP
+msgid "ORDERAPP_ERROR_SUBJECT_CODE_ADDED"
+msgstr "Ce code à déjà été ajouté à votre commande"
+
+msgid "ORDERAPP_ERROR_ADD_SUBJECT_CODE"
+msgstr "Nous ne pouvons pas ajouter ce code en ce moment, veuillez réessayer plus tard"
+
+msgid "ORDERAPP_ERROR_SESSION_PRODUCTS"
+msgstr "Nous ne pouvons pas obtenir les produits associés à cette session pour le moment. Veuillez contacter notre support si ce problème persiste"
+
+msgid "ORDERAPP_ERROR_CANT_REMOVE_PHOTO"
+msgstr "Cette photo est associée à au moins un article dans votre panier et ne peut être enlevée"
+
+msgid "ORDERAPP_ERROR_TOUCHUP_NO_PRODUCTS"
+msgstr "Vous avez demandé des retouches mais vous n'avez pas d'autre produits dans votre panier, veuillez ajouter un produit utilisant les photos retouchées avant de continuer"
+
+msgid "ORDERAPP_ERROR_TOUCHUP_PHOTO_NOT_IN_PRODUCTS"
+msgstr "Vous avez demandé des retouches pour une ou plusieurs photos qui ne sont pas utilisée(s) dans aucun produits, veuillez utiliser ces photos ou retirer les retouches inutilisées avant de continuer. Voulez-vous retirer les retouches inutilisées?"
+
+msgid "ORDERAPP_ERROR_TOUCHUP_REVIEW_PHOTO_NOT_IN_PRODUCTS"
+msgstr "Voici les retouches non utilisées:"
+
+msgid "ORDERAPP_MESSAGE_RELOAD_STATE"
+msgstr "Vous avez une commande incomplète débutée $1. Désirez-vous reprendre votre commande? Si vous répondez NON, toutes les informations seront supprimées"
+
+msgid "ORDERAPP_MESSAGE_UNIQUE_SESSION"
+msgstr "Le code de sujet que vous entrez est d'une école/année/session différente et ne peut pas être ajouté à cette commande. Complétez votre commande ou cliquez sur le bouton \"Effacer&nbsp;votre&nbsp;session\" et entrez votre code à nouveau."
+
+msgid "ORDERAPP_MESSAGE_IMG_BACK_COMB_EXIST"
+msgstr "Ce fond a déjà été appliqué à cette image"
+
+msgid "ORDERAPP_MESSAGE_IMG_EXIST"
+msgstr "Cette image est déjà sélectionnée"
+
+msgid "ORDERAPP_MESSAGE_NO_PHOTOS"
+msgstr "Vous n'avez pas de photos de sélectionées dans votre commande. <br>Veuillez cliquer sur le bouton <span class=\"add-photo-icon\"><i class=\"far fa-portrait\"></i><i class=\"fas fa-plus\"></i></span> pour ajouter des photos à votre commande."
+
+msgid "ORDERAPP_MESSAGE_NO_PHOTOS_SELECTED"
+msgstr "Vous avez aucune photos sélectionnées pour ce produit, veuillez en sélectionner au moins une photo."
+
+msgid "ORDERAPP_MESSAGE_ONLY_GROUP_NOT_ALLOWED"
+msgstr "Vous n'avez sélectionné que des photos de groupe dans votre commande et ce produit n'autorise pas les photos de groupe. <br>Veuillez cliquer sur le bouton <span class=\"add-photo-icon\"><i class=\"far fa-portrait\"></i><i class=\"fas fa-plus\"></i></span> pour ajouter des photos à votre commande."
+
+msgid "ORDERAPP_MESSAGE_ONLY_GROUP_ALLOWED"
+msgstr "Vous n'avez sélectionné que des photos de sujet dans votre commande et ce produit n'autorise que les photos de groupe. <br>Veuillez cliquer sur le bouton <span class=\"add-photo-icon\"><i class=\"far fa-portrait\"></i><i class=\"fas fa-plus\"></i></span> pour ajouter des photos à votre commande."
+
+
+msgid "ORDERAPP_MESSAGE_RESET_SESSION"
+msgstr "Vous avez enlevé toutes les photos du panier. Voulez-vous effacer votre session et recommencer du début?"
+
+msgid "ORDERAPP_MESSAGE_BUBBLE_ADD_PHOTO"
+msgstr "Entrez içi vos autres codes internet si vous avez plus d'un enfant. Choisissez ensuite les photos qui vous intéressent. Les photos avec fond vert vous permettront de choisir un arrière plan.<br><br>Cliquez sur cette bulle pour continuer."
+
+msgid "ORDERAPP_ADD_PHOTO_HEADER"
+msgstr "Sélectionner vos photos"
+
+msgid "ORDERAPP_ADD_PHOTO_EXPLAIN"
+msgstr "Cliquez sur les photos que vous voulez sélectionner pour votre&nbsp;commande."
+
+msgid "ORDERAPP_ADD_SUBJECT_CODE"
+msgstr "Ajouter un code de sujet"
+
+msgid "ORDERAPP_ENTER_SUBJECT_CODE"
+msgstr "Entrez votre code de sujet"
+
+msgid "ORDERAPP_INTERNET_CODE"
+msgstr "Code de sujet"
+
+msgid "ORDERAPP_CHOOSE_GREEN_SCREEN"
+msgstr "Appliquer un fond"
+
+msgid "ORDERAPP_GREEN_SCREEN_CATEGORY_HEADER"
+msgstr "Catégories de fonds"
+
+msgid "ORDERAPP_BACKGROUND_CATEGORY_RECENT"
+msgstr "Récents"
+
+msgid "ORDERAPP_BACKGROUND_CATEGORY_FAVORITES"
+msgstr "Favoris"
+
+msgid "ORDERAPP_BACKGROUND_CATEGORY_FEATURED"
+msgstr "En vedette"
+
+msgid "ORDERAPP_BYOP_CHOICES_HEADER"
+msgstr "Choix"
+
+msgid "ORDERAPP_GET_STARTED"
+msgstr "Débutons!"
+
+msgid "ORDERAPP_ADD_TO_CART_TITLE"
+msgstr "Sélectionnez les photos désirées"
+
+msgid "ORDERAPP_ADD_TO_CART"
+msgstr "Ajouter au panier"
+
+msgid "ORDERAPP_ADD_TO_CART_DESCRIPTION"
+msgstr "Description"
+
+msgid "ORDERAPP_ADD_TO_CART_THEMES"
+msgstr "Thèmes"
+
+msgid "ORDERAPP_ADD_TO_CART_PRICE"
+msgstr "Prix "
+
+msgid "ORDERAPP_ADD_TO_CART_QUANTITY"
+msgstr "Quantité"
+
+msgid "ORDERAPP_CANCEL_REMOVAL"
+msgstr "Annuler"
+
+msgid "ORDERAPP_REMOVE_CART_ITEM"
+msgstr "Enlever"
+
+msgid "ORDERAPP_EDIT_CART_ITEM"
+msgstr "Modifier"
+
+msgid "ORDERAPP_COMPLETE_ORDER"
+msgstr "Compléter"
+
+msgid "ORDERAPP_CART_SUBTOTAL"
+msgstr "Sous-total"
+
+msgid "ORDERAPP_SUBJECT_NAME_NOTFOUND"
+msgstr "Introuvable"
+
+msgid "ORDERAPP_SUBJECT_NAME_ERROR"
+msgstr "Erreur"
+
+msgid "ORDERAPP_SUBJECT_NAME_SEARCHING"
+msgstr "Recherche..."
+
+msgid "ORDERAPP_MISSING_CODE_TIME"
+msgstr "Un code de sujet peut prendre quelques jours avant d'être disponible"
+
+msgid "ORDERAPP_GREENSCREEN_PREVIEW_WARNING"
+msgstr "Cet apercu n'est pas représentatif du produit final"
+
+msgid "ORDERAPP_TERMS_AND_CONDITIONS"
+msgstr "En utilisant ce site vous acceptez nos <a href=\"%s\">Termes&nbsp;et&nbsp;Conditions</a>"
+
+msgid "ORDERAPP_SELECT_PHOTO_FIRST_MESSAGE"
+msgstr "Veuillez sélectionner les photos pour cet article"
+
+msgid "ORDERAPP_CODE_REQUEST"
+msgstr "Vous n'avez pas votre code?"
+
+msgid "ORDERAPP_ADD_TO_CART_COMMENT"
+msgstr "Commentaire"
+
+msgid "ORDERAPP_ADD_TO_CART_EXTRA_OPTIONS"
+msgstr "Extra Options"
+
+msgid "ORDERAPP_ADD_TO_CART_EXTRA_DIGITAL_COPY"
+msgstr "Copie Digitale"
+
+msgid "ORDERAPP_ADD_TO_CART_EXTRA_TOUCH_UPS"
+msgstr "Retouches"
+
+msgid "ORDERAPP_ADD_TO_CART_EDIT"
+msgstr "Modifier"
+
+msgid "ORDERAPP_CROSS_SELL_TITLE"
+msgstr "Produits en vedettes"
+
+msgid "ORDERAPP_BUILD_YOUR_OWN_TITLE"
+msgstr "Construisez votre forfait"
+
+msgid "ORDERAPP_BUILD_YOUR_OWN_CHOICE"
+msgstr "Choix"
+
+msgid "ORDERAPP_BUILD_YOUR_OWN_SELECT_PHOTO"
+msgstr "Selectionnez votre photo"
+
+msgid "ORDERAPP_CLEAR_SESSION"
+msgstr "Effacer votre session"
+
+msgid "ORDERAPP_CLEAR_SESSION_CONFIRM"
+msgstr "Êtes-vous certain que vous désirez effacer votre session?"
+
+msgid "ORDERAPP_CROSS_SELL_NO_THANKS"
+msgstr "Non merci"
+
+msgid "ORDERAPP_CART_TITLE"
+msgstr "Panier"
+
+msgid "ORDERAPP_CART_ANNOUNCEMENT"
+msgstr "%s$ et plus = Livraison gratuite"
+
+msgid "ORDERAPP_DIGITAL_COPY"
+msgstr "Copie digitale"
+
+msgid "ORDERAPP_ADD_TO_CART_DIGITAL_DISCOUNT"
+msgstr "Rabais sur les copies digitales"
+
+msgid "ORDERAPP_ADD_TO_CART_DIGITAL_DISCOUNT_NO_OVERLAP"
+msgstr "Ajouter des copies digitales à votre panier pour obtenir un rabais sur ces photos"
+
+msgid "ORDERAPP_ADD_TO_CART_DIGITAL_DISCOUNT_OVERLAP"
+msgstr "Les copies digitales que vous avez sélectionnées sont admissibles à un rabais en ajoutant ce produit à votre panier, ajouter les autres photos pour des rabais additionnels"
+
+msgid "ORDERAPP_ADD_TO_CART_DIGITAL_DISCOUNT_FULL_OVERLAP"
+msgstr "Les copies digitales que vous avez sélectionnées sont admissibles à un rabais en ajoutant ce produit à votre panier"
+
+msgid "ORDERAPP_ADD_TO_CART_ELIGIBLE_DISCOUNT"
+msgstr "Ajouter ce produit et obtener un rabais de $$1 sur vos copies digitales"
+
+msgid "ORDERAPP_ADD_TO_CART_DIGITAL_DISCOUNT_OVERLAP_OPTION"
+msgstr "Ajouter $1 photo$2 à rabais"
+
+msgid "ORDERAPP_ADD_TO_CART_DIGITAL_DISCOUNT_AMOUNT"
+msgstr "Ajouter des copies digitales et économiser $$1 sur ces photos"
+
+msgid "ORDERAPP_TOUCHUPS"
+msgstr "Retouches"
+
+msgid "ORDERAPP_TOUCHUPS_COMMENT_MESSAGE"
+msgstr "Un commentaire est requis pour les retouches."
+
+msgid "ORDERAPP_SELECT_MORE_CHOICES_MESSAGE"
+msgstr "Vous n'avez pas choisi assez d'options pour le produit sélectionné. S'il-vous plaît sélectionner les options restantes avant de procéder."
+
+msgid "ORDERAPP_CHOOSE_THEME"
+msgstr "Choisissez un thème"
+
+msgid "ORDERAPP_THEMES_MESSAGE"
+msgstr "Choisissez un thème avant de continuer"
+
+msgid "ORDERAPP_TOUCHUP"
+msgstr "Retouche"
+
+msgid "ORDERAPP_DIGITAL"
+msgstr "Copie digitale"
+
+msgid "ORDERAPP_ADD_TO_CART_TOUCHUPS_TITLE"
+msgstr "Retouche"
+
+msgid "ORDERAPP_ADD_TO_CART_TOUCHUPS_DESCRIPTION"
+msgstr "Demandez des ajustements mineurs à la photo sélectionnée. Veuillez décrire ce que vous souhaitez dans le champ de texte fourni. Si vous n'êtes pas sûr de ce qui est possible, n'hésitez pas à nous contacter pour plus d'informations."
+
+msgid "ORDERAPP_TOUCHUP_CHOSEN"
+msgstr "Ajouté"
+
+msgid "ORDERAPP_ADD_TO_CART_DIGITALS_TITLE"
+msgstr "Digitals"
+
+msgid "ORDERAPP_ADD_TO_CART_DIGITALS_DESCRIPTION"
+msgstr "Choisissez les photos que vous souhaitez recevoir par email. Vous recevrez un lien pour les télécharger dans les jours suivants."
+
+
+## ORDER COMPLETE
+msgid "ORDER_COMPLETE_TITLE"
+msgstr "Compléter votre commande"
+
+msgid "ORDER_COMPLETE_BILLING_ADDRESS_TITLE"
+msgstr "Adresse de facturation"
+
+msgid "ORDER_COMPLETE_CONTACT_TITLE"
+msgstr "Information de contact"
+
+msgid "ORDER_COMPLETE_SHIPPING_TITLE"
+msgstr "Livraison"
+
+msgid "ORDER_COMPLETE_PAYMENT_TITLE"
+msgstr "Paiement"
+
+msgid "ORDER_COMPLETE_PAY_WITH_PAYPAL"
+msgstr "Payer avec Paypal"
+
+msgid "ORDER_COMPLETE_PAY_WITH_PAYPAL_INSTRUCTION"
+msgstr "Cliquer sur le bouton Placer la commande ci-dessous pour continuer avec Paypal"
+
+msgid "ORDER_COMPLETE_PAY_WITH_CC"
+msgstr "Payer par carte"
+
+msgid "ORDER_COMPLETE_CART_REVIEW_CONSENT"
+msgstr "J’ai revu mon panier"
+
+msgid "ORDER_COMPLETE_CART_REVIEW_EXPLAIN"
+msgstr "S’il-vous plait faire une vérification supplémentaire du panier avant de continuer"
+
+msgid "ORDER_COMPLETE_CART_TITLE"
+msgstr "Révision du panier"
+
+msgid "ORDER_COMPLETE_PH_FIRSTNAME"
+msgstr "Prénom"
+
+msgid "ORDER_COMPLETE_PH_LASTNAME"
+msgstr "Nom"
+
+msgid "ORDER_COMPLETE_PH_ADDRESS"
+msgstr "Adresse"
+
+msgid "ORDER_COMPLETE_PH_APARTMENT"
+msgstr "Appartement"
+
+msgid "ORDER_COMPLETE_PH_CITY"
+msgstr "Ville"
+
+msgid "ORDER_COMPLETE_PH_POSTALCODE"
+msgstr "Code Postal"
+
+msgid "ORDER_COMPLETE_PH_COUNTRY"
+msgstr "Pays"
+
+msgid "ORDER_COMPLETE_PH_EMAIL"
+msgstr "Courriel"
+
+msgid "ORDER_COMPLETE_PH_PHONE"
+msgstr "Téléphone"
+
+msgid "ORDER_COMPLETE_PH_CREDITCARD"
+msgstr "Carte de crédit"
+
+msgid "ORDER_COMPLETE_PH_NAMEONCARD"
+msgstr "Nom complet"
+
+msgid "ORDER_COMPLETE_WARNING_NAMEONCARD"
+msgstr "Longueur maximum atteinte, vos informations actuelles sont sufisantes pour continuer."
+
+msgid "ORDER_COMPLETE_PH_EXPIRYMONTH"
+msgstr "MM"
+
+msgid "ORDER_COMPLETE_PH_EXPIRYYEAR"
+msgstr "AA"
+
+msgid "ORDER_COMPLETE_PH_CSC"
+msgstr "CSC"
+
+msgid "ORDER_COMPLETE_METHOD"
+msgstr "Méthode de paiement"
+
+msgid "ORDER_COMPLETE_EXPIRY_DATE"
+msgstr "Date d'expiration"
+
+msgid "ORDER_COMPLETE_PICK_STATE"
+msgstr "Province"
+
+msgid "ORDER_COMPLETE_NEWSLETTER"
+msgstr "Je veux recevoir la lettre d'information"
+
+msgid "ORDER_COMPLETE_COMMENT"
+msgstr "Commentaire"
+
+msgid "ORDER_COMPLETE_YOUR_ORDER"
+msgstr "Votre commande"
+
+msgid "ORDER_COMPLETE_ORDER_SUBTOTAL"
+msgstr "Total commande"
+
+msgid "ORDER_COMPLETE_SHIPPING"
+msgstr "Livraison"
+
+msgid "ORDER_COMPLETE_LATE"
+msgstr "Retard"
+
+msgid "ORDER_COMPLETE_SUBTOTAL"
+msgstr "Sous-total"
+
+msgid "ORDER_COMPLETE_GST"
+msgstr "TPS"
+
+msgid "ORDER_COMPLETE_QST"
+msgstr "TVQ"
+
+msgid "ORDER_COMPLETE_PST"
+msgstr "TVP"
+
+msgid "ORDER_COMPLETE_HST"
+msgstr "TVH"
+
+msgid "ORDER_COMPLETE_TOTAL"
+msgstr "Total"
+
+msgid "ORDER_COMPLETE_CONTINUE"
+msgstr "Continuer"
+
+msgid "ORDER_COMPLETE_UPDATE"
+msgstr "Mettre à jour"
+
+msgid "ORDER_COMPLETE_PROMO"
+msgstr "Promo"
+
+msgid "ORDER_COMPLETE_APPLY_PROMO"
+msgstr "Appliquer"
+
+msgid "ORDER_COMPLETE_PROMO_APPLIED"
+msgstr "Promotion appliquée"
+
+msgid "ORDER_COMPLETE_PROMO_NOT_FOUND"
+msgstr "Ce code promo n'a pu être trouvé"
+
+msgid "ORDER_COMPLETE_PLACE_ORDER"
+msgstr "Placer la commande"
+
+msgid "ORDER_COMPLETE_RETURN_TO_ORDER"
+msgstr "Modifier votre commande"
+
+msgid "ORDER_COMPLETE_CALCULATE_SHIPPING"
+msgstr "Calculer livraison"
+
+msgid "ORDER_COMPLETE_UPDATE_CONTACT_INFO"
+msgstr "Continuer"
+
+msgid "ORDER_COMPLETE_BREADCRUMB_STEP1"
+msgstr "Revue"
+
+msgid "ORDER_COMPLETE_BREADCRUMB_STEP2"
+msgstr "Info"
+
+msgid "ORDER_COMPLETE_BREADCRUMB_STEP3"
+msgstr "Livraision"
+
+msgid "ORDER_COMPLETE_BREADCRUMB_STEP4"
+msgstr "Paiement"
+
+msgid "ORDER_COMPLETE_ERROR_PAYPAL"
+msgstr "S'il-vous plaît sélectionner une méthode de livraison avant de procéder avec Paypal"
+
+msgid "ORDER_COMPLETE_REVIEW_INFO"
+msgstr "Certains champs sont incomplets ou invalides, veuillez revoir vos informations."
+
+msgid "ORDER_COMPLETE_METHOD_CREDITCARDS"
+msgstr "Carte de crédit"
+
+msgid "ORDER_COMPLETE_METHOD_PAYPAL"
+msgstr "Paypal"
+
+
+## FORM
+msgid "FORM_SCHOOL"
+msgstr "École/Garderie"
+
+msgid "FORM_GROUP"
+msgstr "Groupe"
+
+msgid "FORM_ORDER_ID"
+msgstr "No. de commande"
+
+msgid "FORM_INTERNET_CODE"
+msgstr "Code de sujet"
+
+msgid "FORM_NEWSLETTER"
+msgstr "Je désire recevoir les promotions et nouveautés de&nbsp;PhotoSF"
+
+msgid "FORM_OPTION_MESSAGE"
+msgstr "Afin de mieux vous informer, choisissez les catégories pour lesquelle vous désirez recevoir de l'information."
+
+msgid "FORM_OPTION_SOCCER"
+msgstr "Association de soccer"
+
+msgid "FORM_OPTION_HOCKEY"
+msgstr "Association de hockey"
+
+msgid "FORM_OPTION_OTHER"
+msgstr "Autres associations sportives"
+
+msgid "FORM_OPTION_PRIMAIRE"
+msgstr "École primaire"
+
+msgid "FORM_OPTION_SECONDAIRE"
+msgstr "École secondaire"
+
+msgid "FORM_OPTION_KINDERGARTEN"
+msgstr "Garderie"
+
+msgid "FORM_OPTION_GRADUATING"
+msgstr "Finissants"
+
+msgid "FORM_SENT"
+msgstr "Nous avons bien reçu votre message et vous contacterons dans les plus brefs délais."
+
+msgid "FORM_NOT_SENT"
+msgstr "Nous sommes malheureusement dans l'impossibilité d'envoyer votre message en ce moment. S'il-vous plaît réessayer dans quelques minutes. Si le problème persiste, n'hésitez pas à nous appeler au %s"
+
+
+## PAYMENT
+msgid "PAYMENT_ITEM_NAME_ORDER"
+msgstr "Commande PhotoSF #%s"
+
+msgid "PAYMENT_CHECKOUT_WITH_PAYPAL"
+msgstr "Payer avec PayPal"
+
+
+## CODE REQUEST
+msgid "CODE_REQUEST_TITLE"
+msgstr "Demande de code de sujet"
+
+msgid "CODE_REQUEST_EXPLAIN"
+msgstr "Si vous ne connaissez pas votre code, remplissez le formulaire ci-dessous et nous vous l'enverront par courriel."
+
+msgid "CODE_REQUEST_PARENT_NAME"
+msgstr "Votre nom"
+
+msgid "CODE_REQUEST_SUBJECT_NAME"
+msgstr "Nom du sujet"
+
+msgid "CODE_REQUEST_EMAIL"
+msgstr "Courriel"
+
+msgid "CODE_REQUEST_GPI"
+msgstr "Numero d'identification"
+
+msgid "CODE_REQUEST_GPI_HELP"
+msgstr "Numéro unique à l'établissement. Pour les écoles c'est le numéro GPI, etc."
+
+msgid "CODE_REQUEST_PHONE"
+msgstr "Téléphone"
+
+msgid "CODE_REQUEST_ESTABLISHMENT"
+msgstr "Session"
+
+msgid "CODE_REQUEST_ESTABLISHMENT_HELP"
+msgstr "Nom de l'école, de la garderie, de l'association sportive, etc. Là où les photos ont été prises"
+
+msgid "CODE_REQUEST_GROUP"
+msgstr "Groupe"
+
+msgid "CODE_REQUEST_SUBMIT"
+msgstr "Envoyer"
+
+msgid "CODE_REQUEST_NOT_SENT"
+msgstr "Nous sommes malheureusement dans l'impossibilité d'envoyer votre demande en ce moment, s'il-vous plaît réessayer dans quelques minutes. Si le problème persiste, n'hésitez pas à nous appeler au <b>%s</b>"
+
+msgid "CODE_REQUEST_SENT"
+msgstr "Merci pour votre demande, nous vous enverrons votre code à votre adresse courriel dès que nous le pourrons."
+
+msgid "CODE_REQUEST_RETURN"
+msgstr "Retourner à la Page d'Accueil"
+
+msgid "CODE_REQUEST_FAIL_RETURN"
+msgstr "Retour à la page de demande"
+
+msgid "CODE_REQUEST_MESSAGE_NEED"
+msgstr "Vous ne connaissez pas votre code? Cliquez ici!"
+
+
+## DIGITALS
+msgid "DIGITAL_DOWNLOAD"
+msgstr "Téléchargez vos photos"
+
+msgid "DIGITAL_THANKS"
+msgstr "Merci d'avoir fait affaire avec nous!"
+
+msgid "DIGITAL_SENT"
+msgstr "Merci pour votre récent achat de vos photos ! Nous apprécions vraiment votre soutien et espérons que vous apprécierez vos photos."
+
+
+## SHUTDOWN
+msgid "SHUTDOWN_TITLE"
+msgstr ""
+
+
+## HELIOX
+msgid "HELIOX_CREATION"
+msgstr "Une création de"
+
+
+## TAXES
+msgid "TAXES_QST"
+msgstr "TPS"
+
+msgid "TAXES_GST"
+msgstr "TVQ"
+
+msgid "TAXES_HST"
+msgstr "TVH"
+
+msgid "TAXES_PST"
+msgstr "PST"

@@ -1,0 +1,7 @@
+{
+  "jobId": "confirm-mailer",
+  "triggers": {
+    "Order.complete": "onOrderComplete"
+  },
+  "schedule": "none"
+}

@@ -1,0 +1,94 @@
+//////////////////////////////
+// Confirmation
+//////////////////////////////
+
+.confirmation-msg {
+
+  margin: 0 auto;
+  max-width: 650px;
+  //text-align: center;
+
+  @include breakpoint($small-desktop) {
+    margin-top: 100px;
+    margin-bottom: 200px;
+  }
+
+  .confirmation-header {
+    text-align: center;
+
+    &.svg-holder {
+      --icon-height: 8rem;
+      max-height: var(--icon-height);
+
+      svg {
+        height: var(--icon-height);
+        max-width: 100%;
+
+        .fa-primary {
+          fill: #1a1a1a;
+        }
+
+        .fa-secondary {
+          fill: var(--color-accent);
+        }
+      }
+    }
+
+    i {
+      margin-left: 10px;
+      padding: 6px;
+      width: 48px;
+      display: inline-block;
+      font-size: 1.6em;
+      color: var(--color-semantic-success);
+      @include border-radius(50%);
+      border: 5px solid var(--color-semantic-success);
+
+    }
+
+    .error {
+      i {
+        color: var(--color-semantic-error);
+        border: 5px solid var(--color-semantic-error);
+      }
+    }
+  }
+
+  .confirmation-body {
+    @extend .color-neutral-16;
+    max-width: 54.5rem;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 20px;
+    @include drop-shadow(1px, 1px, 2px, var(--color-semantic-disabled));
+
+    h2 {
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 25px;
+    }
+
+    h4 {
+      font-family: $font-main;
+      padding: 1rem;
+      background-color: var(--color-accent);
+      border: 3px solid currentColor;
+      border-radius: 1.5rem;
+
+      a {
+        margin: 2rem 0;
+        text-align: center;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  span {
+    margin-top: 10px;
+    display: inline-flex;
+    align-items: center;
+  }
+}

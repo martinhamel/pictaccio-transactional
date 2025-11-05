@@ -1,0 +1,67 @@
+/*
+ * HeO2 - Proprietary RAD Web Framework
+ * Copyright  2015-2019, Heliox - All Right Reserved
+ */
+
+@import "../../../../../resources/scss/variables";
+
+#add-session > * {
+    margin: .2em 0;
+}
+
+#categories {
+    width: 100%;
+}
+
+#product-groups {
+    width: 100%;
+}
+
+#product-groups option {
+    height: 15px;
+}
+
+#delivery-option-groups {
+    width: 100%;
+}
+
+#delivery-option-groups option {
+    height: 15px;
+}
+
+.inherit-off:before {
+    content: '';
+    display: inline-block;
+    background: url('../img/switch_15.png') no-repeat;
+    width: 24px;
+    height: 15px;
+    margin-right: 2px;
+}
+
+.inherit-on:before {
+    content: '';
+    display: inline-block;
+    background: url('../img/switch_15.png') no-repeat -24px 0;
+    width: 24px;
+    height: 15px;
+    margin-right: 2px;
+}
+
+.date-no-spinner::-webkit-inner-spin-button {
+    display: none;
+}
+
+.session-color {
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    left: .5rem;
+    top: 1.5rem;
+    border-radius: 50%;
+    border: $medium-gray 1px solid;
+}
+
+.session-color-text {
+    width: 11rem !important;
+    padding-left: 3rem !important;
+}

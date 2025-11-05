@@ -1,0 +1,188 @@
+msgid "ORDERS"
+msgstr "Commandes"
+
+msgid "ID"
+msgstr "Id"
+
+msgid "NAME"
+msgstr "Nom"
+
+msgid "SUBJECT_NAME"
+msgstr "Nom de sujet"
+
+msgid "TOTAL"
+msgstr "Total"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "SESSION"
+msgstr "Session"
+
+msgid "TRANSACTION_CODE"
+msgstr "Code de transaction"
+
+msgid "INCOMPLETE_ORDERS_LAST_7_DAYS"
+msgstr "Commandes imcomplètes"
+
+msgid "CONTACT"
+msgstr "Contact"
+
+msgid "TRANSACTION"
+msgstr "Transaction"
+
+msgid "SUBJECTS"
+msgstr "Sujets"
+
+msgid "SHIPPING"
+msgstr "Livraison"
+
+msgid "COMMENT"
+msgstr "Commentaire"
+
+msgid "DETAILS"
+msgstr "Détails"
+
+msgid "ORDER"
+msgstr "Commande"
+
+msgid "PHONE"
+msgstr "Téléphone"
+
+msgid "EMAIL"
+msgstr "Courriel"
+
+msgid "APARTMENT"
+msgstr "Appartement"
+
+msgid "CIVIC"
+msgstr "Numéro civic"
+
+msgid "STREET"
+msgstr "Rue"
+
+msgid "CITY"
+msgstr "Ville"
+
+msgid "STATE"
+msgstr "Province"
+
+msgid "POSTALCODE"
+msgstr "Code postal"
+
+msgid "PRODUCT_TOTAL"
+msgstr "Total produit"
+
+msgid "DELIVERY_OPTION"
+msgstr "Option de livraison"
+
+msgid "SESSION_NAME"
+msgstr "Nom de session"
+
+msgid "ORDER_ID"
+msgstr "No de commande"
+
+msgid "GST"
+msgstr "TPS"
+
+msgid "QST"
+msgstr "TVQ"
+
+msgid "TRANSACTION_ID"
+msgstr "Id"
+
+msgid "PAYMENT_MODULE"
+msgstr "Module"
+
+msgid "SUCCESSFUL"
+msgstr "Reussi"
+
+msgid "TIMESTAMP"
+msgstr "Date"
+
+msgid "VIEW_RAW"
+msgstr "Voir Source"
+
+msgid "VIEW_ALL_TRANSACTIONS"
+msgstr "Voir toutes les transactions"
+
+msgid "TRANSACTION_TYPE"
+msgstr "Type de transaction"
+
+msgid "FILTERS"
+msgstr "Filtres"
+
+msgid "STATUS"
+msgstr "État"
+
+msgid "DATE"
+msgstr "Date"
+
+msgid "STATUS_COMPLETE"
+msgstr "Complet"
+
+msgid "STATUS_INCOMPLETE"
+msgstr "Incomplet"
+
+msgid "STATUS_COMPLETE_INCOMPLETE"
+msgstr "Tous"
+
+msgid "APPLY"
+msgstr "Appliquer"
+
+msgid "QUANTITY"
+msgstr "Quantité"
+
+msgid "UNIT_SUBTOTAL"
+msgstr "Sous-total"
+
+msgid "PRINT_SELECTION"
+msgstr "Imprimer sélection"
+
+msgid "THEME"
+msgstr "Thème"
+
+msgid "RESULT_COUNT"
+msgstr "résultat(s)"
+
+msgid "PRINT_LABELS"
+msgstr "Imprimer Étiquettes"
+
+msgid "PRINT_LABELS"
+msgstr "Imprimer Étiquette"
+
+msgid "SEND_CONFIRMATION"
+msgstr "​Envoyer confirmation "
+
+msgid "UPLOAD_TITLE"
+msgstr "Téléverser les photos"
+
+msgid "EXPORT_CONTACTS"
+msgstr "Télécharger les contacts"
+
+msgid "DIGITAL_COPY"
+msgstr "Copie digitale"
+
+msgid "TOUCHUPS"
+msgstr "Retouches"
+
+msgid "PROMO"
+msgstr "Promo"
+
+msgid "BYOP_SELECTION"
+msgstr "Sélection"
+
+msgid "SENT_ON"
+msgstr "Envoyé le "
+
+msgid "NOT_SENT"
+msgstr "Non envoyé"
+
+msgid "NEW_COMMENT"
+msgstr "Nouveau commentaire"
+
+msgid "PRINT_TAGS"
+msgstr "Imprimer étiquette produits"
+
+msgid "TO"
+msgstr "À"

@@ -1,0 +1,188 @@
+msgid "ORDERS"
+msgstr "Orders"
+
+msgid "ID"
+msgstr "Id"
+
+msgid "NAME"
+msgstr "Name"
+
+msgid "SUBJECT_NAME"
+msgstr "Subject name"
+
+msgid "TOTAL"
+msgstr "Total"
+
+msgid "Date"
+msgstr "Date"
+
+msgid "SESSION"
+msgstr "Session"
+
+msgid "TRANSACTION_CODE"
+msgstr "Transaction code"
+
+msgid "INCOMPLETE_ORDERS_LAST_7_DAYS"
+msgstr "Incomplete orders"
+
+msgid "CONTACT"
+msgstr "Contact"
+
+msgid "TRANSACTION"
+msgstr "Transaction"
+
+msgid "SUBJECTS"
+msgstr "Subjects"
+
+msgid "SHIPPING"
+msgstr "Shipping"
+
+msgid "COMMENT"
+msgstr "Comment"
+
+msgid "DETAILS"
+msgstr "Details"
+
+msgid "ORDER"
+msgstr "Order"
+
+msgid "PHONE"
+msgstr "Phone"
+
+msgid "EMAIL"
+msgstr "Email"
+
+msgid "APARTMENT"
+msgstr "Apartment"
+
+msgid "CIVIC"
+msgstr "Civic number"
+
+msgid "STREET"
+msgstr "Street"
+
+msgid "CITY"
+msgstr "City"
+
+msgid "STATE"
+msgstr "State"
+
+msgid "POSTALCODE"
+msgstr "Postal code"
+
+msgid "PRODUCT_TOTAL"
+msgstr "Product total"
+
+msgid "DELIVERY_OPTION"
+msgstr "Delivery option"
+
+msgid "SESSION_NAME"
+msgstr "Session name"
+
+msgid "ORDER_ID"
+msgstr "Order ID"
+
+msgid "GST"
+msgstr "GST"
+
+msgid "QST"
+msgstr "QST"
+
+msgid "TRANSACTION_ID"
+msgstr "Id"
+
+msgid "PAYMENT_MODULE"
+msgstr "Module"
+
+msgid "SUCCESSFUL"
+msgstr "Successful"
+
+msgid "TIMESTAMP"
+msgstr "Date"
+
+msgid "VIEW_RAW"
+msgstr "View Raw"
+
+msgid "VIEW_ALL_TRANSACTIONS"
+msgstr "View All Transactions"
+
+msgid "TRANSACTION_TYPE"
+msgstr "Transaction Type"
+
+msgid "FILTERS"
+msgstr "Filters"
+
+msgid "STATUS"
+msgstr "Status"
+
+msgid "DATE"
+msgstr "Date"
+
+msgid "STATUS_COMPLETE"
+msgstr "Complete"
+
+msgid "STATUS_INCOMPLETE"
+msgstr "Incomplete"
+
+msgid "STATUS_COMPLETE_INCOMPLETE"
+msgstr "Both"
+
+msgid "APPLY"
+msgstr "Apply"
+
+msgid "QUANTITY"
+msgstr "Quantity"
+
+msgid "UNIT_SUBTOTAL"
+msgstr "Subtotal"
+
+msgid "PRINT_SELECTION"
+msgstr "Print Selection"
+
+msgid "THEME"
+msgstr "Theme"
+
+msgid "RESULT_COUNT"
+msgstr "result(s)"
+
+msgid "PRINT_LABELS"
+msgstr "Print Labels"
+
+msgid "PRINT_LABEL"
+msgstr "Print Label"
+
+msgid "SEND_CONFIRMATION"
+msgstr "Send Confirmation"
+
+msgid "UPLOAD_TITLE"
+msgstr "Upload Photos"
+
+msgid "EXPORT_CONTACTS"
+msgstr "Export Contacts"
+
+msgid "DIGITAL_COPY"
+msgstr "Digital Copy"
+
+msgid "TOUCHUPS"
+msgstr "Touchups"
+
+msgid "PROMO"
+msgstr "Promo"
+
+msgid "BYOP_SELECTION"
+msgstr "Selection"
+
+msgid "SENT_ON"
+msgstr "Sent on"
+
+msgid "NOT_SENT"
+msgstr "Not yet sent"
+
+msgid "PRINT_TAGS"
+msgstr "Print Product Tags"
+
+msgid "NEW_COMMENT"
+msgstr "New comment"
+
+msgid "TO"
+msgstr "To"

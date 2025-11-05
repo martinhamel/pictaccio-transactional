@@ -1,0 +1,42 @@
+{
+    "compilerOptions": {
+        "target": "es2021",
+        "module": "CommonJS",
+        "esModuleInterop": true,
+        "moduleResolution": "node",
+        "removeComments": true,
+        "allowSyntheticDefaultImports": true,
+        "allowJs": true,
+        "importHelpers": true,
+        "alwaysStrict": true,
+        "sourceMap": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitReturns": true,
+        "noUnusedLocals": false,
+        "noUnusedParameters": false,
+        "noImplicitAny": false,
+        "noImplicitThis": false,
+        "strictNullChecks": false,
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "baseUrl": "src",
+        "outDir": "../../cms/companion",
+        "plugins": [
+            {
+                "transform": "typescript-transform-path-rewrite"
+            },
+            {
+                "transform": "typescript-transform-path-rewrite",
+                "afterDeclarations": true
+            }
+        ]
+    },
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "src/http/views/scripts/**/*"
+    ]
+}
+

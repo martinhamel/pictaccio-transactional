@@ -1,0 +1,100 @@
+//.accounts-create {
+//  h2 {
+//    margin-top: .5rem;
+//    text-align: center;
+//  }
+//
+//  .error {
+//    color: #bd4444;
+//    text-align: center;
+//  }
+//
+//  .signup-form-container {
+//    display: flex;
+//    flex-direction: column;
+//    justify-content: center;
+//    align-items: center;
+//    width: 100%;
+//  }
+//
+//  .signup-form {
+//    flex-grow: .20;
+//    text-align: center;
+//
+//    label {
+//      margin-top: .65rem;
+//    }
+//
+//    .password {
+//      display: flex;
+//      margin-bottom: .65rem;
+//
+//      label {
+//        flex: 1;
+//
+//        &:first-child {
+//          margin-right: .25rem;
+//        }
+//        &:last-child {
+//          margin-left: .25rem;
+//        }
+//      }
+//    }
+//  }
+//
+//  .auth-type-separator {
+//    width: 80%;
+//    margin: 2.5rem 10%;
+//    background-color: $color-neutral4;
+//  }
+//
+//  .oauth-auth {
+//    display: grid;
+//    grid-template-columns: repeat(3, 1fr);
+//    gap: 1rem;
+//
+//    h3 {
+//      color: $color-accent;
+//      grid-column: 1 / 4;
+//    }
+//
+//    div {
+//      cursor: pointer;
+//      grid-column: span 1 / auto;
+//      height: 4.2rem;
+//      display: flex;
+//      align-items: center;
+//      justify-content: center;
+//      gap: 1.2rem;
+//      padding: 0.5rem;
+//      border-radius: .5rem;
+//
+//      img {
+//        height: 100%;
+//        object-fit: contain;
+//      }
+//
+//      &.g-signin2 {
+//        font-family: $font-main;
+//        font-weight: 600;
+//        background-color: hsl(0, 0%, 100%);
+//        border: 1px solid hsl(0, 0%, 90%);
+//        color: hsl(0, 0%, 30%);
+//      }
+//      &.fb-login-button {
+//        font-family: $font-main;
+//        font-weight: 600;
+//        background-color: hsl(214, 89%, 52%);
+//        border: 1px solid hsl(214, 89%, 42%);
+//        color: #fff;
+//      }
+//      &.apple-singin {
+//        font-family: $font-main;
+//        font-weight: 600;
+//        background-color: hsl(0, 0%, 0%);
+//        border: 1px solid hsl(0, 0%, 10%);
+//        color: hsl(0, 0%, 100%);
+//      }
+//    }
+//  }
+//}

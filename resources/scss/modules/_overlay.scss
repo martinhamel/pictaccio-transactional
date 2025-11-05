@@ -1,0 +1,280 @@
+@mixin overlay-normal() {
+  --overlay-padding: 1.5rem;
+  --color-lightness: 25%;
+  border-radius: 0.4rem;
+  border: 1px solid hsl(0, 0%, 85%);
+  filter: drop-shadow(0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.2));
+  padding: var(--overlay-padding);
+}
+
+@mixin overlay-bubble() {
+  --overlay-padding: 1.5rem;
+  --color-lightness: 7%;
+  border-radius: 1rem;
+  border: 1px solid oklch(15% 0% 0 / 20%);
+  filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 0.4));
+  padding: var(--overlay-padding);
+}
+
+.overlay {
+  position: fixed;
+  display: block;
+  z-index: 1000001;
+  max-height: 100vh;
+  max-width: 100vw;
+  transform-origin: left;
+  // opacity: 0;
+
+  animation-name: openOverlay;
+  animation-duration: 0.25s;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-play-state: paused;
+
+  @include breakpoint(max-height 758px) {
+    transform-origin: bottom;
+    top: 0;
+    height: 100vh;
+    animation-name: openOverlayMaxHeight758;
+  }
+
+  @include breakpoint($phone) {
+    width: unset;
+    height: unset;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 0;
+    transform: none;
+    animation-name: openOverlayPhone;
+  }
+
+  .close {
+    color: inherit;
+    position: absolute;
+    right: 1.5rem;
+    top: 1rem;
+    font-size: 3rem;
+    transition: $transition-delay $transition-easing color;
+    z-index: 10000002;
+    background: transparent;
+    cursor: pointer;
+
+    &:after {
+      content: "\f00d";
+      font-family: 'Font Awesome 5 Pro';
+      font-weight: 100;
+    }
+
+    &:hover {
+      color: var(--color-semantic-error);
+    }
+  }
+}
+
+.SAMSUNG,
+.HUAWEI {
+  .overlay{
+    @include breakpoint($phone) {
+      bottom: 4rem;
+    }
+  }
+}
+
+.overlay-default {
+  @extend .color-neutral-18;
+  --color-lightness: calc(var(--color-contrasted-neutral-lightness) - 10%);
+  position: fixed;
+  @include center();
+  padding: 3rem 2rem;
+  border-radius: 3rem;
+  box-shadow: 1px 1px 3px currentColor;
+}
+
+.overlay-feedback {
+  min-width: 35rem;
+  height: auto;
+  @include center;
+
+  @include breakpoint($phone) {
+    left: 0;
+    right: 0;
+    min-width: unset;
+    width: unset;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .buttons {
+    text-align: right;
+
+    button {
+      margin-right: 1rem;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.overlay-shade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000000;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: grayscale(50%);
+  animation: 0.5s overlay-shade-fade-in ease-out;
+}
+
+@keyframes overlay-shade-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: .98;
+  }
+}
+
+@keyframes overlay-shade-fade-out {
+  from {
+    opacity: .98;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes openOverlay {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.97, .97) translateX(-50%) translateY(-50%) translateZ(0);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1, 1) translateX(-50%) translateY(-50%) translateZ(0);
+  }
+}
+
+@-webkit-keyframes openOverlay {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.97, .97) translateX(-50%) translateY(-50%) translateZ(0);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1, 1) translateX(-50%) translateY(-50%) translateZ(0);
+  }
+}
+
+@-moz-keyframes openOverlay {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.97, .97) translateX(-50%) translateY(-50%) translateZ(0);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1, 1) translateX(-50%) translateY(-50%) translateZ(0);
+  }
+}
+
+@keyframes openOverlayMaxHeight758 {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    top: 0;
+    transform: scale(.97, .97) translateX(-50%) translateZ(0);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    top: 0;
+    transform: scale(1, 1) translateX(-50%) translateZ(0);
+  }
+}
+
+@-webkit-keyframes openOverlayMaxHeight758 {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.97, .97) translateX(-50%) translateZ(0);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1, 1) translateX(-50%) translateZ(0);
+  }
+}
+
+@-moz-keyframes openOverlayMaxHeight758 {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.97, .97) translateX(-50%) translateZ(0);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1, 1) translateX(-50%) translateZ(0);
+  }
+}
+
+@keyframes openOverlayPhone {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.97, .97);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@-webkit-keyframes openOverlayPhone {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.97, .97);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}
+
+@-moz-keyframes openOverlayPhone {
+  0% {
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(.97, .97);
+  }
+  100% {
+    pointer-events: all;
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+}

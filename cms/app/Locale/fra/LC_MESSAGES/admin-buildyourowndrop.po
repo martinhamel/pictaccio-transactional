@@ -1,0 +1,20 @@
+msgid "TITLE"
+msgstr "Gestion des \"Construisez votre forfait\""
+
+msgid "CREATE_OPTION"
+msgstr "Ajouter un option"
+
+msgid "CHOICES"
+msgstr "Options disponibles"
+
+msgid "CHOICES_EXPLAIN"
+msgstr "Entrer les options pour ce Construisez votre forfait (une par ligne)"
+
+msgid "CHOICES_COUNT"
+msgstr "Nombre d'options"
+
+msgid "ADD_BYOP"
+msgstr "Construisez votre forfait"
+
+msgid "EDIT_BYOP"
+msgstr "Modifier votre forfait"

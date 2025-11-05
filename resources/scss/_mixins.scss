@@ -1,0 +1,134 @@
+// _mixins
+// ========
+
+@mixin back-image(
+                  $image,
+                  $gr-dir:   to bottom,
+                  $op-start: 0,
+                  $op-end:   0,
+                  $bg-pos:   center center
+) {
+
+  background: linear-gradient(
+                    $gr-dir,
+                    rgba(0, 0, 0, $op-start),
+                    rgba(0, 0, 0, $op-end)
+                    ),
+
+  image-url($image) no-repeat $bg-pos;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  /*-webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;*/
+}
+
+@mixin back-pattern(
+                  $image,
+                  $gr-dir:   to bottom,
+                  $op-start: 0,
+                  $op-end:   0,
+                  $is-fixed: scroll
+) {
+
+  background: linear-gradient(
+                  $gr-dir,
+                  rgba(0,0,0, $op-start),
+                  rgba(0,0,0, $op-end)
+                  ), image-url($image);
+
+  //background-attachment: $isFixed;
+
+  /*-webkit-transition: all 1s ease-out;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  transition: all 1s ease-out;*/
+}
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin defineColorHSL($color, $hue, $saturation, $lightness){
+  #{$color}-hue: #{$hue};
+  #{$color}-saturation: #{$saturation};
+  #{$color}-lightness: #{$lightness};
+  #{$color}: unquote("hsl(var(#{$color}-hue), var(#{$color}-saturation), var(#{$color}-lightness))");
+}
+
+@mixin drop-shadow($offset-x, $offset-y, $blur-radius, $color) {
+  -webkit-filter: drop-shadow($offset-x $offset-y $blur-radius $color);
+  filter: drop-shadow($offset-x $offset-y $blur-radius $color);
+}
+
+@mixin center($xy:xy) {
+  @if $xy == xy {
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    @include transform(translateX(-50%) translateY(-50%));
+  }
+  @else if $xy == x {
+    left: 50%;
+    right: auto;
+    @include transform(translateX(-50%));
+  }
+  @else if $xy == y {
+    top: 50%;
+    bottom: auto;
+    @include transform(translateY(-50%));
+  }
+}
+
+@mixin exclusive($device) {
+  @if $device == Firefox {
+    @supports (text-align: justify) {
+      @content;
+    }
+  } @else if $device == iOS {
+    @supports (-webkit-touch-callout: none) {
+      @content;
+    }
+  } @else if $device == Safari {
+    @supports (hanging-punctuation: none) {
+      @content;
+    }
+  } @else  {
+      @warn 'Unrecognized prefix, try Firefox, iOS, Safari';
+    }
+}
+
+@mixin exception($device) {
+  @if $device == Firefox {
+    @supports not (text-align: justify) {
+      @content;
+    }
+  } @else if $device == iOS {
+    @supports not (-webkit-touch-callout: none) {
+      @content;
+    }
+  } @else if $device == Safari {
+    @supports not (hanging-punctuation: none) {
+      @content;
+    }
+  } @else  {
+      @warn 'Unrecognized prefix, try Firefox, iOS, Safari';
+    }
+}
+
+@mixin input-border {
+  border: 1px solid oklch(75% 0% 0);
+}

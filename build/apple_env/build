@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+DIR="$(dirname "$0")"
+
+echo "Cleaning..."
+rm -rf $DIR/../../cms/app/webroot/css/*
+rm -rf $DIR/../../cms/app/webroot/js/*
+
+echo "Compiling JS (prod)..."
+npx gulp compile_js
+
+echo "Compile SCSS (prod)..."
+npx gulp compile_css
+
+if [[ $nocache = "true" ]]; then
+	docker build -f $DIR/Dockerfile -t pictaccio/transactional_dev --no-cache --build-arg EMAIL_SENDGRID_APIKEY="$EMAIL_SENDGRID_APIKEY" $DIR/../../
+else
+	docker build -f $DIR/Dockerfile -t pictaccio/transactional_dev --no-cache --build-arg EMAIL_SENDGRID_APIKEY=$EMAIL_SENDGRID_APIKEY $DIR/../../
+fi

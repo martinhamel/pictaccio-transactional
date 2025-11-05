@@ -1,0 +1,80 @@
+msgid "TITLE"
+msgstr "Products"
+
+msgid "ADD_PRODUCT"
+msgstr "Add Product"
+
+msgid "EDIT_PRODUCT"
+msgstr "Edit Product"
+
+msgid "ADD_PRODUCT_GROUP"
+msgstr "Add Product Catalog"
+
+msgid "EDIT_PRODUCT_GROUP"
+msgstr "Edit Product Catalog"
+
+msgid "PRODUCT_WEIGHT"
+msgstr "Weight"
+
+msgid "PRODUCT_EXTRA"
+msgstr "Gift idea"
+
+msgid "PRODUCTS"
+msgstr "Products"
+
+msgid "PRODUCT_INFO"
+msgstr "Information"
+
+msgid "PRODUCT_THEMES"
+msgstr "Themes"
+
+msgid "PRODUCT_THEME_LIST"
+msgstr "Theme List"
+
+msgid "PRODUCT_CAN_MIX_SUBJECTS"
+msgstr "Allow multiple children"
+
+msgid "PRODUCT_SLIDING_PRICE"
+msgstr "Scaling price"
+
+msgid "PRODUCT_ALLOW_GROUP_PICTURE"
+msgstr "Allow group picture"
+
+msgid "PRODUCT_PRODUCTS"
+msgstr "Products"
+
+msgid "PRODUCT_GROUPS"
+msgstr "Groups"
+
+msgid "PRODUCT_AVAILABLE"
+msgstr "Available"
+
+msgid "PRODUCT_SELECTED"
+msgstr "Selected"
+
+msgid "PRODUCT_CATEGORIES"
+msgstr "Categories"
+
+msgid "ADD_PRODUCT_CATEGORY"
+msgstr "Add Category"
+
+msgid "EDIT_PRODUCT_CATEGORY"
+msgstr "Edit Category"
+
+msgid "PRODUCT_CATEGORY"
+msgstr "Category"
+
+msgid "BUILD_YOUR_OWN_PACKAGE"
+msgstr "Build Your Own Package"
+
+msgid "PRODUCT_DIGITAL"
+msgstr "Digital image"
+
+msgid "PRODUCT_SURCHARGE"
+msgstr "Surcharge"
+
+msgid "PRODUCT_TOUCHUPS"
+msgstr "Touch-ups"
+
+msgid "PRODUCT_TAGS"
+msgstr "Tags"

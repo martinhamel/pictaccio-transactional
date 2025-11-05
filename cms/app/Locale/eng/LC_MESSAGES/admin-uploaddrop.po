@@ -1,0 +1,8 @@
+msgid "TITLE"
+msgstr "Uploads"
+
+msgid "UPLOAD"
+msgstr "Upload"
+
+msgid "SESSIONS"
+msgstr "Sessions"

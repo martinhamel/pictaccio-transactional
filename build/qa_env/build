@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+DIR="$(dirname "$0")"
+
+echo "Cleaning..."
+rm -rf $DIR/../../cms/app/webroot/css/*
+rm -rf $DIR/../../cms/app/webroot/js/*
+
+echo "Compiling JS (dev)..."
+$DIR/../../node_modules/.bin/gulp compile_js
+
+echo "Compile SCSS (dev)..."
+$DIR/../../node_modules/.bin/gulp compile_css
+
+if [[ $nocache = "true" ]]; then
+	docker build -f $DIR/Dockerfile -t sf/photosf-qa --no-cache $DIR/../../
+else
+	docker build -f $DIR/Dockerfile -t sf/photosf-qa $DIR/../../
+fi
+
+if [[ $push = "true" ]]; then
+	docker tag sf/photosf-qa:latest docker.aruzia.com/sf-photosf-qa
+	docker push docker.aruzia.com/sf-photosf-qa
+fi

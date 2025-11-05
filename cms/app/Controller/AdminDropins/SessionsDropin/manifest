@@ -1,0 +1,7 @@
+{
+  "uuid": "d2673ad4-2a8f-4c05-8dbd-9d46d4a66a3b",
+  "name_locale_json": "{\"eng\": \"Sessions\", \"fra\": \"Sessions\"}",
+  "category_locale_json": "{\"eng\": \"Management\", \"fra\": \"Gestion\"}",
+  "order": 6,
+  "js_modules": "grid forms ui"
+}

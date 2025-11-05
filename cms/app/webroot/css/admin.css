@@ -1,0 +1,339 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oswald:400,700|Slabo+27px|Roboto:100,400,500,700,900";
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200";
+/* line 4, ../../../../resources/scss/admin/_layout.scss */
+#admin-container {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+/* line 9, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark {
+  color: #f6f4eb;
+}
+/* line 12, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-nav {
+  background-color: #303030;
+  border-right: 0;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.25);
+}
+/* line 20, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark .admin-menu li.selected {
+  background-color: #3d3d3d !important;
+}
+/* line 23, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark .admin-menu li.selected:after {
+  border-left-color: #3d3d3d !important;
+}
+/* line 30, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-content {
+  background-color: #232323;
+}
+/* line 33, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-content input, #admin-container.dark #admin-content select, #admin-container.dark #admin-content .tags-container {
+  color: #f6f4eb;
+  background-color: #565656;
+  border: 1px solid #636363;
+}
+/* line 38, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-content .tags-dropdown {
+  background-color: #303030;
+}
+/* line 42, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-content .tags-dropdown li:hover {
+  background-color: rgba(246, 244, 235, 0.15);
+}
+/* line 48, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-content .overlay {
+  background-color: #4a4a4a;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.45);
+}
+/* line 53, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-content .db-table-container,
+#admin-container.dark #admin-content .db-table {
+  border: none !important;
+}
+/* line 57, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-content .db-table-container table,
+#admin-container.dark #admin-content .db-table table {
+  background-color: #303030 !important;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  border: none !important;
+}
+/* line 62, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #admin-content .db-table-container table tr, #admin-container.dark #admin-content .db-table-container table th, #admin-container.dark #admin-content .db-table-container table td,
+#admin-container.dark #admin-content .db-table table tr,
+#admin-container.dark #admin-content .db-table table th,
+#admin-container.dark #admin-content .db-table table td {
+  color: #f6f4eb;
+  background-color: transparent !important;
+  border-color: #4a4a4a;
+}
+/* line 71, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark h1, #admin-container.dark h2, #admin-container.dark h3, #admin-container.dark h4, #admin-container.dark h5, #admin-container.dark h6 {
+  color: #f6f4eb;
+}
+/* line 75, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark .ui-button {
+  background-color: #6787bf;
+}
+/* line 80, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark .help-balloon div {
+  background-color: #303030;
+}
+/* line 86, ../../../../resources/scss/admin/_layout.scss */
+#admin-container.dark #orders-table .selected {
+  background-color: #536d4f;
+}
+
+/* line 93, ../../../../resources/scss/admin/_layout.scss */
+#admin-nav {
+  position: relative;
+  display: table-cell;
+  width: 250px;
+  padding: 1rem 0;
+  background-color: #f6f4eb;
+  white-space: nowrap;
+  border-right: 1px solid #eeead9;
+  box-shadow: 1px 0 5px rgba(0, 0, 0, 0.1);
+}
+/* line 103, ../../../../resources/scss/admin/_layout.scss */
+#admin-nav .color-scheme-toggle {
+  position: absolute;
+  top: .75rem;
+  right: .75rem;
+  font-size: 2.5rem;
+  color: #acacac;
+  cursor: pointer;
+}
+/* line 114, ../../../../resources/scss/admin/_layout.scss */
+#admin-nav ul.admin-menu li .category-title {
+  padding-left: 1rem;
+  color: #acacac;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  font-size: 2.2rem;
+}
+/* line 122, ../../../../resources/scss/admin/_layout.scss */
+#admin-nav ul.admin-menu li ul {
+  margin-bottom: .75rem;
+}
+/* line 125, ../../../../resources/scss/admin/_layout.scss */
+#admin-nav ul.admin-menu li ul li {
+  font-family: "Slabo", sans-serif;
+  padding: .5rem 2rem;
+  font-size: 1.4rem;
+}
+/* line 130, ../../../../resources/scss/admin/_layout.scss */
+#admin-nav ul.admin-menu li ul li a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+/* line 136, ../../../../resources/scss/admin/_layout.scss */
+#admin-nav ul.admin-menu li ul li.selected {
+  content: " ";
+  position: relative;
+  background-color: #eeead9;
+}
+/* line 141, ../../../../resources/scss/admin/_layout.scss */
+#admin-nav ul.admin-menu li ul li.selected:after {
+  content: " ";
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: solid transparent;
+  border-width: 1.15rem;
+  border-left-color: #eeead9;
+  margin-top: -1.1rem;
+}
+
+/* line 160, ../../../../resources/scss/admin/_layout.scss */
+#admin-content {
+  display: table-cell;
+  width: 100%;
+  padding: 2rem;
+  overflow-x: scroll;
+}
+
+/* line 173, ../../../../resources/scss/admin/_layout.scss */
+.build-info-footer {
+  height: 3rem;
+}
+/* line 176, ../../../../resources/scss/admin/_layout.scss */
+.build-info-footer ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -5px;
+  height: 35px;
+}
+/* line 183, ../../../../resources/scss/admin/_layout.scss */
+.build-info-footer ul li {
+  text-align: center;
+  color: #acacac;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+/* line 193, ../../../../resources/scss/admin/_layout.scss */
+#footer {
+  bottom: unset;
+}
+
+/* line 197, ../../../../resources/scss/admin/_layout.scss */
+#content {
+  padding-bottom: 0;
+}
+
+/* line 1, ../../../../resources/scss/admin/_common.scss */
+.action-bar {
+  margin: .6em 0;
+  text-align: right;
+}
+
+/* line 6, ../../../../resources/scss/admin/_common.scss */
+.section-separator {
+  border: 0;
+  border-bottom: 1px dashed #f2f2f2;
+  background: #cbe1f6;
+}
+
+/* line 2, ../../../../resources/scss/admin/_forms.scss */
+.admin-form h3 {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+/* line 7, ../../../../resources/scss/admin/_forms.scss */
+.admin-form div {
+  margin: .5em 0;
+}
+
+/* line 12, ../../../../resources/scss/admin/_forms.scss */
+.columns-2 {
+  display: flex;
+  flex-direction: row;
+}
+/* line 16, ../../../../resources/scss/admin/_forms.scss */
+.columns-2 div {
+  flex: 1 0;
+}
+/* line 19, ../../../../resources/scss/admin/_forms.scss */
+.columns-2 div:first-child {
+  padding-right: .5rem;
+}
+/* line 22, ../../../../resources/scss/admin/_forms.scss */
+.columns-2 div:last-child {
+  padding-left: .5rem;
+}
+
+/* line 1, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container {
+  display: inline-block;
+}
+/* line 54, ../../../../resources/scss/_mixins.scss */
+.db-table-container .controls:before, .db-table-container .controls:after {
+  content: '';
+  display: table;
+}
+/* line 59, ../../../../resources/scss/_mixins.scss */
+.db-table-container .controls:after {
+  clear: both;
+}
+/* line 7, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container .controls .add-row {
+  color: #26ade4;
+  font-size: 2.5rem;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  transition: 0.1s ease-out color;
+}
+/* line 16, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container .controls .add-row:hover {
+  color: #6ac7ec;
+}
+/* line 19, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container .controls .add-row:active {
+  color: #157ea9;
+}
+/* line 25, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table {
+  background-color: #f2f2f2;
+  box-shadow: 1px 1px 3px rgba(45, 45, 45, 0.15);
+}
+/* line 29, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table th {
+  padding: 1rem 2rem .3rem;
+  text-align: center;
+  border-bottom: 1px solid #b3b3b3;
+  border-right: 1px dashed #b3b3b3;
+  white-space: nowrap;
+  user-select: none;
+}
+/* line 37, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table th:last-child {
+  border-right: 0;
+}
+/* line 41, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table th i {
+  margin-left: .5rem;
+  opacity: .01;
+}
+/* line 45, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table th i.visible {
+  opacity: 1;
+}
+/* line 52, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table tr:not(:first-child):not(:last-child) {
+  border-bottom: 1px dashed #b3b3b3;
+}
+/* line 57, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table td {
+  padding: .5rem .5rem .3rem .5rem;
+  border-right: 1px dashed #b3b3b3;
+}
+/* line 61, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table td:last-child {
+  border-right: 0;
+}
+/* line 65, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table td.row-actions {
+  text-align: center;
+}
+/* line 67, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table td.row-actions i {
+  cursor: pointer;
+  margin-right: .5rem;
+}
+/* line 71, ../../../../resources/scss/admin/_db_table.scss */
+.db-table-container table td.row-actions i:last-child {
+  margin-right: 0;
+}
+
+/* line 2, ../../../../resources/scss/admin/_order.scss */
+.overview .overview-items {
+  width: 100%;
+}
+/* line 5, ../../../../resources/scss/admin/_order.scss */
+.overview .overview-items .overview-per-photo .single-photo, .overview .overview-items .overview-add-shipping .single-photo {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+/* line 7, ../../../../resources/scss/admin/_order.scss */
+.overview .overview-items .overview-per-photo .single-photo img, .overview .overview-items .overview-add-shipping .single-photo img {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  float: left;
+}
+/* line 13, ../../../../resources/scss/admin/_order.scss */
+.overview .overview-items .overview-per-photo .overview-item, .overview .overview-items .overview-add-shipping .overview-item {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+}

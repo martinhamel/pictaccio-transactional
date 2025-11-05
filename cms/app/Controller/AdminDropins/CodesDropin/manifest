@@ -1,0 +1,7 @@
+{
+  "uuid": "37b42d3e-4f49-4255-8709-0f6bcb3fc9fd",
+  "name_locale_json": "{\"eng\": \"Codes\", \"fra\": \"Codes\"}",
+  "category_locale_json": "{\"eng\": \"Database\", \"fra\": \"Base de données\"}",
+  "order": 2,
+  "js_modules": "grid forms widgets"
+}

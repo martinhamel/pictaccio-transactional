@@ -1,0 +1,25 @@
+.tab {
+  .tab-buttons {
+    margin-bottom: 1.2rem;
+
+    li {
+      display: inline-block;
+      margin-right: .5rem;
+      padding: .75rem 2rem .25rem;
+      font-family: Oswald, sans-serif;
+      border-bottom: 2px solid currentColor;
+      opacity: .70;
+      cursor: pointer;
+      transition: $transition-delay $transition-easing all;
+
+      &.selected {
+        border-bottom: 2px solid var(--color-accent);
+        opacity: 1;
+      }
+    }
+  }
+
+  & > div {
+    display: none;
+  }
+}

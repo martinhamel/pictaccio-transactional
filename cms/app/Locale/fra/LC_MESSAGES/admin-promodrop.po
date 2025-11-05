@@ -1,0 +1,53 @@
+msgid "TITLE"
+msgstr "Promotion"
+
+msgid "CODES"
+msgstr "Codes"
+
+msgid "SHIPPING"
+msgstr "Expédition"
+
+msgid "ENABLED"
+msgstr "Actif"
+
+msgid "THRESHOLD_AMOUNT"
+msgstr "Montant"
+
+msgid "ADD_CAMPAIGN"
+msgstr "Ajouter une campagne"
+
+msgid "CODES"
+msgstr "Codes"
+
+msgid "USED"
+msgstr "Utilisé"
+
+msgid "ORDER_ID"
+msgstr "Commande #"
+
+msgid "INTERNAL_NAME"
+msgstr "Nom interne"
+
+msgid "PREFIX"
+msgstr "Préfix"
+
+msgid "CREATE_SERIES"
+msgstr "Créer une Série"
+
+msgid "ADD_SERIES"
+msgstr "Ajouter une Série"
+
+msgid "COUNT"
+msgstr "Nombres"
+
+msgid "BACK"
+msgstr "Retour"
+
+msgid "AMOUNT"
+msgstr "Montant"
+
+msgid "CATEGORY"
+msgstr "Catégorie"
+
+msgid "HIDE_USED"
+msgstr "Cacher les codes utilisés"

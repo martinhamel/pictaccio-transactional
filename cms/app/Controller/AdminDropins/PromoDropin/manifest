@@ -1,0 +1,7 @@
+{
+  "uuid": "5f080cda-d297-11eb-b8bc-0242ac130003",
+  "name_locale_json": "{\"eng\": \"Promo\", \"fra\": \"Promo\"}",
+  "category_locale_json": "{\"eng\": \"Management\", \"fra\": \"Gestion\"}",
+  "order": 1,
+  "js_modules": "grid forms ui"
+}

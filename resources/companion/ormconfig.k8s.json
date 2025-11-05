@@ -1,0 +1,27 @@
+{
+  "name": "default",
+  "type": "postgres",
+  "host": "database-service",
+  "port": 5432,
+  "username": "psql_admin",
+  "password": "password",
+  "database": "pictaccio",
+  "synchronize": false,
+  "logging": false,
+  "entities": [
+    "src/database/models/*.ts",
+    "src/lib/database/models/*.ts"
+  ],
+  "subscribers": [
+    "src/database/subscribers/*.ts",
+    "src/lib/database/subscribers/*.ts"
+  ],
+  "migrations": [
+    "src/database/migrations/*.ts"
+  ],
+  "cli": {
+    "entitiesDir": "src/database/models",
+    "migrationsDir": "src/database/migrations",
+    "subscribersDir": "src/database/subscribers"
+  }
+}

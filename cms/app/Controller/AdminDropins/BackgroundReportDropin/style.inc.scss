@@ -1,0 +1,44 @@
+/*
+ * HeO2 - Proprietary RAD Web Framework
+ * Copyright  2015-2019, Heliox - All Right Reserved
+*/
+
+@import "../../../../../resources/scss/variables";
+
+#admin-content {
+
+    table {
+        font-family: $font-main;
+        margin: auto;
+        
+        tr {
+            margin-bottom: 0.5rem;
+
+            .date {
+                font-size: 1.8rem;
+                margin: 1rem 0 0.5rem;
+                padding: 1rem 2rem;
+                background-color: $color-neutral3;
+            }
+
+            th {
+                font-weight: 700;
+                padding: 1rem 2rem;
+            }
+
+            td {
+                padding: 1.5rem;
+                text-align: center;
+
+                &:first-child {
+                    font-weight: 700;
+                }
+
+                img {
+                    height: 18rem;
+                }
+
+            }
+        }
+    }
+}

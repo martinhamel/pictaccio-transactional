@@ -1,0 +1,14 @@
+msgid "TITLE"
+msgstr "Catégorie"
+
+msgid "ADD_CATEGORY"
+msgstr "Ajouter une catégorie"
+
+msgid "EDIT_CATEGORY"
+msgstr "Modifier une catégorie"
+
+msgid "PRODUCT_GROUPS"
+msgstr "Groupe de produits"
+
+msgid "DELIVERY_OPTION_GROUPS"
+msgstr "Groupe d'option de livraison"

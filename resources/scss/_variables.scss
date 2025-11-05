@@ -1,0 +1,154 @@
+// _variables.scss
+// =================
+
+@import "mixins";
+
+$susy: (
+        global-border-sizing: border-box,
+        columns: 12,
+        gutters: 1/4,
+        //gutter-position: inside,
+        //debug: (image: show),
+);
+
+$phone			: max-width 499px;
+$small-desktop          : max-width 1200px;
+$desktop		: max-width 600px;
+$mid-desktop            : max-width 900px;
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-10..0,25..151,100..1000&display=swap');
+
+//Fonts
+
+$font-main              : 'Roboto Flex', sans-serif;
+
+//Colors
+$default-accent         : #4d8573;
+$default-black          : #000;
+$default-white          : #fff;
+
+// Neutrals
+$max-neutral            : 20;
+@for $i from 0 through $max-neutral {
+    $color-neutral: #{$i * 10}0;
+    // 0 is black, 20 is white
+    $color-neutral-name: unquote('color-neutral-#{$i}');
+    $lightness-step: 100 / $max-neutral;
+
+    .#{$color-neutral-name} {
+        --color-lightness: #{if($i < 9, 93%, 7%)};
+        @include defineColorHSL('--color-background-neutral', 0, 0%, #{($i * $lightness-step) * 1%});
+        @include defineColorHSL('--color-contrasted-neutral', 0, 0%, unquote('var(--color-lightness)'));
+
+        background-color: var(--color-background-neutral);
+        color: var(--color-contrasted-neutral);
+    }
+}
+
+:root {
+    // Props
+    --color-hue: 0;
+    --color-saturation: 0%;
+    --color-lightness: 0%;
+
+    @include exception(Firefox) {
+    @property --color-hue {
+        syntax: '<number> | <angle>';
+        inherits: false;
+        initial-value: 0;
+    }
+
+    @property --color-saturation {
+        syntax: '<number> | <percentage>';
+        inherits: false;
+        initial-value: 0%;
+    }
+
+    @property --color-lightness {
+        syntax: '<number> | <percentage>';
+        inherits: false;
+        initial-value: 0%;
+    }
+    }
+
+    // Complimentary hue
+    --color-complimentary-hue: calc(var(--color-hue) - 180);
+
+    // Triadic hues
+    --color-triad-hue1: calc(var(--color-hue) + 120);
+    --color-triad-hue2: calc(var(--color-hue) - 120);
+
+    // Analogous hues
+    --color-analogous-hue1: calc(var(--color-hue) + 30);
+    --color-analogous-hue2: calc(var(--color-hue) - 30);
+    --color-analogous-hue3: calc(var(--color-hue) + 60);
+    --color-analogous-hue4: calc(var(--color-hue) - 60);
+
+    // Split-complimentary hues
+    --color-split-complimentary-hue1: calc(var(--color-hue) + 150);
+    --color-split-complimentary-hue2: calc(var(--color-hue) - 150);
+
+    // Tetradic hues
+    --color-tetradic-hue1: calc(var(--color-hue) + 90);
+    --color-tetradic-hue2: calc(var(--color-hue) - 90);
+    --color-tetradic-hue3: calc(var(--color-hue) + 180);
+
+    /* Preset props */
+    // Links
+    @include defineColorHSL(--color-link, 210, 100%, 35%);
+
+    // Headers
+    @include defineColorHSL(--color-header, 0, 70%, 50%);
+
+    // Buttons
+    @include defineColorHSL(--color-button-blue, 180, 70%, 50%);
+    @include defineColorHSL(--color-button-red, 0, 70%, 50%);
+
+
+    // Semantic colors
+    --color-semantic-success                 : #{hsl(113, 34%, 52%)};
+    --color-semantic-error                   : #{hsl(2, 68%, 42%)};
+    --color-semantic-warning                 : #{hsl(59, 67%, 57%)};
+    --color-semantic-info                    : #{hsl(216, 56%, 49%)};
+    --color-semantic-disabled                : #{hsl(0, 0%, 50%)};
+
+    --color-semantic-delete                  : var(--color-semantic-error);
+
+    // Customized colors
+    --color-accent: var(--customization-color-accent, #{$default-accent});
+    .accent-complementary {
+        filter: hue-rotate(180deg);
+
+        > *:not(.accent-complementary) {
+            filter: hue-rotate(180deg);
+        }
+    }
+
+    --color-separator: oklch(75% 0% 0);
+
+    * {
+        // Capitalization required for CSS variables in attribute with parenthesis
+        color: HSL(var(--color-hue), var(--color-saturation), var(--color-lightness));
+    }
+
+    // Buttons
+    --button-padding: 20px;
+    --button-font-size: 1.6rem;
+    --button-height: calc((var(--button-padding) * 2) + var(--button-font-size) + 1px);
+}
+
+$space-base       : 20px;
+$space-big        : 40px;
+$space-small      : 10px;
+
+$head-font        : 'Roboto Flex', sans-serif;
+$menu-font        : 'Roboto Flex', sans-serif;
+$body-font        : 'Roboto Flex', sans-serif;
+
+// Input
+$input-height: 30px;
+
+// Transitions
+$transition-delay: .1s;
+$transition-delay-snap: 15ms;
+$transition-easing: ease-out;

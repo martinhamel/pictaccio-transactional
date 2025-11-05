@@ -1,0 +1,88 @@
+{
+    "$schema": "../../node_modules/nx/schemas/project-schema.json",
+    "name": "transactional",
+    "sourceRoot": "app/transactional/src",
+    "projectType": "application",
+
+    "targets": {
+        "compile-css": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "npx gulp --gulpfile app/transactional/gulpfile.js compile_css"
+            }
+        },
+
+        "compile-js": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "npx gulp --gulpfile app/transactional/gulpfile.js compile_js"
+            }
+        },
+
+        "compile-companion": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "cd app/transactional/resources/companion && npm run build"
+            },
+            "configurations": {
+                "production": {
+                    "command": "cd app/transactional/resources/companion && npm install && npm run build:prod"
+                }
+            }
+        },
+
+        "serve": {
+            "executor": "nx:run-commands",
+            "options": {
+                "command": "cd app/transactional && vagrant up --provider=virtualbox",
+                "parallel": false
+            },
+            "configurations": {
+                "apple": {
+                    "command": "cd app/transactional && docker run -v ./cms:/srv/photosf -v ./../../dist/app/admin-api/src/public:/srv/photosf/app/webroot/pub -v ./cms/app/tmp/logs/nginx:/var/log/photosf.ca -v ./build/apple_env/db_vars.php:/srv/photosf/app/Config/db_vars.php --env-file ./build/apple_env/environment_php -p 8010:8080 pictaccio/transactional_dev"
+                }
+            }
+        },
+
+        "build": {
+            "executor": "nx:run-commands",
+            "options": {
+                "commands": [
+                    "cd app/transactional && build/env --qa --push --clean"
+                ]
+            },
+            "configurations": {
+                "production-alpha": {
+                    "commands": [
+                        "cd app/transactional && build/env --prod-alpha --push"
+                    ]
+                },
+                "production-beta": {
+                    "commands": [
+                        "cd app/transactional && build/env --prod-beta --push"
+                    ]
+                },
+                "production-prod": {
+                    "commands": [
+                        "cd app/transactional && build/env --prod-prod --push"
+                    ]
+                },
+                "production-winter24": {
+                    "commands": [
+                        "cd app/transactional && build/env --prod-winter24 --push"
+                    ]
+                },
+                "production-test": {
+                    "commands": [
+                        "cd app/transactional && build/env --prod-test --push"
+                    ]
+                },
+                "apple": {
+                    "commands": [
+                        "cd app/transactional && build/env --apple --clean"
+                    ]
+                }
+            }
+        }
+    }
+}

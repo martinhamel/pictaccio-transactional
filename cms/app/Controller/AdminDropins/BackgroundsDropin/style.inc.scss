@@ -1,0 +1,101 @@
+/*
+ * HeO2 - Proprietary RAD Web Framework
+ * Copyright  2015-2019, Heliox - All Right Reserved
+ */
+
+@import "../../../../../resources/scss/variables";
+
+.background-table {
+  td.field_id {
+    text-align: center;
+  }
+
+  td.field_number {
+    text-align: center;
+  }
+
+  img {
+    height: 5rem;
+  }
+}
+
+
+.background-category-table {
+  td.field_id {
+    text-align: center;
+  }
+
+  th[name="name_locale_json"] {
+    min-width: 30rem;
+  }
+}
+
+.background-category-overlay {
+  h3 {
+    text-align: center;
+  }
+
+  .columns-2 label {
+    font-size: 80%;
+  }
+
+  .buttons {
+    margin-top: 1rem;
+    text-align: right;
+  }
+}
+
+.background-overlay {
+  width: 50rem;
+
+  h3 {
+    text-align: center;
+  }
+
+  & > label {
+    margin-top: .5rem;
+  }
+
+  .columns-2 label {
+    font-size: 80%;
+  }
+
+  .background-images-dropzone {
+    margin-top: 1rem;
+    text-align: right;
+  }
+
+
+  #background-drop-target {
+    height: 165px;
+  }
+
+  #background-img {
+    height: 165px;
+    max-width: 123px;
+  }
+
+  #background-img-container {
+    box-sizing: content-box;
+    width: 123px;
+    height: 165px;
+    padding: 3px;
+    margin: 0 auto;
+    text-align: center;
+    border: 3px dashed #f2f2f2;
+    border-radius: 10px;
+
+    img {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+
+  .buttons {
+    margin-top: 1rem;
+    text-align: right;
+  }
+}
+
+

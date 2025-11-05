@@ -1,0 +1,7 @@
+{
+  "uuid": "31e95d62-de48-472d-9281-a22df6ad1e54",
+  "name_locale_json": "{\"eng\": \"Build Your Own Package\", \"fra\": \"Construisez votre forfait\"}",
+  "category_locale_json": "{\"eng\": \"Merchandise\", \"fra\": \"Marchandise\"}",
+  "order": 3,
+  "js_modules": "grid forms ui"
+}

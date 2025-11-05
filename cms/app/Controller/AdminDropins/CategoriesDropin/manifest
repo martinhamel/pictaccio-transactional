@@ -1,0 +1,7 @@
+{
+  "uuid": "df9c72f0-b822-4fea-bcbc-d39b9c1e5fd5",
+  "name_locale_json": "{\"eng\": \"Categories\", \"fra\": \"Catégories\"}",
+  "category_locale_json": "{\"eng\": \"Management\", \"fra\": \"Gestion\"}",
+  "order": 5,
+  "js_modules": "grid forms ui"
+}

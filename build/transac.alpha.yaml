@@ -1,0 +1,114 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: shop-service
+  labels:
+    app: pictaccio
+  annotations:
+    service.beta.kubernetes.io/azure-load-balancer-internal: "true"
+spec:
+  type: LoadBalancer
+  loadBalancerSourceRanges:
+    - 10.0.250.0/24
+    - 10.8.0.0/24
+    - 10.0.255.0/24
+  ports:
+    - port: 3000
+      protocol: TCP
+      name: ctrl-http
+  selector:
+    role: shop-service
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: transac
+  labels:
+    app: pictaccio
+    role: shop-service
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: pictaccio
+  template:
+    metadata:
+      labels:
+        app: pictaccio
+        role: shop-service
+    spec:
+      containers:
+        - name: transac
+          image: {{ !-! TODO: WITH YOUR CONTAINER REGISTRY -! }}/pictaccio-transactional-alpha
+          imagePullPolicy: Always
+          resources:
+            limits:
+              cpu: 300m
+              memory: .5Gi
+          #          livenessProbe:
+          #            exec:
+          #              command:
+          #                - /bin/bash
+          #                - -c
+          #                - "[ $(curl -LI http://localhost:3000/test/ -o /dev/null -w '%{http_code}\n' -s) == '200' ] && exit 0 || exit -1"
+          #            initialDelaySeconds: 180
+          #            periodSeconds: 30
+          #          readinessProbe:
+          #            exec:
+          #              command:
+          #                - /bin/bash
+          #                - -c
+          #                - "[ $(curl -LI http://localhost:3000/test/ -o /dev/null -w '%{http_code}\n' -s) == '200' ] && exit 0 || exit -1"
+          #            initialDelaySeconds: 120
+          #            periodSeconds: 5
+          ports:
+            - containerPort: 3000
+          volumeMounts:
+            - name: public-files
+              mountPath: /srv/pictaccio/app/webroot/pub
+              subPath: app/pictaccio/public/alpha/
+            - name: pictaccio-log
+              mountPath: /app/log
+              subPath: app
+            - name: pictaccio-log
+              mountPath: /var/log/nginx
+              subPath: system
+            - name: cache-volume
+              mountPath: /var/cache/nginx/
+            - name: cache-volume
+              mountPath: /var/run
+            - name: cache-volume
+              mountPath: /run/php
+            - name: cache-volume
+              mountPath: /tmp
+            - name: cache-volume
+              mountPath: /var/log/php
+            - name: cache-volume
+              mountPath: /srv/pictaccio/app/tmp
+              subPath: app-tmp
+          envFrom:
+            - configMapRef:
+                name: transac-config
+            - secretRef:
+                name: pictaccio-secrets
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: false
+            capabilities:
+              drop:
+                - ALL
+              add:
+                - CHOWN
+                - NET_BIND_SERVICE
+                - SETUID
+                - SETGID
+      volumes:
+        - name: public-files
+          persistentVolumeClaim:
+            claimName: aks-smb-pvc
+        - name: pictaccio-log
+          emptyDir: { }
+        - name: cache-volume
+          emptyDir: { }
+      imagePullSecrets:
+        - name: {{ !-! TODO: WITH YOUR IMAGE PULL SECRETS -! }}

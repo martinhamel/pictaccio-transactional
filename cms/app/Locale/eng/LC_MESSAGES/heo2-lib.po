@@ -1,0 +1,8 @@
+msgid "DELIVERY_OPTION_AROUND"
+msgstr "delivered in about %s days"
+
+msgid "DELIVERY_OPTION_SCHOOL"
+msgstr "delivered to school in %s days"
+
+msgid "DELIVERY_OPTION_READY_AFTER"
+msgstr "ready in %s days"

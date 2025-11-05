@@ -1,0 +1,273 @@
+.page-container {
+  position: relative;
+  min-height: 100%;
+
+  &:has(.show-header) {
+    header.header-nav {
+      .nav-header-mobile {
+        display: flex;
+      }
+    }
+  }
+}
+
+.container {
+  @include container;
+  @include clearfix;
+  max-width: 120rem;
+  padding: 1rem;
+  position: relative;
+
+  @include breakpoint($small-desktop) {
+    padding: 2rem;
+  }
+}
+
+
+.content-side {
+  @include span(8 last);
+}
+
+.sidebar-side {
+  display: inherit;
+	@include span(4);
+}
+
+@include breakpoint($mid-desktop) {
+	.content-side {
+		@include span(12);
+	}
+
+	.sidebar-side {
+		@include span(8)
+	}
+}
+
+@include breakpoint($phone) {
+	.content-side {
+		@include span(12);
+	}
+
+	.sidebar-side {
+		@include span(12)
+	}
+}
+
+// --- Header ---------------------------------
+
+header.header-nav {
+  @extend .color-neutral-4;
+  position: relative;
+  box-shadow: 0 1px 2px var(--color-background-neutral);
+  z-index: 15;
+
+  .lang-link {
+    position: absolute;
+    display: inline-block;
+    right: 2rem;
+    top: .5rem;
+    font-size: 1.6rem;
+    z-index: 100000000;
+
+    @include breakpoint($phone) {
+      left: 50%;
+      right: unset;
+      transform: translateX(-50%);
+    }
+  }
+
+  .nav-header-mobile {
+    display: none;
+    position: relative;
+    height: 9rem;
+    box-shadow: 0 1px 2px var(--color-background-neutral);
+    z-index: 20;
+    align-items: center;
+    justify-content: center;
+
+    @include breakpoint($phone) {
+      display: flex;
+    }
+
+    .header-logo {
+      flex: 0 0;
+      position: relative;
+      height: 6rem;
+    }
+  }
+}
+
+#dialog-locale-selection {
+  position: fixed;
+  @include center(x);
+  z-index: 100000000000;
+  top: 32%;
+  margin: 0;
+  width: max-content;
+  max-width: 100vw;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  border: 0 solid transparent;
+  filter: drop-shadow(0.1rem 0.1rem 0.5rem rgba(0, 0, 0, 0.25));
+
+  &::backdrop {
+    backdrop-filter: grayscale(50%);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .dialog-locale-selection-title {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .dialog-locale-selection-content {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+
+// --- Content --------------------------------
+#content {
+  @extend .color-neutral-20;
+  font-size: 1.6rem;
+}
+
+
+// --- Footer ---------------------------------
+.footer {
+  @extend .color-neutral-16;
+  position: sticky;
+  top: 100%;
+
+  .footer-columns {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5rem 16rem 0 16rem;
+    white-space: nowrap;
+
+    @include breakpoint($mid-desktop) {
+      flex-direction: column;
+      text-align: center;
+      padding: 2.5rem 1rem 0 1rem;
+      gap: 2rem;
+    }
+
+    h3 {
+      font-weight: bold;
+      margin-bottom: 1rem;
+
+      @include breakpoint($mid-desktop) {
+        font-size: 2.5rem;
+      }
+    }
+
+    a {
+      font-size: 1.6rem;
+
+      &:hover {
+        color: var(--color-accent);
+      }
+    }
+
+    div {
+      @include breakpoint($phone) {
+        margin-bottom: 0;
+      }
+    }
+
+    .footer-contact-us {
+      flex: 0 0;
+
+      p:empty {
+        display: none;
+      }
+
+      .footer-phone {
+        margin-top: 0;
+        margin-bottom: 0.75rem;
+      }
+
+      .footer-address-1,
+      .footer-address-2,
+      .footer-address-3 {
+        margin: 0;
+      }
+
+      .footer-contact-us-link {
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .footer-our-services {
+      flex: 0 0;
+
+      li {
+        margin-bottom: 1rem;
+      }
+    }
+
+    .footer-our-other-services {
+      flex: 0 0;
+    }
+  }
+
+  .copyright {
+    padding: .5rem 1rem;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+
+    @include breakpoint($phone) {
+      padding: 0 1rem 1rem 1rem;
+    }
+
+    p {
+      margin: 4rem 0 .5rem 0;
+      font-size: 1.2rem;
+
+      @include breakpoint($phone) {
+        font-size: 0.8rem;
+      }
+    }
+
+    .build {
+      margin: 0 0 .5rem 0;
+      font-size: 1rem;
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+}
+
+.layout-browser-warning-safari-9 {
+  @extend .color-neutral-3;
+  display: none;
+  position: fixed;
+  align-items: center;
+  -webkit-align-items: center;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 3rem;
+  text-align: center;
+  padding: 35vh 15vw;
+  z-index: 100000000001;
+
+  &.show {
+    display: block;
+
+    @supports (display: flex) {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "uuid": "c986d573-906d-4b42-9428-01f86ad03771",
+  "name_locale_json": "{\"eng\": \"Delivery Options\", \"fra\": \"Options de Livraison\"}",
+  "category_locale_json": "{\"eng\": \"Management\", \"fra\": \"Gestion\"}",
+  "order": 4,
+  "js_modules": "grid forms ui"
+}

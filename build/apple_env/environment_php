@@ -1,0 +1,10 @@
+REDIS_PORT=6379
+DB_TYPE=postgres
+REDIS_HOST=host.docker.internal
+DB_HOST=host.docker.internal
+DB_PORT=5432
+DB_USERNAME=pictaccio_transactional
+DB_PASSWORD=password
+DB_DATABASE_NAME=pictaccio_db1
+PUBLIC_FOLDER=pub
+BASE_URL=http://localhost:8010/

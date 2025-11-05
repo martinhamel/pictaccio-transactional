@@ -1,0 +1,29 @@
+msgid "TITLE"
+msgstr "Background"
+
+msgid "ADD_BACKGROUND"
+msgstr "Add Background"
+
+msgid "EDIT_BACKGROUND"
+msgstr "Edit Background"
+
+msgid "UPDATE_BACKGROUND_STATIC"
+msgstr "Force background cache update"
+
+msgid "NUMBER"
+msgstr "Number"
+
+msgid "CATEGORIES"
+msgstr "Categories"
+
+msgid "BACKGROUNDS"
+msgstr "Backgrounds"
+
+msgid "FEATURED"
+msgstr "Featured"
+
+msgid "ADD_BACKGROUND_CATEGORY"
+msgstr "Add background category"
+
+msgid "EDIT_BACKGROUND_CATEGORY"
+msgstr "Edit background category"

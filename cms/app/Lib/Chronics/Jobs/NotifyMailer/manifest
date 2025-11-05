@@ -1,0 +1,7 @@
+{
+  "jobId": "notify-mailer",
+  "triggers": {
+    "Order.complete": "onOrderComplete"
+  },
+  "schedule": "none"
+}

@@ -1,0 +1,57 @@
+/*
+ * HeO2 - Proprietary RAD Web Framework
+ * Copyright  2015-2019, Heliox - All Right Reserved
+ */
+
+#add-session > * {
+    margin: .2em 0;
+}
+
+#sessions {
+    width: 100%;
+}
+
+#upload-overlay {
+    display: none;
+    height: 100%;
+}
+
+#package-filename-label {
+    width: 100%;
+    height: 24px;
+    background-color: #efefef;
+    border: #dadada solid 1px;
+    border-radius: 5px;
+}
+
+#upload-package-button {
+    margin-top: 1em;
+}
+
+.subject-info {
+    width: 25%;
+    color: #26ade4;
+}
+
+.subject-pictures {
+    width: 75%;
+}
+
+.picture {
+    height: 110px;
+}
+
+.label {
+    color: #666;
+}
+
+.subject,
+.group {
+    padding: 1em;
+    overflow: hidden;
+}
+
+.subject:nth-child(even),
+.group:nth-child(even) {
+    background-color: #f0f1e9;
+}

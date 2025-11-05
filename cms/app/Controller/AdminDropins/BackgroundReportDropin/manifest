@@ -1,0 +1,7 @@
+{
+  "uuid": "a886583f-9c51-454c-b706-23df76731011",
+  "name_locale_json": "{\"eng\": \"Backgrounds\", \"fra\": \"Fonds\"}",
+  "category_locale_json": "{\"eng\": \"Reports\", \"fra\": \"Rapports\"}",
+  "order": 1,
+  "js_modules": "grid forms ui"
+}

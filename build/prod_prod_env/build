@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+DIR="$(dirname "$0")"
+
+echo "Cleaning..."
+rm -rf $DIR/../../cms/app/webroot/css/*
+rm -rf $DIR/../../cms/app/webroot/js/*
+
+echo "Compiling JS (prod)..."
+$DIR/../../node_modules/.bin/gulp compile_js
+
+echo "Compile SCSS (prod)..."
+$DIR/../../node_modules/.bin/gulp compile_css
+
+if [[ $nocache = "true" ]]; then
+	docker build -f $DIR/Dockerfile -t pictaccio-transactional-prod --no-cache $DIR/../../
+else
+	docker build -f $DIR/Dockerfile -t pictaccio-transactional-prod $DIR/../../
+fi

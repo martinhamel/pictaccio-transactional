@@ -1,0 +1,123 @@
+msgid "CONFIRM_SUBJECT"
+msgstr "PhotoSF - Order confirmation"
+
+msgid "CONFIRM_ORDER"
+msgstr "Thank you for your order!"
+
+msgid "ORDER_DELIVERY_ADDRESS"
+msgstr "Address"
+
+msgid "GREETINGS"
+msgstr "Hello "
+
+msgid "ALL_RIGHTS_RESERVED"
+msgstr "Copyright &copy; %s PhotoSF, All rights reserved."
+
+msgid "CONTACT_US"
+msgstr "Contact US"
+
+msgid "TRANSACTION"
+msgstr "Transaction"
+
+msgid "SHIPPING"
+msgstr "Shipping"
+
+msgid "ORDER_ID"
+msgstr "Order #%s"
+
+msgid "CONFIRM_CART_TITLE"
+msgstr "Your order"
+
+msgid "CONFIRM_CART_ITEMS"
+msgstr "Items"
+
+msgid "CONFIRM_DIGITAL_OPTION"
+msgstr "digital copy"
+
+msgid "CONFIRM_TOUCHUPS_OPTION"
+msgstr "touchups"
+
+msgid "CONFIRM_CART_PRICE"
+msgstr "Price"
+
+msgid "CONFIRM_CART_PRODUCT_TOTAL"
+msgstr "Subtotal"
+
+msgid "CONFIRM_CART_SHIPPING"
+msgstr "Shipping"
+
+msgid "CONFIRM_CART_PROMO"
+msgstr "Promo"
+
+msgid "CONFIRM_CART_QST"
+msgstr "QST"
+
+msgid "CONFIRM_CART_GST"
+msgstr "GST"
+
+msgid "CONFIRM_CART_TOTAL"
+msgstr "Total"
+
+msgid "CONFIRM_CART_ITEM"
+msgstr "Item"
+
+msgid "CONFIRM_CART_QUANTITY"
+msgstr "Quantity"
+
+msgid "CONFIRM_CART_PRICE"
+msgstr "Price"
+
+msgid "CONFIRM_CART_SUBTOTAL"
+msgstr "Subtotal"
+
+msgid "CONFIRM_CART_THEME"
+msgstr "Theme"
+
+msgid "DIGITAL_READY"
+msgstr "Your digital photos are ready"
+
+msgid "CONTACT_US"
+msgstr "Contact us"
+
+msgid "FAQ_LINK"
+msgstr "Have any questions?"
+
+msgid "CODE_REQUESTED"
+msgstr "Here is your code:"
+
+msgid "POWERED_BY"
+msgstr "Powered by Pictaccio"
+
+
+# NOTIFY
+msgid "NOTIFY_MAIN"
+msgstr "has placed the order #%s on your store, Navigate with the following link to see the order details:"
+
+msgid "NOTIFY_ORDER"
+msgstr "Order"
+
+msgid "NOTIFY_INFORMATION_LABEL"
+msgstr "Information"
+
+
+# CODE REQUEST
+msgid "CODE_REQUEST_TITLE"
+msgstr "Code Request"
+
+msgid "CODE_REQUEST_CUSTOMER"
+msgstr "Customer"
+
+msgid "CODE_REQUEST_SUBJECT"
+msgstr "Subject"
+
+msgid "CODE_REQUEST_EMAIL"
+msgstr "Email"
+
+msgid "CODE_REQUEST_PHONE"
+msgstr "Phone"
+
+msgid "CODE_REQUEST_SESSION"
+msgstr "Session"
+
+msgid "CODE_REQUEST_GROUP"
+msgstr "Group"

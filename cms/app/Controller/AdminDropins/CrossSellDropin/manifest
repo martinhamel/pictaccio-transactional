@@ -1,0 +1,7 @@
+{
+  "uuid": "4247dab1-b9b0-41e7-bf95-4a78c2ef5ac2",
+  "name_locale_json": "{\"eng\": \"Cross-Sell\", \"fra\": \"Vente additionnelle\"}",
+  "category_locale_json": "{\"eng\": \"Merchandise\", \"fra\": \"Marchandise\"}",
+  "order": 1,
+  "js_modules": "grid forms ui"
+}

@@ -1,0 +1,10 @@
+#__breakpoint-observer {
+  content: 'desktop';
+  width: 0;
+  height: 1px;
+  transition: height 1ms;
+  @include breakpoint($phone) {
+    content: 'phone';
+    height: 3px;
+  }
+}

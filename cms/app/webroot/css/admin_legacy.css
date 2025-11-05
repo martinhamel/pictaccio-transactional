@@ -1,0 +1,159 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700|Slabo+27px";
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:200";
+@import "https://fonts.googleapis.com/css?family=Open+Sans:300,400,700|Oswald:400,700|Slabo+27px|Roboto:100,400,500,700,900";
+/* line 2, ../../../../resources/scss/admin/_forms.scss */
+/* line 31, ../../../../resources/scss/admin_legacy.scss */
+.admin-form h3 {
+  margin-bottom: 2em;
+  text-align: center;
+}
+
+/* line 7, ../../../../resources/scss/admin/_forms.scss */
+/* line 36, ../../../../resources/scss/admin_legacy.scss */
+.admin-form div {
+  margin: .5em 0;
+}
+
+/* line 12, ../../../../resources/scss/admin/_forms.scss */
+/* line 41, ../../../../resources/scss/admin_legacy.scss */
+.float-50 {
+  float: left;
+  width: 50%;
+  padding: 0 .2em;
+}
+
+/* line 17, ../../../../resources/scss/admin/_forms.scss */
+/* line 47, ../../../../resources/scss/admin_legacy.scss */
+.float-50:first-of-type {
+  padding-left: 0;
+}
+
+/* line 20, ../../../../resources/scss/admin/_forms.scss */
+/* line 51, ../../../../resources/scss/admin_legacy.scss */
+.float-50:last-of-type {
+  padding-right: 0;
+}
+
+/* line 25, ../../../../resources/scss/admin/_forms.scss */
+/* line 56, ../../../../resources/scss/admin_legacy.scss */
+.sub-label {
+  color: #444;
+  font-size: .8em;
+}
+
+/* line 1, ../../../../resources/scss/admin/_table.scss */
+/* line 62, ../../../../resources/scss/admin_legacy.scss */
+.db-table {
+  display: inline-block;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+/* line 7, ../../../../resources/scss/admin/_table.scss */
+/* line 69, ../../../../resources/scss/admin_legacy.scss */
+.db-table tr:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+/* line 11, ../../../../resources/scss/admin/_table.scss */
+/* line 73, ../../../../resources/scss/admin_legacy.scss */
+.db-table tr:nth-child(even) {
+  background-color: #efefef;
+}
+
+/* line 15, ../../../../resources/scss/admin/_table.scss */
+/* line 77, ../../../../resources/scss/admin_legacy.scss */
+.db-table td {
+  padding: .5em;
+}
+
+/* line 18, ../../../../resources/scss/admin/_table.scss */
+/* line 81, ../../../../resources/scss/admin_legacy.scss */
+.db-table td .action-link {
+  font-size: smaller;
+  cursor: pointer;
+}
+
+/* line 2, ../../../../resources/scss/admin/_order.scss */
+/* line 87, ../../../../resources/scss/admin_legacy.scss */
+.overview .overview-items {
+  width: 100%;
+}
+
+/* line 5, ../../../../resources/scss/admin/_order.scss */
+/* line 91, ../../../../resources/scss/admin_legacy.scss */
+.overview .overview-items .overview-per-photo .single-photo, .overview .overview-items .overview-add-shipping .single-photo {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+}
+
+/* line 7, ../../../../resources/scss/admin/_order.scss */
+/* line 97, ../../../../resources/scss/admin_legacy.scss */
+.overview .overview-items .overview-per-photo .single-photo img, .overview .overview-items .overview-add-shipping .single-photo img {
+  width: 32.20339%;
+  float: left;
+  margin-right: 1.69492%;
+  float: left;
+}
+
+/* line 13, ../../../../resources/scss/admin/_order.scss */
+/* line 104, ../../../../resources/scss/admin_legacy.scss */
+.overview .overview-items .overview-per-photo .overview-item, .overview .overview-items .overview-add-shipping .overview-item {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+}
+
+/* line 110, ../../../../resources/scss/admin_legacy.scss */
+.dialog-overlay-legacy {
+  position: fixed;
+  width: 65%;
+  max-height: 90%;
+  padding: 10px 5px;
+  border-radius: 4px;
+  background-color: #f2f2f2;
+  z-index: 1000000001;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  transform: translateX(-50%) translateY(-50%);
+  box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* line 122, ../../../../resources/scss/admin_legacy.scss */
+.close-dialog-overlay-legacy {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  background: url("../img/dubious/close.png") 0 0;
+}
+/* line 131, ../../../../resources/scss/admin_legacy.scss */
+.close-dialog-overlay-legacy:hover {
+  background: url("../img/dubious/close.png") 24px 0;
+}
+
+/* line 136, ../../../../resources/scss/admin_legacy.scss */
+.content-dialog-overlay-legacy {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+}
+
+/* line 143, ../../../../resources/scss/admin_legacy.scss */
+.dialog-overlay-dimmer-legacy {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000;
+  opacity: .7;
+  z-index: 1000000000;
+}

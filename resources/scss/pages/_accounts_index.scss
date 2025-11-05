@@ -1,0 +1,64 @@
+//.my-account {
+//  width: 100vw;
+//  min-height: calc(100vh - 9rem);
+//  position: relative;
+//  display: grid;
+//  background-color: $color-neutral1;
+//  grid-template-columns: 25rem auto;
+//
+//  .menu-container {
+//    height: 100%;
+//    width: 25rem;
+//    overflow: hidden;
+//    display: flex;
+//    flex-direction: column;
+//    background-color: $color-neutral4;
+//    grid-column: 1 / 2;
+//
+//    label {
+//      display: flex;
+//      color: $color-neutral1;
+//      font-size: 1.7rem;
+//      gap: 1.7rem;
+//      box-sizing: content-box;
+//      margin: 2rem;
+//      position: relative;
+//      transition-duration: 0.3s;
+//
+//      &.item-up {
+//      }
+//
+//      &.item-down {
+//        position: relative;
+//        bottom: calc(-100vh + 38rem);
+//      }
+//
+//      &:hover {
+//        color: $color-accent;
+//      }
+//    }
+//  }
+//
+//  .sections-container {
+//    width: 100%;
+//    height: 100%;
+//    display: flex;
+//    overflow-x: hidden;
+//    overflow-y: auto;
+//    padding: 2rem;
+//
+//    section {
+//      position: absolute;
+//      display: none;
+//      width: 100%;
+//      height: auto;
+//      flex-direction: column;
+//
+//      &.active {
+//        position: relative;
+//        display: flex;
+//      }
+//
+//    }
+//  }
+//}

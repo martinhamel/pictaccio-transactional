@@ -1,0 +1,80 @@
+msgid "TITLE"
+msgstr "Produits"
+
+msgid "ADD_PRODUCT"
+msgstr "Ajouter un produit"
+
+msgid "EDIT_PRODUCT"
+msgstr "Modifier un produit"
+
+msgid "ADD_PRODUCT_GROUP"
+msgstr "Ajouter un groupe de produits"
+
+msgid "EDIT_PRODUCT_GROUP"
+msgstr "Modifier un groupe de produits"
+
+msgid "PRODUCT_WEIGHT"
+msgstr "Poids"
+
+msgid "PRODUCT_EXTRA"
+msgstr "Idée cadeau"
+
+msgid "PRODUCTS"
+msgstr "Produits"
+
+msgid "PRODUCT_INFO"
+msgstr "Information"
+
+msgid "PRODUCT_THEMES"
+msgstr "Thèmes"
+
+msgid "PRODUCT_THEME_LIST"
+msgstr "Liste des thèmes"
+
+msgid "PRODUCT_CAN_MIX_SUBJECTS"
+msgstr "Permettre plusieurs enfants"
+
+msgid "PRODUCT_SLIDING_PRICE"
+msgstr "Prix décroissant"
+
+msgid "PRODUCT_ALLOW_GROUP_PICTURE"
+msgstr "Permettre photo de groupe"
+
+msgid "PRODUCT_PRODUCTS"
+msgstr "Produits"
+
+msgid "PRODUCT_GROUPS"
+msgstr "Groupes"
+
+msgid "PRODUCT_AVAILABLE"
+msgstr "Disponible"
+
+msgid "PRODUCT_SELECTED"
+msgstr "Sélectionnés"
+
+msgid "PRODUCT_CATEGORIES"
+msgstr "Catégories"
+
+msgid "ADD_PRODUCT_CATEGORY"
+msgstr "Ajouter une catégorie"
+
+msgid "EDIT_PRODUCT_CATEGORY"
+msgstr "Modifier une catégorie"
+
+msgid "PRODUCT_CATEGORY"
+msgstr "Catégorie"
+
+msgid "BUILD_YOUR_OWN_PACKAGE"
+msgstr "Construisez votre forfait"
+
+msgid "PRODUCT_DIGITAL"
+msgstr "Image digital"
+
+msgid "PRODUCT_SURCHARGE"
+msgstr "Surcharge"
+
+msgid "PRODUCT_TOUCHUPS"
+msgstr "Retouche"
+
+msgid "PRODUCT_TAGS"
+msgstr "Étiquettes"

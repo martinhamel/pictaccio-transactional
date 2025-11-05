@@ -1,0 +1,123 @@
+msgid "CONFIRM_SUBJECT"
+msgstr "PhotoSF - Confirmation de votre commande"
+
+msgid "CONFIRM_ORDER"
+msgstr "Nous vous remercions de votre commande!"
+
+msgid "ORDER_DELIVERY_ADDRESS"
+msgstr "Adresse"
+
+msgid "GREETINGS"
+msgstr "Bonjour "
+
+msgid "ALL_RIGHTS_RESERVED"
+msgstr "Copyright &copy; %s PhotoSF, Tout droits réservés."
+
+msgid "CONTACT_US"
+msgstr "Contactez nous"
+
+msgid "TRANSACTION"
+msgstr "Transaction"
+
+msgid "SHIPPING"
+msgstr "Livraison"
+
+msgid "ORDER_ID"
+msgstr "Commande #%s"
+
+msgid "CONFIRM_CART_TITLE"
+msgstr "Votre commande"
+
+msgid "CONFIRM_CART_ITEMS"
+msgstr "Items"
+
+msgid "CONFIRM_DIGITAL_OPTION"
+msgstr "copie numérique"
+
+msgid "CONFIRM_TOUCHUPS_OPTION"
+msgstr "retouches"
+
+msgid "CONFIRM_CART_PRICE"
+msgstr "Prix"
+
+msgid "CONFIRM_CART_PRODUCT_TOTAL"
+msgstr "Sous-total"
+
+msgid "CONFIRM_CART_SHIPPING"
+msgstr "Livraison"
+
+msgid "CONFIRM_CART_PROMO"
+msgstr "Promo"
+
+msgid "CONFIRM_CART_QST"
+msgstr "TVQ"
+
+msgid "CONFIRM_CART_GST"
+msgstr "TVQ"
+
+msgid "CONFIRM_CART_TOTAL"
+msgstr "Total"
+
+msgid "CONFIRM_CART_ITEM"
+msgstr "Item"
+
+msgid "CONFIRM_CART_QUANTITY"
+msgstr "Quantité"
+
+msgid "CONFIRM_CART_PRICE"
+msgstr "Prix"
+
+msgid "CONFIRM_CART_SUBTOTAL"
+msgstr "Sous-total"
+
+msgid "CONFIRM_CART_THEME"
+msgstr "Thème"
+
+msgid "DIGITAL_READY"
+msgstr "Vos photos numériques sont prêtes"
+
+msgid "CONTACT_US"
+msgstr "Contactez nous"
+
+msgid "FAQ_LINK"
+msgstr "Avez-vous des questions?"
+
+msgid "CODE_REQUESTED"
+msgstr "Voici votre code:"
+
+msgid "POWERED_BY"
+msgstr "Propulsé par Pictaccio"
+
+
+# NOTIFY
+msgid "NOTIFY_MAIN"
+msgstr "à placé la commande #%s sur votre boutique, visitez le lien suivant pour plus d'information:"
+
+msgid "NOTIFY_ORDER"
+msgstr "Commande"
+
+msgid "NOTIFY_INFORMATION_LABEL"
+msgstr "Information"
+
+
+# CODE REQUEST
+msgid "CODE_REQUEST_TITLE"
+msgstr "Demande de code"
+
+msgid "CODE_REQUEST_CUSTOMER"
+msgstr "Client"
+
+msgid "CODE_REQUEST_SUBJECT"
+msgstr "Sujet"
+
+msgid "CODE_REQUEST_EMAIL"
+msgstr "Courriel"
+
+msgid "CODE_REQUEST_PHONE"
+msgstr "Téléphone"
+
+msgid "CODE_REQUEST_SESSION"
+msgstr "Session"
+
+msgid "CODE_REQUEST_GROUP"
+msgstr "Groupe"

@@ -1,0 +1,106 @@
+#!/usr/bin/env bash
+
+#set -o errexit -o pipefail -o noclobber -o nounset
+
+#if command -v brew &> /dev/null; then
+#  source $(brew --prefix nvm)/nvm.sh
+#fi
+#
+#nvm use 9.6.0
+DIR="$(dirname "$0")"
+
+function print_help {
+	echo
+	echo --qa, --stage, --prod-alpha, --prod-beta, --prod-prod, --prod-winter24, --prod-test, --apple:
+	echo Choose environment to build
+	echo
+	echo --push:
+	echo Push to registry after build
+	echo
+	echo --clean:
+	echo Docker --no-cache
+	echo
+}
+
+export environment=""
+export push="false"
+export nocache="false"
+while true; do
+	if ! [ -n "${1+set}" ]; then
+		break;
+	fi
+
+    case "$1" in
+        --qa)
+        	environment="qa"
+        	shift
+        	;;
+        --stage)
+        	environment="stage"
+        	shift
+        	;;
+        --prod-alpha)
+        	environment="prod-alpha"
+        	shift
+        	;;
+        --prod-beta)
+          environment="prod-beta"
+          shift
+          ;;
+        --prod-prod)
+          environment="prod-prod"
+          shift
+          ;;
+        --prod-winter24)
+          environment="prod-winter24"
+          shift
+          ;;
+        --prod-test)
+          environment="prod-test"
+          shift
+          ;;
+        --apple)
+          environment="apple"
+          shift
+          ;;
+        --push)
+        	push="true"
+        	shift
+        	;;
+        --clean)
+        	nocache="true"
+        	shift
+        	;;
+        \?|-h|--help)
+        	print_help
+        	exit 0
+        	;;
+    esac
+done
+
+case $environment in
+	qa)
+		$DIR/qa_env/build
+		;;
+	stage)
+		$DIR/stage_env/build
+		;;
+	prod-alpha)
+		$DIR/prod_alpha_env/build
+		;;
+	prod-beta)
+		$DIR/prod_beta_env/build
+		;;
+	prod-prod)
+		$DIR/prod_prod_env/build
+		;;
+	prod-winter24)
+		$DIR/prod_winter24_env/build
+		;;
+  prod-test)
+    $DIR/prod_test_env/build
+    ;;
+  apple)
+    $DIR/apple_env/build
+    ;;
+esac

@@ -1,0 +1,7 @@
+{
+  "uuid": "791ad02f-73a2-4d55-8473-7c70072be949",
+  "name_locale_json": "{\"eng\": \"Shutdown\", \"fra\": \"Fermeture\"}",
+  "category_locale_json": "{\"eng\": \"Management\", \"fra\": \"Gestion\"}",
+  "order": 7,
+  "js_modules": "grid forms ui"
+}

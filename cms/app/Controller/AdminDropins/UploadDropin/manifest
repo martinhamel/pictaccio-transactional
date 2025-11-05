@@ -1,0 +1,7 @@
+{
+  "uuid": "30413b67-7fc4-479d-b9e7-c290d05d6a07",
+  "name_locale_json": "{\"eng\": \"Upload\", \"fra\": \"Téléchargement\"}",
+  "category_locale_json": "{\"eng\": \"Photos\", \"fra\": \"Photos\"}",
+  "order": 1,
+  "js_modules": "grid forms ui"
+}

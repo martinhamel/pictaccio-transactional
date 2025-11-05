@@ -1,0 +1,42 @@
+%credit-card-icon {
+  display: inline-block;
+  width: 28px;
+  height: 18px;
+  background: image-url("cards.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+.cc-default {
+  @extend %credit-card-icon;
+  background-position: 0 0;
+}
+
+.cc-mastercard {
+  @extend %credit-card-icon;
+  background-position: -56px 0;
+}
+
+.cc-visa {
+  @extend %credit-card-icon;
+  background-position: -28px 0;
+}
+
+.cc-amex {
+  @extend %credit-card-icon;
+  background-position: -84px 0;
+}
+
+.cc-discover {
+  @extend %credit-card-icon;
+  background-position: -113px 0;
+}
+
+.cc-diners {
+  @extend %credit-card-icon;
+  background-position: -141px 0;
+}
+
+.cc-jcb {
+  @extend %credit-card-icon;
+  background-position: -170px 0;
+}

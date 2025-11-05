@@ -1,0 +1,256 @@
+/*
+ * HeO2 - Proprietary RAD Web Framework
+ * Copyright  2015-2019, Heliox - All Right Reserved
+ */
+
+@import "../../../../../resources/scss/variables";
+
+#admin-products {
+  img {
+    height: 4rem;
+  }
+
+  .product-table {
+    .filters {
+      label,
+      select,
+      .product-tags-filter {
+        display: inline-block;
+        width: unset;
+      }
+
+      select {
+        height: 3rem;
+      }
+    }
+
+    .field_id {
+      text-align: center;
+    }
+
+    .field_price {
+      text-align: center;
+    }
+
+    .field_weight {
+      text-align: center;
+    }
+
+    .field_images_json {
+      img {
+        height: 4rem;
+        margin-right: .5rem;
+      }
+    }
+
+    .field_priority {
+      text-align: center;
+    }
+  }
+
+  .product-overlay {
+    max-height: 100vh;
+    width: 65rem;
+    overflow: hidden;
+
+    h3 {
+      text-align: center;
+    }
+
+    .tab {
+      height: auto;
+      max-height: calc(100vh - 12rem);
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    select {
+      height: 3rem;
+    }
+
+    .surcharge {
+      display: inline-block;
+      margin-left: 10rem;
+
+      input {
+        width: unset;
+      }
+    }
+
+    .input-group {
+      margin-bottom: 1rem;
+
+      .only-group-picture {
+        display: none
+      }
+
+      #allow-group-picture:checked ~ .only-group-picture {
+        display: inline;
+      }
+    }
+
+    .with-option {
+      display: inline-block;
+      width: 10rem;
+    }
+
+    .columns-2 label.sub-label {
+      font-size: 80%;
+    }
+
+    .product-images-dropzone {
+      margin-top: 1rem;
+
+      #product-img-container {
+        height: 18.5rem;
+        padding: 1rem;
+        background-color: rgba($black, .05);
+        border-radius: 3px;
+        overflow: auto hidden;
+        white-space: nowrap;
+
+        .placeholder {
+          display: inline-block;
+          width: 12.3rem;
+          height: 16.5rem;
+          border: 3px dashed #f2f2f2;
+          border-radius: 10px;
+          filter: drop-shadow(1px 1px 2px rgba(#111, .3));
+
+          &:after {
+            content: '\002B';
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            font-size: 10rem;
+            transform: translate(-50%, -55%);
+          }
+        }
+
+        div {
+          position: relative;
+          display: inline-block;
+          height: 100%;
+          margin-right: .5rem;
+
+          img {
+            height: 100%;
+            border-radius: 3px;
+          }
+
+          input {
+            position: absolute;
+            left: .5rem;
+          }
+
+          select {
+            position: absolute;
+            left: 50%;
+            bottom: 1rem;
+            border: 0;
+            background: rgba($dark-gray, .85);
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      .browse-container {
+        text-align: right;
+        padding: 1rem;
+      }
+    }
+
+    .theme-list {
+      width: 100%;
+      height: 25rem;
+      outline: 0;
+      font-size: 1.4rem;
+
+      option {
+        position: relative;
+        padding: .5rem .75rem;
+        line-height: 3rem;
+
+        &:checked {
+          background: linear-gradient(0deg, $mid-blue 0%, $mid-blue 100%) !important;
+        }
+
+        &:after {
+          content: '\f00d';
+          position: absolute;
+          right: 1rem;
+          color: $light-gray;
+          font-family: FontAwesome;
+        }
+      }
+
+      &:focus {
+        option:checked {
+
+        }
+      }
+    }
+
+    .buttons {
+      margin-top: 1rem;
+      text-align: right;
+    }
+  }
+
+  .product-group-overlay {
+    width: 65rem;
+
+    h3 {
+      text-align: center;
+    }
+
+    label {
+      margin-top: 1rem;
+    }
+
+    .products {
+      .drag-hint-wrapper {
+        position: relative;
+      }
+
+      .drag-hint {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: .3rem;
+        background-color: $mid-blue;
+        z-index: 1000;
+
+        &:before {
+          content: " ";
+          position: absolute;
+          left: 0;
+          width: .2rem;
+          height: .9rem;
+          margin-top: -3px;
+          background-color: $mid-blue;
+        }
+        &:after {
+          content: " ";
+          position: absolute;
+          right: 0;
+          width: .2rem;
+          height: .9rem;
+          margin-top: -3px;
+          background-color: $mid-blue;
+        }
+      }
+
+      select {
+        position: relative;
+        height: 35rem;
+        outline: none;
+      }
+    }
+  }
+
+  .buttons {
+    margin-top: 1rem;
+    text-align: right;
+  }
+}

@@ -1,0 +1,129 @@
+.__gallery-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(10px) grayscale(.75) brightness(.6);
+  background: linear-gradient(180deg,
+          rgba(0, 0, 0, 0.65) 0%,
+          rgba(0, 0, 0, 0) 15%,
+          rgba(0, 0, 0, 0) 85%,
+          rgba(0, 0, 0, 0.65) 100%
+  );
+  z-index: 10000000000000000000;
+
+  .__gallery-close {
+    --color-lightness: 80%;
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+
+    &:hover {
+      color: var(color-semantic-error);
+    }
+  }
+}
+
+.__gallery-container {
+  display: flex;
+  flex-direction: row-reverse;
+  align-content: space-between;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 6rem 3rem;
+
+  @include breakpoint($phone) {
+    text-align: center;
+    flex-direction: column-reverse;
+  }
+
+  .__gallery-viewer {
+    flex: 1 0;
+    padding: 2rem;
+
+    @include breakpoint($phone) {
+      flex: 1;
+      min-width: 100vw;
+      padding: unset;
+      display: flex;
+    }
+
+    .__gallery-image-container {
+      display: flex;
+      height: 100%;
+      justify-content: center;
+
+      @include breakpoint($phone) {
+        width: 100vw;
+        min-height: 50vh;
+        max-height: calc(100vh - calc(6rem/*padding top of screen*/ + 21rem/*little gallery height*/ + 1rem/*margin bottom*/));
+        height: auto;
+        margin-left: -3rem;
+        margin-bottom: 1rem;
+        padding: unset;
+      }
+
+      img {
+        border-radius: 0.6rem;
+        width: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .__gallery-image-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 20rem;
+    height: unset;
+    gap: 1rem;
+
+    @include breakpoint($phone) {
+      display: flex;
+      position: relative;
+      flex-direction: row;
+      left: 50%;
+      transform: translateX(-50%);
+      width: unset;
+      max-width: unset;
+      height: auto;
+      padding-top: 0;
+      overflow-x: hidden;
+      overflow-y: visible;
+    }
+
+    img {
+      height: min-content;
+      width: 100%;
+      max-width: 9rem;
+      object-fit: contain;
+      margin-right: 1rem;
+      border-radius: 0.6rem;
+
+      @include breakpoint($phone) {
+        max-height: 10rem;
+        max-width: 6rem;
+        margin-left: 1rem;
+        margin-bottom: 1rem;
+        margin-right: 0;
+      }
+
+      &.selected {
+        border: 2px solid var(--color-accent);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      };
+    }
+  }
+}

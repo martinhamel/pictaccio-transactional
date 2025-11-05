@@ -1,0 +1,5 @@
+msgid "GENERIC_SLUG"
+msgstr "Slug"
+
+msgid "UPLOAD_CSV"
+msgstr "Sélectionner un fichier CSV"

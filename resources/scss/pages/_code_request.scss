@@ -1,0 +1,153 @@
+#code-request {
+
+  .help-mark {
+    position: relative;
+    color: var(--color-semantic-info);
+    cursor: pointer;
+    margin-right: -0.5em;
+
+    &.help-mark-last {
+      margin-right: 0;
+    }
+
+    &:hover {
+      color: oklch(from var(--color-semantic-info) calc(l * 1.2) c h);
+
+      .help-bubble {
+        display: block;
+      }
+    }
+
+    sup {
+      font-size: 75%;
+      position: relative;
+      top: -0.45em;
+      left: -0.35em;
+    }
+
+    .help-bubble {
+      display: none;
+      position: absolute;
+      bottom: 125%;
+      left: -50%;
+      z-index: 100;
+      background-color: var(--color-semantic-info);
+      color: white;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      width: 28rem;
+      text-align: left;
+      line-height: 1.5rem;
+    }
+  }
+
+  .container {
+    width: 50%;
+    min-width: 50rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-bottom: 5rem;
+
+    @include breakpoint($phone) {
+      min-width: 0;
+      width: 95%;
+    }
+
+    &.feedback-message {
+      width: 65%;
+    }
+  }
+
+  form {
+
+    & > div:not(:first-child) {
+    margin-top: .5em;
+    }
+
+    div.input-block {
+      margin-bottom: 1rem;
+
+      label.input-label {
+        text-align: left;
+      }
+
+      input[type="text"] {
+
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+
+        &::-webkit-outer-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+
+    div.control-ui {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  .btn {
+    height: auto;
+    margin-top: 1rem;
+    padding: 6px 1em;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    text-align: center;
+
+    &:hover {
+        filter: brightness(1.1);
+    }
+
+    &:disabled {
+        background-color: var(--color-semantic-disabled);
+
+      &:hover {
+        background-color: var(--color-semantic-disabled);
+      }
+    }
+  }
+
+  .g-recaptcha {
+    width: auto;
+    padding-block: 10px;
+  }
+
+
+
+  .feedback-message {
+    i.fa-check {
+      margin-bottom: 5px;
+      color: var(--color-semantic-success);
+      font-size: 90px;
+    }
+
+    i.fa-exclamation {
+      margin-bottom: 15px;
+      color: var(--color-semantic-error);
+      font-size: 60px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+
+    a {
+      display:inline-block;
+      margin-top: 15px;
+    }
+  }
+}

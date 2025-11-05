@@ -1,0 +1,12 @@
+PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin"
+export REDIS_HOST=host.docker.internal
+export REDIS_PORT=6379
+export DB_TYPE=postgres
+export DB_HOST=host.docker.internal
+export DB_PORT=5432
+export DB_USERNAME=pictaccio_transactional
+export DB_PASSWORD=password
+export DB_DATABASE_NAME=pictaccio_db1
+export PUBLIC_FOLDER=pub
+export BASE_URL=http://localhost:8010/
+export APP_URL_LOCALHOST=http://localhost:8080/

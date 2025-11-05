@@ -1,0 +1,32 @@
+msgid "TITLE"
+msgstr "Cross-sell Administration"
+
+msgid "ADD_CROSS_SELL"
+msgstr "Create cross-sell"
+
+msgid "EDIT_CROSS_SELL"
+msgstr "Edit cross-sell"
+
+msgid "PRODUCT_PRODUCTS"
+msgstr "Products"
+
+msgid "PRODUCT_EXPLAIN"
+msgstr "Select the products you want to feature. If you choose more than 3, each time it is displayed to a user, 3 products are drawn randomly from your selection."
+
+msgid "PRODUCT_SELECTED"
+msgstr "Selected"
+
+msgid "PRODUCT_AVAILABLE"
+msgstr "Available"
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""
+
+msgid ""
+msgstr ""

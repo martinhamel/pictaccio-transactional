@@ -1,0 +1,6 @@
+#!/bin/bash
+
+#export PATH=/Users/roxy/.nvm/versions/node/v9.6.0/bin:/Users/roxy/.pyenv/shims:/Users/username/.pyenv:/Library/Frameworks/Python.framework/Versions/3.6/bin:/Users/roxy/.rvm/gems/ruby-2.3.3/bin:/Users/roxy/.rvm/gems/ruby-2.3.3@global/bin:/Users/roxy/.rvm/rubies/ruby-2.3.3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/Library/TeX/texbin:/Applications/Wireshark.app/Contents/MacOS:/Users/roxy/dev/photosf/node_modules/.bin:/Users/roxy/.rvm/bin
+
+#. ~/bashrc
+compass compile

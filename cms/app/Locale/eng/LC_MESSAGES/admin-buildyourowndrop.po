@@ -1,0 +1,20 @@
+msgid "TITLE"
+msgstr "Build Your Own Package Management"
+
+msgid "CREATE_OPTION"
+msgstr "Add Option"
+
+msgid "CHOICES"
+msgstr "Available options"
+
+msgid "CHOICES_EXPLAIN"
+msgstr "Write the options for this Build Your Own Package (each on a separate line)"
+
+msgid "CHOICES_COUNT"
+msgstr "Number of options"
+
+msgid "ADD_BYOP"
+msgstr "Build Your Own Package"
+
+msgid "EDIT_BYOP"
+msgstr "Edit Your Package"

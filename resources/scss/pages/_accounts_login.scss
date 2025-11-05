@@ -1,0 +1,244 @@
+//.accounts-login {
+//  width: 100%;
+//  min-height: 100vh;
+//  height: auto;
+//  padding: 5rem;
+//  display: flex;
+//
+//  @include breakpoint($phone) {
+//    padding: 5rem 2rem;
+//  }
+//
+//  .container {
+//    display: grid;
+//    width: 100%;
+//    max-width: 70rem;
+//    grid-template-columns: repeat(2, 1fr);
+//    grid-template-rows: 4rem auto;
+//    gap: 3rem;
+//    padding: 0;
+//
+//    label {
+//      position: absolute;
+//      display: flex;
+//      width: auto;
+//      color: $color-accent;
+//      filter: grayscale(1);
+//      font-size: 4rem;
+//      font-weight: 400;
+//      cursor: pointer;
+//      transition-duration: .3s;
+//
+//      &:first-of-type {
+//        grid-column: 1 / 2;
+//        justify-self: left;
+//      }
+//
+//      &:last-of-type {
+//        grid-column: 2 / 3;
+//        justify-self: right;
+//      }
+//    }
+//
+//    input[type="radio"] {
+//      position: absolute;
+//      top: -100rem;
+//      left: -100rem;
+//      display: none;
+//    }
+//
+//    #selection-section-login:checked {
+//      ~.selection-section-login {
+//        filter: grayscale(0);
+//        font-weight: 700;
+//      }
+//
+//      ~.section-login {
+//        display: grid;
+//      }
+//    }
+//
+//    #selection-section-signup:checked {
+//      ~.selection-section-signup {
+//        filter: grayscale(0);
+//        font-weight: 700;
+//      }
+//
+//      ~.section-signup {
+//        display: grid;
+//      }
+//    }
+//
+//    section {
+//      position: absolute;
+//      display: none;
+//      grid-row: 2 / 3;
+//      grid-column: 1 / 3;
+//      width: 100%;
+//      min-height: 30rem;
+//
+//      &.section-login {
+//        // background-color: red;
+//        .local-auth {
+//          width: 100%;
+//
+//          form {
+//            width: 100%;
+//            display: flex;
+//            flex-direction: column;
+//            gap: 2rem;
+//
+//            label {
+//              position: relative;
+//              display: grid;
+//              gap: 0.7rem;
+//              width: 100%;
+//
+//              span {
+//                font-size: 2rem;
+//                color: $color-neutral4;
+//              }
+//
+//              input {
+//                cursor: pointer;
+//              }
+//
+//              a {
+//                cursor: pointer;
+//                text-align: left;
+//              }
+//            }
+//
+//            a {
+//              color: $color-primary;
+//              font-size: 1.5rem;
+//              filter: grayscale(0);
+//              cursor: pointer;
+//              text-align: right;
+//            }
+//
+//            .btn-secondary {
+//              color: white;
+//              background-color: $color-accent;
+//              box-sizing: content-box;
+//              padding: 1rem 3rem;
+//              font-size: 2rem;
+//              border-radius: 1.5rem;
+//              border: none;
+//              cursor: pointer;
+//            }
+//          }
+//        }
+//
+//        .auth-type-separator {
+//          width: 80%;
+//          margin: 2.5rem 10%;
+//          background-color: $color-neutral4;
+//          // border: 1.5px solid $color-neutral4;
+//          // display: none;
+//        }
+//
+//        .oauth-auth {
+//          display: grid;
+//          grid-template-columns: repeat(3, 1fr);
+//          gap: 1rem;
+//          // display: none;
+//
+//          h3 {
+//            color: $color-accent;
+//            grid-column: 1 / 4;
+//          }
+//
+//          div {
+//            cursor: pointer;
+//            grid-column: span 1 / auto;
+//            height: 4.2rem;
+//            display: flex;
+//            align-items: center;
+//            justify-content: center;
+//            gap: 1.2rem;
+//            padding: 0.5rem;
+//            border-radius: .5rem;
+//
+//            img {
+//              height: 100%;
+//              object-fit: contain;
+//            }
+//
+//            &.g-signin2 {
+//              font-family: $font-main;
+//              font-weight: 600;
+//              background-color: hsl(0, 0%, 100%);
+//              border: 1px solid hsl(0, 0%, 90%);
+//              color: hsl(0, 0%, 30%);
+//            }
+//            &.fb-login-button {
+//              font-family: $font-main;
+//              font-weight: 600;
+//              background-color: hsl(214, 89%, 52%);
+//              border: 1px solid hsl(214, 89%, 42%);
+//              color: #fff;
+//            }
+//            &.apple-singin {
+//              font-family: $font-main;
+//              font-weight: 600;
+//              background-color: hsl(0, 0%, 0%);
+//              border: 1px solid hsl(0, 0%, 10%);
+//              color: hsl(0, 0%, 100%);
+//            }
+//          }
+//        }
+//      }
+//
+//      &.section-signup {
+//        // background-color: blue;
+//      }
+//    }
+//  }
+//}
+//
+//.accounts-reload-needed {
+//  min-width: 30rem;
+//  min-height: 20rem;
+//  display: block;
+//  position: fixed;
+//  background-color: $color-accent;
+//  padding: 2.5rem 2.5rem 3.5rem 2.5rem;
+//  border-radius: 3rem;
+//  text-align: center;
+//  box-shadow: 12px 12px #00000073;
+//  font-family: $font-main;
+//
+//  @include center();
+//  opacity: 0;
+//  pointer-events: none;
+//  animation: accounts-reload-needed 0s linear 900s 1 normal forwards;
+//
+//  .bottom {
+//    position: absolute;
+//    width: 100%;
+//    bottom: 1.5rem;
+//    right: 1.5rem;
+//    text-align: right;
+//    margin-top: 1.5rem;
+//
+//    button {
+//      @extend .btn;
+//      cursor: pointer;
+//
+//      color: $color-neutral3 !important;
+//      background: $color-neutral1 !important;
+//    }
+//  }
+//}
+//
+//@keyframes accounts-reload-needed {
+//  0% {
+//    opacity: 0;
+//    pointer-events: none;
+//  }
+//  100% {
+//    opacity: 1;
+//    pointer-events: initial;
+//  }
+//}

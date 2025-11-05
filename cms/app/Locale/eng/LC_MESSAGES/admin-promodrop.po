@@ -1,0 +1,53 @@
+msgid "TITLE"
+msgstr "Promo"
+
+msgid "CODES"
+msgstr "Codes"
+
+msgid "SHIPPING"
+msgstr "Shipping"
+
+msgid "ENABLED"
+msgstr "Enabled"
+
+msgid "THRESHOLD_AMOUNT"
+msgstr "Threshold amount"
+
+msgid "ADD_CAMPAIGN"
+msgstr "Add a campaign"
+
+msgid "CODES"
+msgstr "Codes"
+
+msgid "USED"
+msgstr "Used"
+
+msgid "ORDER_ID"
+msgstr "Order #"
+
+msgid "INTERNAL_NAME"
+msgstr "Internal name"
+
+msgid "PREFIX"
+msgstr "Prefix"
+
+msgid "CREATE_SERIES"
+msgstr "Create Series"
+
+msgid "ADD_SERIES"
+msgstr "Add Series"
+
+msgid "COUNT"
+msgstr "Count"
+
+msgid "BACK"
+msgstr "Back"
+
+msgid "AMOUNT"
+msgstr "Amount"
+
+msgid "CATEGORY"
+msgstr "Category"
+
+msgid "HIDE_USED"
+msgstr "Hide used code"
