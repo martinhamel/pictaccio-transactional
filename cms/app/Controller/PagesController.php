@@ -7,6 +7,16 @@ App::uses('ImageResizer', 'Lib');
 App::uses('Recaptcha', 'Lib');
 
 class PagesController extends AppController {
+    public function home() {
+        $lang = Configure::read('Config.language');
+        if ($lang === 'en') {
+            $lang = 'eng';
+        } elseif ($lang === 'fr') {
+            $lang = 'fra';
+        }
+        $this->render('home' . DS . $lang);
+    }
+
     /* PUBLIC ACTIONS */
     public function aboutus() {
     }

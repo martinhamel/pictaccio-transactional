@@ -66,8 +66,8 @@
     "webpack-cli": "^5.1.1"
   },
   "dependencies": {
-    "@loufa/loufairy-client": "https://github.com/martinhamel/pictaccio-loufairy-client.git",
     "@loufa/loufairy": "https://github.com/martinhamel/pictaccio-loufairy.git",
+    "@loufa/loufairy-client": "https://github.com/martinhamel/pictaccio-loufairy-client.git",
     "@loufa/loufairy-server": "https://github.com/martinhamel/pictaccio-loufairy-server.git",
     "@loufa/routing-controllers": "https://github.com/martinhamel/pictaccio-routing-controllers.git",
     "@node-redis/client": "^1.0.6",
@@ -96,6 +96,7 @@
     "routing-controllers": "^0.10.4",
     "routing-controllers-openapi": "^4.0.0",
     "saml2-js": "^4.0.2",
+    "tsconfig-paths": "^4.2.0",
     "tslib": "^2.5.2",
     "typedi": "^0.10.0",
     "typeorm": "^0.3.16",

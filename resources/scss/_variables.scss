@@ -4,31 +4,42 @@
 @import "mixins";
 
 $susy: (
-        global-border-sizing: border-box,
-        columns: 12,
-        gutters: 1/4,
-        //gutter-position: inside,
-        //debug: (image: show),
+    global-border-sizing: border-box,
+    columns: 12,
+    gutters: 1/4,
+    //gutter-position: inside,
+    //debug: (image: show),
 );
 
 $phone			: max-width 499px;
-$small-desktop          : max-width 1200px;
+$small-desktop : max-width 1200px;
 $desktop		: max-width 600px;
-$mid-desktop            : max-width 900px;
+$mid-desktop : max-width 900px;
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,slnt,wdth,wght@8..144,-10..0,25..151,100..1000&display=swap');
 
 //Fonts
 
-$font-main              : 'Roboto Flex', sans-serif;
+$font-main : 'Roboto Flex',
+sans-serif;
 
 //Colors
-$default-accent         : #4d8573;
-$default-black          : #000;
-$default-white          : #fff;
+$default-accent : #4d8573;
+$default-black : #000;
+$default-white : #fff;
+$white : white;
+$blue : rgb(26, 81, 163);
+$color-primary : #486cab;
+$color-neutral2 : #acacac;
+$color-neutral1 : #f6f4eb;
+$light-red: #d45c3e;
+$color-accent : #f6f4eb;
+$color-neutral3: #3f4040;
+$color-neutral4: #f6f4eb;
 
 // Neutrals
-$max-neutral            : 20;
+$max-neutral : 20;
+
 @for $i from 0 through $max-neutral {
     $color-neutral: #{$i * 10}0;
     // 0 is black, 20 is white
@@ -52,23 +63,23 @@ $max-neutral            : 20;
     --color-lightness: 0%;
 
     @include exception(Firefox) {
-    @property --color-hue {
-        syntax: '<number> | <angle>';
-        inherits: false;
-        initial-value: 0;
-    }
+        @property --color-hue {
+            syntax: '<number> | <angle>';
+            inherits: false;
+            initial-value: 0;
+        }
 
-    @property --color-saturation {
-        syntax: '<number> | <percentage>';
-        inherits: false;
-        initial-value: 0%;
-    }
+        @property --color-saturation {
+            syntax: '<number> | <percentage>';
+            inherits: false;
+            initial-value: 0%;
+        }
 
-    @property --color-lightness {
-        syntax: '<number> | <percentage>';
-        inherits: false;
-        initial-value: 0%;
-    }
+        @property --color-lightness {
+            syntax: '<number> | <percentage>';
+            inherits: false;
+            initial-value: 0%;
+        }
     }
 
     // Complimentary hue
@@ -106,20 +117,21 @@ $max-neutral            : 20;
 
 
     // Semantic colors
-    --color-semantic-success                 : #{hsl(113, 34%, 52%)};
-    --color-semantic-error                   : #{hsl(2, 68%, 42%)};
-    --color-semantic-warning                 : #{hsl(59, 67%, 57%)};
-    --color-semantic-info                    : #{hsl(216, 56%, 49%)};
-    --color-semantic-disabled                : #{hsl(0, 0%, 50%)};
+    --color-semantic-success : #{hsl(113, 34%, 52%)};
+    --color-semantic-error : #{hsl(2, 68%, 42%)};
+    --color-semantic-warning : #{hsl(59, 67%, 57%)};
+    --color-semantic-info : #{hsl(216, 56%, 49%)};
+    --color-semantic-disabled : #{hsl(0, 0%, 50%)};
 
-    --color-semantic-delete                  : var(--color-semantic-error);
+    --color-semantic-delete : var(--color-semantic-error);
 
     // Customized colors
     --color-accent: var(--customization-color-accent, #{$default-accent});
+
     .accent-complementary {
         filter: hue-rotate(180deg);
 
-        > *:not(.accent-complementary) {
+        >*:not(.accent-complementary) {
             filter: hue-rotate(180deg);
         }
     }
@@ -137,13 +149,16 @@ $max-neutral            : 20;
     --button-height: calc((var(--button-padding) * 2) + var(--button-font-size) + 1px);
 }
 
-$space-base       : 20px;
-$space-big        : 40px;
-$space-small      : 10px;
+$space-base : 20px;
+$space-big : 40px;
+$space-small : 10px;
 
-$head-font        : 'Roboto Flex', sans-serif;
-$menu-font        : 'Roboto Flex', sans-serif;
-$body-font        : 'Roboto Flex', sans-serif;
+$head-font : 'Roboto Flex',
+sans-serif;
+$menu-font : 'Roboto Flex',
+sans-serif;
+$body-font : 'Roboto Flex',
+sans-serif;
 
 // Input
 $input-height: 30px;

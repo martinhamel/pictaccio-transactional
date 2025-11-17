@@ -30,27 +30,27 @@
 
 .sidebar-side {
   display: inherit;
-	@include span(4);
+  @include span(4);
 }
 
 @include breakpoint($mid-desktop) {
-	.content-side {
-		@include span(12);
-	}
+  .content-side {
+    @include span(12);
+  }
 
-	.sidebar-side {
-		@include span(8)
-	}
+  .sidebar-side {
+    @include span(8)
+  }
 }
 
 @include breakpoint($phone) {
-	.content-side {
-		@include span(12);
-	}
+  .content-side {
+    @include span(12);
+  }
 
-	.sidebar-side {
-		@include span(12)
-	}
+  .sidebar-side {
+    @include span(12)
+  }
 }
 
 // --- Header ---------------------------------
@@ -60,6 +60,18 @@ header.header-nav {
   position: relative;
   box-shadow: 0 1px 2px var(--color-background-neutral);
   z-index: 15;
+
+  a {
+    color: #acacac;
+
+    &:hover {
+      color: #f6f4eb;
+    }
+
+    &:active {
+      color: #f99e1d;
+    }
+  }
 
   .lang-link {
     position: absolute;
@@ -76,11 +88,52 @@ header.header-nav {
     }
   }
 
+  .nav-header-desktop {
+    display: flex;
+    max-width: 100rem;
+    flex-direction: row;
+    height: 9rem;
+    padding: 0 22rem;
+    font-family: Roboto, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+
+    @include breakpoint($mid-desktop) {
+      display: none;
+    }
+
+    .header-logo {
+      flex: 0 0;
+      position: relative;
+      top: 50%;
+      height: 6rem;
+      min-width: 12rem;
+      object-fit: contain;
+      transform: translateY(-50%);
+    }
+
+    ul {
+      flex: 1 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 8rem;
+
+      li {
+        flex: 0 0;
+        white-space: nowrap;
+        margin-right: 4rem;
+      }
+    }
+  }
+
   .nav-header-mobile {
     display: none;
     position: relative;
     height: 9rem;
-    box-shadow: 0 1px 2px var(--color-background-neutral);
+    padding: 0 16rem;
+    box-shadow: 0 1px 2px #303030;
     z-index: 20;
     align-items: center;
     justify-content: center;

@@ -11,17 +11,17 @@
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
-          "slnt" var(--font-slant),
-          "wdth" var(--font-width),
-          "GRAD" 0,
-          "XOPQ" 96,
-          "XTRA" 468,
-          "YOPQ" 79,
-          "YTAS" 750,
-          "YTDE" -203,
-          "YTFI" 738,
-          "YTLC" 514,
-          "YTUC" 712;
+    "slnt" var(--font-slant),
+    "wdth" var(--font-width),
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
 }
 
 html {
@@ -29,7 +29,10 @@ html {
   box-sizing: border-box;
   font-size: 10px;
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -60,7 +63,8 @@ em {
   font-style: italic;
 }
 
-b, strong {
+b,
+strong {
   font-weight: bold;
 }
 
@@ -81,7 +85,7 @@ h1 {
   font-size: 2.1rem;
   margin-bottom: 1rem;
 
-  @include breakpoint($phone){
+  @include breakpoint($phone) {
     font-size: 2.6rem;
   }
 }
@@ -100,7 +104,7 @@ h3 {
   font-size: 2.2rem;
   margin-bottom: 1rem;
 
-  @include breakpoint($phone){
+  @include breakpoint($phone) {
     font-size: 1.8rem;
   }
 }
@@ -132,7 +136,8 @@ header.header-nav,
     --font-slant: -10;
   }
 
-  b, strong {
+  b,
+  strong {
     font-weight: 600;
   }
 
@@ -144,8 +149,9 @@ header.header-nav,
   h1 {
     font-size: 2.1rem;
     margin-bottom: 1rem;
+    color: #f6f4eb;
 
-    @include breakpoint($phone){
+    @include breakpoint($phone) {
       font-size: 2.6rem;
     }
   }
@@ -174,7 +180,8 @@ header.header-nav,
   }
 }
 
-.fine { //<span class="fine">&nbsp;</span>
+.fine {
+  //<span class="fine">&nbsp;</span>
   font-size: 50%;
 }
 

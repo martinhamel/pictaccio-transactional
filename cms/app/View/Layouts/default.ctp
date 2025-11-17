@@ -1,22 +1,24 @@
 <?php
 /*
- * Copyright © 2015-2024, loufa - All Right Reserved
+ * HeO2 - Proprietary RAD Web Framework
+ * Copyright © 2015-2019, Heliox - All Right Reserved
  */
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
+    <!-- <?= $buildInfoString; ?> -->
     <?= $this->Html->charset(); ?>
     <title><?= $title_for_layout; ?></title>
     <meta name="description" content="<?= __('GENERIC_META_DESCRIPTION'); ?>">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
 
     <script>
-        var serverUrl = '<?= substr($this->Html->url('/', true), -2) === '//' ? substr($this->Html->url('/', true), 0, -1) : $this->Html->url('/', true); ?>';
+        var serverUrl = '<?= $this->Html->url('/'); ?>';
     </script>
 
-    <?= $this->Html->script("jquery.js?{$buildString}", ['fullBase' => true]);?>
+    <?= $this->Html->script("jquery.js?{$buildString}");?>
     <script>
         jQuery(function() {
             // Check for safari 9 and under
@@ -29,7 +31,7 @@
         });
     </script>
 
-    <?= $this->Html->script("heo2.js?{$buildString}", ['fullBase' => true]); ?>
+    <?= $this->Html->script("heo2.js?{$buildString}"); ?>
     <script>
         jQuery(function() {
             // Check for safari 9 and under
@@ -62,14 +64,8 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <style>
-        :root {
-            --customization-color-accent: <?= Configure::read('Customizations.colors.accent'); ?>;
-        }
-    </style>
-
     <?php
-    echo $this->Html->css(["app.css?{$buildString}", "font-awesome5.css?{$buildString}"], ['fullBase' => true]);
+    echo $this->Html->css(["app.css?{$buildString}", "font-awesome5.css?{$buildString}"]);
     echo $this->fetch('css');
     echo $this->fetch('script');
     ?>
@@ -88,26 +84,84 @@
 
 <div class="page-container">
     <header class="header-nav">
-        <nav class="nav-header-mobile">
-            <?php $pub = Configure::read('Directories.transacExtraPub'); ?>
-            <?= $this->Html->image("/{$pub}/logo.png", ['class' => 'header-logo', 'fullBase' => true]); ?>
+        <nav class="nav-header-desktop">
+            <a href="<?= $this->Html->url(array('controller' => 'pages', 'action' => 'home', 'private' => false)); ?>">
+                <?= $this->Html->image('logo_SF.svg', ['class' => 'header-logo']); ?>
+            </a>
+            <ul>
+                <li>
+                    <a href="<?= $this->Html->url(array('controller' => 'order', 'action' => 'index', 'private' => false)); ?>">
+                        <?= __('NAVIGATION_ORDER'); ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'home#services', 'private' => false]); ?>">
+                        <?= __('NAVIGATION_OUR_SERVICES'); ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'home#contact-us', 'private' => false]); ?>">
+                        <?= __('NAVIGATION_CONTACT_US'); ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $this->Html->url('https://simonfaucherphoto.com/v1/'); ?>">
+                        <?= __('NAVIGATION_RESERVATION'); ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'faq']); ?>">
+                        <?= __('NAVIGATION_FAQ');?>
+                    </a>
+                </li>
+            </ul>
         </nav>
-    </header>
 
-    <?php if ($hadNoLanguage): ?>
-        <dialog id="dialog-locale-selection">
-            <div class="dialog-locale-selection-title">
-                <h2><?= __('GENERIC_SELECT_LANGUAGE'); ?></h2>
-            </div>
-            <form class="dialog-locale-selection-content" method="GET">
-                <button class="small-btn" value="en" name="lang" <?php if (CakeSession::read('Config.language') === 'en'): ?> formmethod="dialog" <?php endif; ?>>English (Canada)</button>
-                <button class="small-btn" value="fr" name="lang" <?php if (CakeSession::read('Config.language') === 'fr'): ?> formmethod="dialog" <?php endif; ?>>Fran&ccedil;ais (Canada)</button>
-            </form>
-        </dialog>
-        <script>
-            document.getElementById('dialog-locale-selection').showModal();
-        </script>
-    <?php endif; ?>
+        <nav class="nav-header-mobile">
+            <a href="<?= $this->Html->url(array('controller' => 'pages', 'action' => 'home', 'private' => false)); ?>">
+                <?= $this->Html->image('logo_SF.svg', ['class' => 'header-logo']); ?>
+            </a>
+
+            <input type="checkbox" id="menu-state" class="menu-state">
+            <label for="menu-state" class="mobile-nav-menu">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </label>
+            <ul class="nav-popup-menu">
+                <li>
+                    <a href="<?= $this->Html->url(array('controller' => 'order', 'action' => 'index', 'private' => false)); ?>">
+                        <?= __('NAVIGATION_ORDER'); ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'home#services', 'private' => false]); ?>">
+                        <?= __('NAVIGATION_OUR_SERVICES'); ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'home#contact-us', 'private' => false]); ?>">
+                        <?= __('NAVIGATION_CONTACT_US'); ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $this->Html->url('https://simonfaucherphoto.com/v1/'); ?>">
+                        <?= __('NAVIGATION_RESERVATION'); ?>
+                    </a>
+                </li>
+                <li>
+                    <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'faq']); ?>">
+                        <?= __('NAVIGATION_FAQ');?>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="lang-link">
+            <a rel="nofollow" hreflang="<?= CakeSession::read('Config.language') === 'fra' ? 'fr' : 'en'; ?>" href="?lang=<?= CakeSession::read('Config.language') === 'fra' ? 'eng' : 'fra'; ?>">
+                <?= CakeSession::read('Config.language') === 'fra' ? 'English' : 'Fran&ccedil;ais'; ?>
+            </a>
+        </div>
+    </header>
 
     <section id="content">
         <div id="flash">
@@ -125,33 +179,57 @@
                 <p class="footer-phone"><?= Configure::read('Contacts.phoneNumber'); ?></p>
                 <p class="footer-address-1"><?= Configure::read('Contacts.addressLine1'); ?></p>
                 <p class="footer-address-2"><?= Configure::read('Contacts.addressLine2'); ?></p>
-                <p class="footer-address-3"><?= Configure::read('Contacts.city'); ?>&nbsp;&nbsp;<?= strtoupper(Configure::read('Contacts.region')); ?>&nbsp;&nbsp;<?= Configure::read('Contacts.postalCode'); ?></p>
-                <p class="footer-address-3"><?= ucwords(Configure::read('Contacts.country')); ?></p>
+                <p class="footer-address-3"><?= Configure::read('Contacts.addressLine3'); ?></p>
                 <p class="footer-contact-us-link">
-                    <a href="<?= $this->Html->url(Configure::read('URL.contactUs')); ?>">
-                        <?= __('GENERIC_CONTACT_US');?>
+                    <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'home#contact-us', 'private' => false]); ?>">
+                        <?= __('NAVIGATION_CONTACT_US'); ?>
+                    </a>
+                </p>
+                <p class="footer-social-media">
+                    <a href="https://www.facebook.com/photosf.ca">
+                        <i class="fab fa-facebook"></i>
+                        <?= __('SOCIAL_FACEBOOK'); ?>
                     </a>
                 </p>
             </div>
-            <div class="footer-terms-and-conditions">
-                <a href="<?= $this->Html->url(Configure::read('URL.termsAndConditions')); ?>">
-                    <?= __('NAVIGATION_TERMS_AND_CONDITIONS');?>
-                </a>
+            <div class="footer-our-services">
+                <h3><?= __('GENERIC_OUR_SERVICES');?></h3>
+                <ul>
+                    <li>
+                        <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'daycare']); ?>"><?= __('NAVIGATION_SERVICES_KINDERGARTEN'); ?></a>
+                    </li>
+                    <li>
+                        <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'school']); ?>"><?= __('NAVIGATION_SERVICES_SCHOOL'); ?></a>
+                    </li>
+                    <li>
+                        <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'graduation']); ?>"><?= __('NAVIGATION_SERVICES_GRADUATION'); ?></a>
+                    </li>
+                    <li>
+                        <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'sport']); ?>"><?= __('NAVIGATION_SERVICES_SPORTS'); ?></a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer-accessibility">
-                <h3><?= __('GENERIC_SELECT_LANGUAGE'); ?></h3>
-                <div class="lang-link">
-                    <a rel="nofollow" hreflang="<?= CakeSession::read('Config.language') === 'fr' ? 'fr' : 'en'; ?>" href="?lang=<?= CakeSession::read('Config.language') === 'fr' ? 'en' : 'fr'; ?>">
-                        <?= CakeSession::read('Config.language') === 'fr' ? 'English' : 'Fran&ccedil;ais'; ?>
-                    </a>
-                </div>
+            <div class="footer-our-other-services">
+                <h3><?= __('GENERIC_OTHER_SERVICES');?></h3>
+                <ul>
+                    <li><a href="http://www.simonfaucherphoto.com/">Simon Faucher Photo</a></li>
+                </ul>
+                <br>
+                <a href="<?= $this->Html->url(['controller' => 'pages', 'action' => 'faq']); ?>">
+                    <?= __('NAVIGATION_FAQ');?>
+                </a>
             </div>
         </div>
         <div id="copyright" class="copyright">
             <p><?= __('GENERIC_COPYRIGHT', date('Y')); ?></p>
+            <p><?= __('ORDERAPP_TERMS_AND_CONDITIONS', $this->Html->url(['controller' => 'pages', 'action' => 'terms_and_conditions'])); ?></p>
+            <?php if (Configure::read('BuildInfo.runMode') === 'debug'): ?>
+                <p class="build"><?= $buildInfoString; ?></p>
+            <?php endif; ?>
         </div>
     </footer>
 </div>
 <div id="__breakpoint-observer"></div>
+<!-- Google tag (gtag.js) -->             <script async src=https://www.googletagmanager.com/gtag/js?id=G-K36N7VZ46V></script>             <script>               window.dataLayer = window.dataLayer || [];               function gtag(){dataLayer.push(arguments);}               gtag('js', new Date());               gtag('config', 'G-K36N7VZ46V');             </script>
 </body>
 </html>

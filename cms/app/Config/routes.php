@@ -42,6 +42,7 @@ Router::connect('/code_request', ['controller' => 'pages', 'action' => 'code_req
 Router::connect('/terms_and_conditions', ['controller' => 'pages', 'action' => 'terms_and_conditions']);
 Router::connect('/account', ['controller' => 'accounts', 'action' => 'index']);
 Router::connect('/bits/:token', ['controller' => 'pages', 'action' => 'digitals', 'private' => false]);
+Router::connect('/', ['controller' => 'pages', 'action' => 'home']);
 
 /* ADMIN */
 Router::connect('/admin', ['controller' => 'Admin', 'action' => 'index', 'private' => true]);

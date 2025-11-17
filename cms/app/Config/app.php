@@ -2,19 +2,19 @@
 Configure::write('Config.shutdown', false);
 Configure::write('Config.shutdownMessage', '');
 
-Configure::write('Language.available', ['fr','en']); // <- Array of configured languages
-Configure::write('Language.fallback', 'fr'); // <- Fallback language
-Configure::write('Config.default', 'fr'); // <- Default language
+Configure::write('Language.available', ['en','fr']); // <- Array of configured languages
+Configure::write('Language.fallback', 'en'); // <- Fallback language
+Configure::write('Config.default', 'en'); // <- Default language
 
 /**
  * Customizations
  */
-Configure::write('Customizations.storeName', 'Test Store');
+Configure::write('Customizations.storeName', 'ma boutique');
 
 /**
  * Customer styles
  */
-Configure::write('Customizations.colors.accent', '#b1a14e');
+Configure::write('Customizations.colors.accent', '#ff7800');
 Configure::write('Customizations.colors.background1', '#ffffff');
 Configure::write('Customizations.colors.background2', '#e6e6e6');
 Configure::write('Customizations.colors.background3', '#cccccc');
@@ -56,22 +56,22 @@ Configure::write('Order', [
 /**
  * Contacts
  */
-Configure::write('Contacts.email', 'service@photosf.ca');
-Configure::write('Contacts.phoneNumber', '5147268069');
-Configure::write('Contacts.addressLine1', '111 Chemin de la Sucrerie');
+Configure::write('Contacts.email', 'martin@ko.com');
+Configure::write('Contacts.phoneNumber', '123-987-76876');
+Configure::write('Contacts.addressLine1', '1512 rue le Caron');
 Configure::write('Contacts.addressLine2','');
-Configure::write('Contacts.city', 'Rigaud');
+Configure::write('Contacts.city', 'Montréal');
 Configure::write('Contacts.region', 'qc');
 Configure::write('Contacts.country', 'canada');
-Configure::write('Contacts.postalCode', 'J0P 1P0');
+Configure::write('Contacts.postalCode', 'H4E1J8');
 
 /**
  * Canada Post
  */
 Configure::write('CanadaPost.enabled', true);
-Configure::write('CanadaPost.username', '5c19929cd0e8b7c8');
-Configure::write('CanadaPost.password', '1307cfc114cb6f76f10a3b');
-Configure::write('CanadaPost.customerNumber', '0008233113');
+Configure::write('CanadaPost.username', 'martin@komunide.com');
+Configure::write('CanadaPost.password', 'password');
+Configure::write('CanadaPost.customerNumber', '12234');
 Configure::write('CanadaPost.certificate', APP . 'Lib' . DS . 'Shipping' . DS . 'ShippingSources' . DS . 'CanadaPost' . DS . 'cacert.pem');
 Configure::write('CanadaPost.apiUrl', 'https://ct.soa-gw.canadapost.ca/rs/ship/price');
 
@@ -79,12 +79,12 @@ Configure::write('CanadaPost.apiUrl', 'https://ct.soa-gw.canadapost.ca/rs/ship/p
  * Taxes
  */
 Configure::write('Taxes.locality', 'ca-qc');
-Configure::write('Taxes.qst', 0.09975);
-Configure::write('Taxes.qstId', 'P987654321');
-Configure::write('Taxes.gst', 0.05);
-Configure::write('Taxes.gstId', 'A123456789');
-Configure::write('Taxes.hst', 0);
-Configure::write('Taxes.hstId', '');
+Configure::write('Taxes.qst', 0.05);
+Configure::write('Taxes.qstId', '23245656');
+Configure::write('Taxes.gst', 0.04);
+Configure::write('Taxes.gstId', '434324');
+Configure::write('Taxes.hst', 0.06);
+Configure::write('Taxes.hstId', '123');
 Configure::write('Taxes.pst', 0);
 Configure::write('Taxes.pstId', '');
 
@@ -341,18 +341,18 @@ Configure::write('CashRegister.yukon', [
 /**
  * Paypal
  */
-Configure::write('Paypal.enabled', true);
-Configure::write('Paypal.username', 'roxannecou-facilitator_api1.gmail.com');
-Configure::write('Paypal.password', '1395249517');
-Configure::write('Paypal.signature', 'A2LBPTZk8t4dAq2E.5jX9qC8gHFtAp3zUdz5-JUgsPuDp-MJ0Wr0fGeU');
-Configure::write('Paypal.endpoint', 'debug');
+Configure::write('Paypal.enabled', false);
+Configure::write('Paypal.username', 'default');
+Configure::write('Paypal.password', 'default');
+Configure::write('Paypal.signature', 'default');
+Configure::write('Paypal.endpoint', 'default');
 
 /**
  * Stripe
  */
 Configure::write('Stripe.enabled', true);
-Configure::write('Stripe.publishableKey', 'pk_test_51PrTiIP3Ao1w8vs19dZe8xzPKUOqquNZ1XS5Gf9QYmHQauatqtkhyafTYhyMZyhFa3K9OuH9XgH0m50Szx7ZCp3d00FpNlK2qb');
-Configure::write('Stripe.secretKey', 'sk_test_51PrTiIP3Ao1w8vs1YrgoYIBaLB8zkEulo2lhg2vxpRZJE88y78dyYnbIPRopndc0m4LSolCxgQFtINRohMevmxlq00iawF73WN');
+Configure::write('Stripe.publishableKey', '7676756');
+Configure::write('Stripe.secretKey', '67675');
 
 /**
  * ConvergeAPI
@@ -393,18 +393,18 @@ Configure::write('Directories', [
     'pictures' => WWW_ROOT . 'pub' . DS . 'photos',
     'thumbs' => WWW_ROOT . 'pub' . DS . 'thumbs',
     'assets' => WWW_ROOT . 'assets',
-    'transacExtraPub' => getenv('loufa_PUBLIC_FOLDER')
+    'transacExtraPub' => getenv('PUBLIC_FOLDER')
 ]);
 
 /**
  * Addresses to notify upon receiving an order
  */
-Configure::write('Notify.addresses', ['service@photosf.ca']);
+Configure::write('Notify.addresses', ['']);
 
 /**
  * Admin contacts
  */
-Configure::write('Admin.emails', ['service@photosf.ca']);
+Configure::write('Admin.emails', ['']);
 
 /**
  * Google reCaptcha api key
@@ -419,11 +419,11 @@ Configure::write('Private', [
     'prefix' => 'private'
 ]);
 
-Configure::write('URL.root', 'https://test.store');
+Configure::write('URL.root', 'http://localhost:8000/');
 Configure::write('URL.startOrder', Router::url(['controller' => 'order', 'action' => 'choose']));
 Configure::write('URL.webCodeRequests', Router::url(['controller' => 'pages', 'action' => 'code_requests']));
-Configure::write('URL.termsAndConditions', 'https://test.store/t&c');
-Configure::write('URL.contactUs', 'https://test.store/contact-us');
+Configure::write('URL.termsAndConditions', 'http://localhost:8000/');
+Configure::write('URL.contactUs', 'http://localhost:8000/');
 Configure::write('URL.confirmPaymentSuccessPaypal', Router::url(['controller' => 'confirm'], true));
 Configure::write('URL.confirmPaymentFailPaypal', Router::url(['controller' => 'confirm', 'action' => 'fail'], true));
 Configure::write('URL.confirmPaymentSuccessConverge', substr(Router::url(['controller' => 'confirm']), 1));
