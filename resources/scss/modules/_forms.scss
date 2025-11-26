@@ -146,6 +146,7 @@ textarea {
 dialog,
 .accounts-reload-needed,
 #complete {
+
   input[type="text"],
   input[type="password"],
   input[type="email"],
@@ -209,4 +210,85 @@ dialog,
       //
     }
   }
+}
+
+#home .btn,
+#home .submit,
+#home .btn-blue,
+#home .small-btn-blue,
+#home .btn-red,
+#home .cross-sell-overlay .bottom button,
+.cross-sell-overlay .bottom #home button,
+#home .accounts-reload-needed .bottom button,
+.accounts-reload-needed .bottom #home button,
+#home .btn-accent,
+#home .btn-primary,
+#order-app .btn,
+#order-app .submit,
+#order-app .btn-blue,
+#order-app .small-btn-blue,
+#order-app .btn-red,
+#order-app .cross-sell-overlay .bottom button,
+.cross-sell-overlay .bottom #order-app button,
+#order-app .accounts-reload-needed .bottom button,
+.accounts-reload-needed .bottom #order-app button,
+#order-app .btn-accent,
+#order-app .btn-primary,
+#accounts-login .btn,
+#accounts-login .submit,
+#accounts-login .btn-blue,
+#accounts-login .small-btn-blue,
+#accounts-login .btn-red,
+#accounts-login .cross-sell-overlay .bottom button,
+.cross-sell-overlay .bottom #accounts-login button,
+#accounts-login .accounts-reload-needed .bottom button,
+.accounts-reload-needed .bottom #accounts-login button,
+#accounts-login .btn-accent,
+#accounts-login .btn-primary,
+dialog .btn,
+dialog .submit,
+dialog .btn-blue,
+dialog .small-btn-blue,
+dialog .btn-red,
+dialog .cross-sell-overlay .bottom button,
+.cross-sell-overlay .bottom dialog button,
+dialog .accounts-reload-needed .bottom button,
+.accounts-reload-needed .bottom dialog button,
+dialog .btn-accent,
+dialog .btn-primary,
+.accounts-reload-needed .btn,
+.accounts-reload-needed .submit,
+.accounts-reload-needed .btn-blue,
+.accounts-reload-needed .small-btn-blue,
+.accounts-reload-needed .btn-red,
+.cross-sell-overlay .bottom .accounts-reload-needed button,
+.accounts-reload-needed .bottom button,
+.accounts-reload-needed .btn-accent,
+.accounts-reload-needed .btn-primary,
+#complete .btn,
+#complete .submit,
+#complete .btn-blue,
+#complete .small-btn-blue,
+#complete .btn-red,
+#complete .cross-sell-overlay .bottom button,
+.cross-sell-overlay .bottom #complete button,
+#complete .accounts-reload-needed .bottom button,
+.accounts-reload-needed .bottom #complete button,
+#complete .btn-accent,
+#complete .btn-primary {
+  display: inline-block;
+  height: auto;
+  padding: 20px;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: gray;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-weight: bold;
+  border-radius: 10px;
+  letter-spacing: unset;
 }

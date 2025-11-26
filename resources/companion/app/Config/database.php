@@ -1,13 +1,11 @@
 <?php
 require 'db_vars.php';
 
-class DATABASE_CONFIG
-{
+class DATABASE_CONFIG {
     public $default = array(
         'datasource' => 'Database/Postgres',
         'persistent' => false,
         'host' => DB_HOST,
-        'port' => DB_PORT,
         'login' => DB_USERNAME,
         'password' => DB_PASSWORD,
         'database' => DB_NAME,
@@ -16,12 +14,11 @@ class DATABASE_CONFIG
         'unix_socket' => '',
         'schema' => 'transactional'
     );
-
+    
     public $public = array(
         'datasource' => 'Database/Postgres',
         'persistent' => false,
         'host' => DB_HOST,
-        'port' => DB_PORT,
         'login' => DB_USERNAME,
         'password' => DB_PASSWORD,
         'database' => DB_NAME,

@@ -2,39 +2,49 @@ import 'reflect-metadata';
 import dotenv from 'dotenv';
 dotenv.config();
 
+// Ensure bare imports like 'lib/...' resolve to the source folder when running
+// the app directly from `src/` (development). If NODE_PATH is already set we
+// leave it alone. Re-init module paths so `require('lib/..')` works.
+if (!globalThis.process?.env?.NODE_PATH) {
+    // @ts-ignore
+    globalThis.process.env.NODE_PATH = __dirname;
+    // @ts-ignore
+    require('module').Module._initPaths();
+}
+
 import { bootstrap, onExit } from 'lib/bootstrap';
 import { logger } from 'lib/core/logger';
 
-function exitHandler(kind: string, exitCode: number|string, error: Error): void {
+function exitHandler(kind: string, exitCode: number | string, error: Error): void {
     switch (kind) {
-    case 'SIGINT':
-    case 'SIGUSR1':
-    case 'SIGUSR2':
-        logger.info(`Application received ${exitCode}`, {area: 'MAIN', action: 'exiting', reason: exitCode});
-        process.exit(0);
-        break;
+        case 'SIGINT':
+        case 'SIGUSR1':
+        case 'SIGUSR2':
+            logger.info(`Application received ${exitCode}`, { area: 'MAIN', action: 'exiting', reason: exitCode });
+            process.exit(0);
+            break;
 
-    case 'uncaught-exception':
-        logger.error('Uncaught exception, application closing.', {
-            area: 'MAIN',
-            action: 'exiting',
-            reason: 'uncaught-exception',
-            error
-        });
-        console.log(error);
-        //process.exit(1);
-        break;
+        case 'uncaught-exception':
+            logger.error('Uncaught exception, application closing.', {
+                area: 'MAIN',
+                action: 'exiting',
+                reason: 'uncaught-exception',
+                error
+            });
+            console.log(error);
+            //process.exit(1);
+            break;
 
-    default:
-        logger.info(`Application closing with exit code ${exitCode}`, {
-            area: 'MAIN',
-            action: 'exiting',
-            reason: exitCode
-        });
+        default:
+            logger.info(`Application closing with exit code ${exitCode}`, {
+                area: 'MAIN',
+                action: 'exiting',
+                reason: exitCode
+            });
     }
 }
 
-logger.info(`Pictacio starting ...`, {area: 'MAIN'});
+logger.info(`Pictacio starting ...`, { area: 'MAIN' });
 onExit(exitHandler);
 
 
@@ -58,18 +68,18 @@ bootstrap([
     typeormLoader,
     servicesLoader
 ])
-.then(async () => {
-    logger.info('... Application started successfully', {area: 'MAIN'});
+    .then(async () => {
+        logger.info('... Application started successfully', { area: 'MAIN' });
 
-    if (process.argv.includes('--init')) {
-        logger.info('Initialization requested', {area: 'MAIN'});
+        if (process.argv.includes('--init')) {
+            logger.info('Initialization requested', { area: 'MAIN' });
 
-        await Container.get<ConfigGenService>('config-gen').init(process.argv.includes('--debug'));
-        process.exit(0);
-    } else {
-        Container.get<RedisPubsubService>('redis-pubsub').init();
-    }
-})
-.catch((error) => {
-    logger.error('An error occurred', {area: 'MAIN', message: error.message, stack: error.stack});
-});
+            await Container.get<ConfigGenService>('config-gen').init(process.argv.includes('--debug'));
+            process.exit(0);
+        } else {
+            Container.get<RedisPubsubService>('redis-pubsub').init();
+        }
+    })
+    .catch((error) => {
+        logger.error('An error occurred', { area: 'MAIN', message: error.message, stack: error.stack });
+    });

@@ -20,6 +20,9 @@ RUN sed -i 's/;cgi.fix_pathinfo/cgi.fix_pathinfo=0;/' /etc/php/5.6/fpm/php.ini; 
     sed -i 's/upload_max_filesize = [0-9]*M/upload_max_filesize = 1000M/' /etc/php/5.6/fpm/php.ini; \
 	sed -i '/sendfile on;/a client_max_body_size 1000M;' /etc/nginx/nginx.conf; \
     sed -i '/sendfile on;/a proxy_request_buffering off;' /etc/nginx/nginx.conf; \
+    sed -i 's/error_log = \/var\/log\/php5.6-fpm.log/error_log = \/proc\/self\/fd\/2/' /etc/php/5.6/fpm/php-fpm.conf; \
+    sed -i 's/;catch_workers_output = yes/catch_workers_output = yes/' /etc/php/5.6/fpm/pool.d/www.conf; \
+    grep -q 'php_admin_value\[error_log\]' /etc/php/5.6/fpm/pool.d/www.conf || echo 'php_admin_value[error_log] = /proc/self/fd/2' >> /etc/php/5.6/fpm/pool.d/www.conf; \
 	rm /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default; \
 	ln -s /etc/nginx/sites-available/photosf.conf /etc/nginx/sites-enabled/photosf.conf; \
 	mkdir /var/log/$SERVER_NAME/; \

@@ -26,12 +26,15 @@ EXPOSE 9229
 CMD [ "node", "entry.js" ]
 
 FROM pictaccio-admin-final-unsafe AS pictaccio-admin-final
+## Copy compiled distribution from the builder stage into the runtime image
+COPY --from=pictaccio-admin-final-unsafe /app_src/dist /app/dist
 
 RUN rm -rf /app/database/migrations/*; \
     rm -rf /app/package*.json; \
     rm -rf /node_modules; \
     rm -rf /app_src;
 
+ENV NODE_PATH=/app/dist
 EXPOSE 3000
 USER www-data
-CMD [ "node", "entry.js" ]
+CMD [ "node", "dist/entry.js" ]

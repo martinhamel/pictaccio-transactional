@@ -133,6 +133,7 @@
                 text-align: center;
                 filter: drop-shadow(0 0 6px rgba(0, 0, 0, .5));
                 white-space: normal;
+                color: #f6f4eb;
 
                 @media (max-width: 600px) {
                     margin: 2rem 2rem 3rem;
@@ -416,7 +417,7 @@
     .contact-us {
         position: relative;
         padding: 5rem 0;
-        background-color: $color-neutral4;
+        background-color: #333 !important;
         overflow: hidden;
 
         h2 {

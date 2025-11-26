@@ -25,11 +25,14 @@ RUN sed -i 's/;cgi.fix_pathinfo/cgi.fix_pathinfo=0;/' /etc/php/5.6/fpm/php.ini \
 &&  sed -i 's/memory_limit = [0-9]*M/memory_limit = -1/' /etc/php/5.6/fpm/php.ini \
 &&  sed -i 's/post_max_size = [0-9]*M/post_max_size = 1000M/' /etc/php/5.6/fpm/php.ini \
 &&  sed -i 's/upload_max_filesize = [0-9]*M/upload_max_filesize = 1000M/' /etc/php/5.6/fpm/php.ini \
-&&  sed -i '/# server_tokens off;/a 	client_max_body_size 10000M;' /etc/nginx/nginx.conf \
+&&  sed -i '/# server_tokens off;/a \tclient_max_body_size 10000M;' /etc/nginx/nginx.conf \
 &&  sed -i 's/session.gc_maxlifetime = 1440/session.gc_maxlifetime = 2629746/' /etc/php/5.6/fpm/php.ini \
 &&  sed -i 's/max_execution_time = 30/max_execution_time = 600/' /etc/php/5.6/fpm/php.ini \
 &&  sed -i 's/error_log = \/var\/log\/php5.6-fpm.log/error_log = \/var\/log\/php\/php5.6-fpm.log/' /etc/php/5.6/fpm/php-fpm.conf \
+&&  sed -i 's#error_log = /var/log/php/php5.6-fpm.log#error_log = /proc/self/fd/2#' /etc/php/5.6/fpm/php-fpm.conf \
 &&  sed -i 's/;clear_env = no/clear_env = no/' /etc/php/5.6/fpm/pool.d/www.conf \
+&&  sed -i 's/;catch_workers_output = yes/catch_workers_output = yes/' /etc/php/5.6/fpm/pool.d/www.conf \
+&&  grep -q 'php_admin_value\[error_log\]' /etc/php/5.6/fpm/pool.d/www.conf || echo 'php_admin_value[error_log] = /proc/self/fd/2' >> /etc/php/5.6/fpm/pool.d/www.conf \
 &&  rm /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default \
 &&  ln -s /etc/nginx/sites-available/pictaccio.conf /etc/nginx/sites-enabled/pictaccio.conf \
 &&  mkdir /var/log/pictaccio/ \

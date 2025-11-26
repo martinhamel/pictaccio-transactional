@@ -3,21 +3,24 @@
  * Copyright © 2015-2024, loufa - All Right Reserved
  */
 
-class Subject extends AppModel {
+class Subject extends AppModel
+{
     public $actsAs = ['Locale'];
     public $validate = [
         'id' => 'blank'
     ];
 
-    public function codeExist($code) {
+    public function codeExist($code)
+    {
         return $this->find('count', [
-                'conditions' => [
-                    'code' => $code
-                ]
-            ]) !== 0;
+            'conditions' => [
+                'code' => $code
+            ]
+        ]) !== 0;
     }
 
-    public function findByCode($code) {
+    public function findByCode($code)
+    {
         return $this->find('first', [
             'conditions' => [
                 'code' => $code
@@ -25,7 +28,8 @@ class Subject extends AppModel {
         ]);
     }
 
-    public function findBySessionId($sessionId) {
+    public function findBySessionId($sessionId)
+    {
         if (!is_numeric($sessionId)) {
             throw new InvalidArgumentException("Non numerical id: {$sessionId}");
         }
@@ -36,7 +40,8 @@ class Subject extends AppModel {
         ]);
     }
 
-    public function findByGpiInSession($sessionId, $gpi) {
+    public function findByGpiInSession($sessionId, $gpi)
+    {
         if (!is_numeric($sessionId)) {
             throw new InvalidArgumentException("Non numerical id: {$sessionId}");
         }
@@ -49,7 +54,8 @@ class Subject extends AppModel {
 
     }
 
-    public function setHide($code, $hide) {
+    public function setHide($code, $hide)
+    {
         $subject = $this->findByCode($code);
         if (empty($subject)) {
             throw new RuntimeException("Subject: code '${code}' not found");

@@ -9,7 +9,7 @@ Configure::write('Config.default', 'en'); // <- Default language
 /**
  * Customizations
  */
-Configure::write('Customizations.storeName', 'ma boutique');
+Configure::write('Customizations.storeName', 'Chez Martin');
 
 /**
  * Customer styles
@@ -56,10 +56,10 @@ Configure::write('Order', [
 /**
  * Contacts
  */
-Configure::write('Contacts.email', 'martin@ko.com');
-Configure::write('Contacts.phoneNumber', '123-987-76876');
+Configure::write('Contacts.email', 'service@aaa.com');
+Configure::write('Contacts.phoneNumber', '');
 Configure::write('Contacts.addressLine1', '1512 rue le Caron');
-Configure::write('Contacts.addressLine2','12 rewr');
+Configure::write('Contacts.addressLine2','');
 Configure::write('Contacts.city', 'Montréal');
 Configure::write('Contacts.region', 'qc');
 Configure::write('Contacts.country', 'canada');
@@ -71,7 +71,7 @@ Configure::write('Contacts.postalCode', 'H4E1J8');
 Configure::write('CanadaPost.enabled', true);
 Configure::write('CanadaPost.username', 'martin@komunide.com');
 Configure::write('CanadaPost.password', 'password');
-Configure::write('CanadaPost.customerNumber', '12234');
+Configure::write('CanadaPost.customerNumber', '1234');
 Configure::write('CanadaPost.certificate', APP . 'Lib' . DS . 'Shipping' . DS . 'ShippingSources' . DS . 'CanadaPost' . DS . 'cacert.pem');
 Configure::write('CanadaPost.apiUrl', 'https://ct.soa-gw.canadapost.ca/rs/ship/price');
 
@@ -80,11 +80,11 @@ Configure::write('CanadaPost.apiUrl', 'https://ct.soa-gw.canadapost.ca/rs/ship/p
  */
 Configure::write('Taxes.locality', 'ca-qc');
 Configure::write('Taxes.qst', 0.05);
-Configure::write('Taxes.qstId', '23245656');
-Configure::write('Taxes.gst', 0.04);
-Configure::write('Taxes.gstId', '434324');
-Configure::write('Taxes.hst', 0.06);
-Configure::write('Taxes.hstId', '123');
+Configure::write('Taxes.qstId', '32432432');
+Configure::write('Taxes.gst', 0.05);
+Configure::write('Taxes.gstId', '432423');
+Configure::write('Taxes.hst', 0);
+Configure::write('Taxes.hstId', '');
 Configure::write('Taxes.pst', 0);
 Configure::write('Taxes.pstId', '');
 
@@ -351,8 +351,8 @@ Configure::write('Paypal.endpoint', 'default');
  * Stripe
  */
 Configure::write('Stripe.enabled', true);
-Configure::write('Stripe.publishableKey', '7676756');
-Configure::write('Stripe.secretKey', '67675');
+Configure::write('Stripe.publishableKey', '321321');
+Configure::write('Stripe.secretKey', '432432');
 
 /**
  * ConvergeAPI
@@ -399,12 +399,12 @@ Configure::write('Directories', [
 /**
  * Addresses to notify upon receiving an order
  */
-Configure::write('Notify.addresses', ['']);
+Configure::write('Notify.addresses', ['not@aaa.com']);
 
 /**
  * Admin contacts
  */
-Configure::write('Admin.emails', ['']);
+Configure::write('Admin.emails', ['not@aaa.com']);
 
 /**
  * Google reCaptcha api key
@@ -419,11 +419,11 @@ Configure::write('Private', [
     'prefix' => 'private'
 ]);
 
-Configure::write('URL.root', 'http://localhost:8000/');
+Configure::write('URL.root', 'https://aaa.com');
 Configure::write('URL.startOrder', Router::url(['controller' => 'order', 'action' => 'choose']));
 Configure::write('URL.webCodeRequests', Router::url(['controller' => 'pages', 'action' => 'code_requests']));
-Configure::write('URL.termsAndConditions', 'http://localhost:8000/');
-Configure::write('URL.contactUs', 'http://localhost:8000/');
+Configure::write('URL.termsAndConditions', 'https://aaa.com');
+Configure::write('URL.contactUs', 'https://aaa.com');
 Configure::write('URL.confirmPaymentSuccessPaypal', Router::url(['controller' => 'confirm'], true));
 Configure::write('URL.confirmPaymentFailPaypal', Router::url(['controller' => 'confirm', 'action' => 'fail'], true));
 Configure::write('URL.confirmPaymentSuccessConverge', substr(Router::url(['controller' => 'confirm']), 1));

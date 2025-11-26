@@ -41,7 +41,7 @@ body {
 }
 
 a {
-  color: var(--color-link);
+  color: #f6f4eb;
   text-decoration: none;
   cursor: pointer;
 
@@ -51,7 +51,7 @@ a {
   }
 
   &:hover {
-    color: oklch(from var(--color-accent) calc(l * 1) c h);
+    color: #f99e1d;
   }
 }
 
@@ -84,6 +84,7 @@ strong {
 h1 {
   font-size: 2.1rem;
   margin-bottom: 1rem;
+  color: #f6f4eb;
 
   @include breakpoint($phone) {
     font-size: 2.6rem;
@@ -144,16 +145,6 @@ header.header-nav,
   #{headings()} {
     font-family: $font-main;
     font-size: 1.6rem;
-  }
-
-  h1 {
-    font-size: 2.1rem;
-    margin-bottom: 1rem;
-    color: #f6f4eb;
-
-    @include breakpoint($phone) {
-      font-size: 2.6rem;
-    }
   }
 
   h2 {

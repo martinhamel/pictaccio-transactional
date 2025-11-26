@@ -1,0 +1,403 @@
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Initialization requested {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Generating config files
+info: Config files generated
+info: Init pubsub
+info: Initializing RedisPubsubService
+info: Preparing init config promises
+info: Completed init pubsub
+info: Publishing config request
+info: Config request published
+info: Waiting for config done
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/app.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/core.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/database.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/db_vars.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.8:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.8","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.8:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.8","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.8:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.8","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.8:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.8","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Initialization requested {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Generating config files
+info: Config files generated
+info: Init pubsub
+info: Initializing RedisPubsubService
+info: Preparing init config promises
+info: Completed init pubsub
+info: Publishing config request
+info: Config request published
+info: Waiting for config done
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/app.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/core.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/database.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/db_vars.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.19:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.19","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.19:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.19","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.19:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.19","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.19:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.19","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.19:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.19","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.19:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.19","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Initialization requested {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Generating config files
+info: Config files generated
+info: Init pubsub
+info: Initializing RedisPubsubService
+info: Preparing init config promises
+info: Completed init pubsub
+info: Publishing config request
+info: Config request published
+info: Waiting for config done
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/app.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/core.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/database.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ENOENT","errno":-2,"path":"/srv/pictaccio/resources/companion/app/Config/db_vars.php","syscall":"open"},"reason":"uncaught-exception"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.3:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.3","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.3:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.3","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.3:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.3","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.3:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.3","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.3:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.3","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.3:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.3","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Initialization requested {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Generating config files
+info: Config files generated
+info: Init pubsub
+info: Initializing RedisPubsubService
+info: Preparing init config promises
+info: Completed init pubsub
+info: Publishing config request
+info: Config request published
+info: Waiting for config done
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.9:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.9","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.9:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.9","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.9:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.9","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.9:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.9","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.9:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.9","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.9:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.9","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Initialization requested {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Generating config files
+info: Config files generated
+info: Init pubsub
+info: Initializing RedisPubsubService
+info: Preparing init config promises
+info: Completed init pubsub
+info: Publishing config request
+info: Config request published
+info: Waiting for config done
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.14:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.14","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Initialization requested {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Generating config files
+info: Config files generated
+info: Init pubsub
+info: Initializing RedisPubsubService
+info: Preparing init config promises
+info: Completed init pubsub
+info: Publishing config request
+info: Config request published
+info: Waiting for config done
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: Socket closed unexpectedly {"action":"logging","area":"services","error":{},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.21:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.21","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.21:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.21","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.21:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.21","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: connect ECONNREFUSED 10.89.0.21:6379 {"action":"logging","area":"services","error":{"address":"10.89.0.21","code":"ECONNREFUSED","errno":-111,"port":6379,"syscall":"connect"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+error: Redis error: Error: getaddrinfo ENOTFOUND redis {"action":"logging","area":"services","error":{"code":"ENOTFOUND","errno":-3008,"hostname":"redis","syscall":"getaddrinfo"},"subarea":"redis"}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Initialization requested {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Generating config files
+info: Config files generated
+info: Init pubsub
+info: Initializing RedisPubsubService
+info: Preparing init config promises
+info: Completed init pubsub
+info: Publishing config request
+info: Config request published
+info: Waiting for config done
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Initialization requested {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Generating config files
+info: Config files generated
+info: Init pubsub
+info: Initializing RedisPubsubService
+info: Preparing init config promises
+info: Completed init pubsub
+info: Publishing config request
+info: Config request published
+info: Waiting for config done
+info: Received app-integrations:changed
+info: Received app-integrations:changed
+info: Processing app-integrations:changed
+info: Received app-integrations:changed
+info: Received configured-languages:changed
+info: Processing app-integrations:changed
+info: Received app-integrations:changed
+info: Received configured-languages:changed
+info: Done processing app-integrations:changed
+info: Processing app-integrations:changed
+info: Done processing app-integrations:changed
+info: Processing configured-languages:changed
+info: Done processing configured-languages:changed
+info: Done processing app-integrations:changed
+info: Processing app-integrations:changed
+info: Done processing app-integrations:changed
+info: Processing configured-languages:changed
+info: Done processing configured-languages:changed
+info: Received store-shutdown:changed
+info: Received store-shutdown:changed
+info: Processing store-shutdown:changed
+info: Done processing store-shutdown:changed
+info: Processing store-shutdown:changed
+info: Done processing store-shutdown:changed
+info: Received backgrounds:changed
+info: Received backgrounds:changed
+info: Prosessing backgrounds:changed
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ERR_INVALID_URL","input":"http://localhost:8080chronics/emit/Backgrounds.update"},"reason":"uncaught-exception"}
+info: Received store-config:changed
+info: Processing store-config:changed
+info: Done processing store-config:changed
+info: Prosessing backgrounds:changed
+error: Uncaught exception, application closing. {"action":"exiting","area":"MAIN","error":{"code":"ERR_INVALID_URL","input":"http://localhost:8080chronics/emit/Backgrounds.update"},"reason":"uncaught-exception"}
+info: Received store-config:changed
+info: Processing store-config:changed
+info: Done processing store-config:changed
+info: Received store-customization:changed
+info: Received store-customization:changed
+info: Processing store-customization:changed
+info: Done processing store-customization:changed
+info: Received config:done
+info: Processing config:done
+info: Done processing config:done
+info: Config done
+info: Flushing file caches
+info: Processing store-customization:changed
+info: Done processing store-customization:changed
+info: Received config:done
+info: Processing config:done
+info: Done processing config:done
+info: Config done
+info: Flushing file caches
+info: Application closing with exit code 0 {"action":"exiting","area":"MAIN","reason":0}
+info: Application closing with exit code 0 {"action":"exiting","area":"MAIN","reason":0}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Initializing RedisPubsubService
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+info: Pictacio starting ... {"area":"MAIN"}
+info: Loading module typedi in the main thread {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":0}
+info: Loading module config in the main thread {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":0}
+info: Loading module scheduler in the main thread {"action":"loading-module","area":"bootstrap","module":"scheduler","subarea":"bootstrap","threadId":0}
+info: Loading module typeorm in the main thread {"action":"loading-module","area":"bootstrap","module":"typeorm","subarea":"bootstrap","threadId":0}
+info: Loading module services in the main thread {"action":"loading-module","area":"bootstrap","module":"services","subarea":"bootstrap","threadId":0}
+info: Loading services... {"action":"loading","area":"loaders","subarea":"services"}
+info: ... Application started successfully {"area":"MAIN"}
+info: Connecting to redis {"action":"connecting","area":"services","subarea":"redis"}
+info: Connected to redis {"action":"connecting","area":"services","result":"success","subarea":"redis"}
+info: Initializing RedisPubsubService
+info: Loading module typedi in thread 1 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":1}
+info: Loading module config in thread 1 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":1}
+info: Loading module typedi in thread 2 {"action":"loading-module","area":"bootstrap","module":"typedi","subarea":"bootstrap","threadId":2}
+info: Loading module config in thread 2 {"action":"loading-module","area":"bootstrap","module":"config","subarea":"bootstrap","threadId":2}
+info: Application received SIGINT {"action":"exiting","area":"MAIN","reason":"SIGINT"}

@@ -863,7 +863,7 @@ msgid "ORDERAPP_MESSAGE_RESET_SESSION"
 msgstr "Vous avez enlevé toutes les photos du panier. Voulez-vous effacer votre session et recommencer du début?"
 
 msgid "ORDERAPP_MESSAGE_BUBBLE_ADD_PHOTO"
-msgstr "Entrez içi vos autres codes internet si vous avez plus d'un enfant. Choisissez ensuite les photos qui vous intéressent. Les photos avec fond vert vous permettront de choisir un arrière plan.<br><br>Cliquez sur cette bulle pour continuer."
+msgstr "Entrez ici vos autres codes internet si vous avez plus d'un enfant. Choisissez ensuite les photos qui vous intéressent. Les photos avec fond vert vous permettront de choisir un arrière plan.<br><br>Cliquez sur cette bulle pour continuer."
 
 msgid "ORDERAPP_ADD_PHOTO_HEADER"
 msgstr "Sélectionner vos photos"

@@ -6,8 +6,10 @@
 App::uses('Controller', 'Controller');
 App::uses('LanguageFallback', 'Lib');
 App::uses('Path', 'Lib');
+App::uses('BuildInfo', 'Lib');
 
-class AppController extends Controller {
+class AppController extends Controller
+{
     public $components = [
         'DebugKit.Toolbar',
         'Session'
@@ -15,10 +17,14 @@ class AppController extends Controller {
 
     public $build = '2023.19-1';
 
-    public function beforeFilter() {
+    public function beforeFilter()
+    {
         parent::beforeFilter();
 
         $this->set('buildString', $this->build);
+        if (Configure::read('BuildInfo.runMode') === 'debug') {
+            $this->set('buildInfoString', BuildInfo::makeInfoString($this->build));
+        }
         $this->_checkLanguage();
         $this->_checkShutdown();
         //$this->CSRF->refresh();
@@ -37,7 +43,8 @@ class AppController extends Controller {
      * @param mixed $redirect Route array or string url to redirect to if the test fails. If this parameter is set to false, the method will notify the caller through a boolean return value.
      * @return bool
      */
-    protected function _expectGet(array $expectQueryVariables = [], $redirect = null) {
+    protected function _expectGet(array $expectQueryVariables = [], $redirect = null)
+    {
         if (!is_array($expectQueryVariables)) {
             $expectQueryVariables = [$expectQueryVariables];
         }
@@ -49,14 +56,16 @@ class AppController extends Controller {
      * @param mixed $redirect Route array or string url to redirect to if the test fails. If this parameter is set to false, the method will notify the caller through a boolean return value.
      * @return bool
      */
-    protected function _expectPost($expectPostVariables = [], $redirect = null) {
+    protected function _expectPost($expectPostVariables = [], $redirect = null)
+    {
         if (!is_array($expectPostVariables)) {
             $expectPostVariables = [$expectPostVariables];
         }
         return $this->_checkRequest('post', $expectPostVariables, $this->request->data, $redirect);
     }
 
-    protected function _expectSession($expectSessionVariables, $redirect = null) {
+    protected function _expectSession($expectSessionVariables, $redirect = null)
+    {
         if (!is_array($expectSessionVariables)) {
             $expectSessionVariables = [$expectSessionVariables];
         }
@@ -70,7 +79,8 @@ class AppController extends Controller {
         }
     }
 
-    protected function _loadComponent($componentName, $addToThis = false, $overwrite = false) {
+    protected function _loadComponent($componentName, $addToThis = false, $overwrite = false)
+    {
         $component = $this->Components->load($componentName);
         $component->initialize($this);
         if ($addToThis && (!isset($this->{$componentName}) || $overwrite)) {
@@ -80,20 +90,23 @@ class AppController extends Controller {
         return $component;
     }
 
-    protected function _sendJsonHeaders() {
+    protected function _sendJsonHeaders()
+    {
         $this->autoRender = false;
         $this->autoLayout = false;
         $this->response->type('application/json');
     }
 
-    protected function _renderJson(array $array) {
+    protected function _renderJson(array $array)
+    {
         $this->_absolutePathToServerRelative($array);
         $this->response->type('application/json');
         $this->set('json_data', $array);
         $this->render(DS . 'Layouts' . DS . 'json' . DS . 'default');
     }
 
-    protected function _htmlEntitiesArray($array) {
+    protected function _htmlEntitiesArray($array)
+    {
         foreach ($array as &$arrayItem) {
             if (is_array($arrayItem)) {
                 $arrayItem = $this->_htmlEntitiesArray($arrayItem);
@@ -106,7 +119,8 @@ class AppController extends Controller {
     }
 
     /* PRIVATE */
-    private function _absolutePathToServerRelative(array &$array, $webroot = null, $webrootLength = null, $serverUrl = null) {
+    private function _absolutePathToServerRelative(array &$array, $webroot = null, $webrootLength = null, $serverUrl = null)
+    {
         $webroot = $webroot ?: Path::join(APP, 'webroot');
         $webrootLength = $webrootLength ?: strlen($webroot);
         $serverUrl = $serverUrl ?: Path::join($_SERVER['HTTP_HOST'], Router::url('/'));
@@ -120,13 +134,16 @@ class AppController extends Controller {
         }
     }
 
-    private function _checkLanguage() {
+    private function _checkLanguage()
+    {
         if (strlen(Configure::read('Config.language')) === 5) {
             Configure::write('Config.language', substr(Configure::read('Config.language'), 0, 2));
         }
 
-        if (!empty($this->request->query['lang']) &&
-            array_search(substr($this->request->query['lang'], 0, 2), Configure::read('Language.available')) !== false) {
+        if (
+            !empty($this->request->query['lang']) &&
+            array_search(substr($this->request->query['lang'], 0, 2), Configure::read('Language.available')) !== false
+        ) {
             CakeSession::write('Config.language', substr($this->request->query['lang'], 0, 2));
             header('X-Robots-Tag: noindex');
         }
@@ -146,7 +163,8 @@ class AppController extends Controller {
         header("Content-Language: {$contentLang}");
     }
 
-    private function _checkRequest($type, $expect, $variables, $redirect) {
+    private function _checkRequest($type, $expect, $variables, $redirect)
+    {
         if (!$this->request->is($type)) {
             if ($redirect === false) {
                 return false;
@@ -170,7 +188,8 @@ class AppController extends Controller {
         return true;
     }
 
-    private function _checkShutdown() {
+    private function _checkShutdown()
+    {
         if ($this->here === '/exports/config.json') {
             return;
         }
@@ -183,7 +202,8 @@ class AppController extends Controller {
         }
     }
 
-    private function _filterQueryAndPostData() {
+    private function _filterQueryAndPostData()
+    {
         $this->request->query = $this->_htmlEntitiesArray($this->request->query);
         $this->request->data = $this->_htmlEntitiesArray($this->request->data);
     }
